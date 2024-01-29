@@ -1,0 +1,37 @@
+PREFIX v:       <http://parameter.com/vocabulary/parameter#>
+PREFIX rdfs:    <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT	?system_id ?system_name 
+		?model_id ?model_name
+		?slot_id ?slot_name
+		?candidate_domain ?slot_unit
+		?container_name
+		?upstream_device_name
+		?power_source_name
+
+WHERE{
+	?model v:Simulates ?system.
+	?model v:hasName ?model_name.
+	?system v:hasName ?system_name.
+	?system v:hasId ?system_id.
+	?container v:Contains+ ?system.
+	?container v:hasName ?container_name.
+	?model v:hasId ?model_id.
+	
+	?model v:IsComposedOf ?slot.
+	?slot v:hasName ?slot_name.
+	?slot v:hasId ?slot_id.
+	?slot v:hasUnit ?slot_unit.
+	
+	?slot v:hasDomain ?candidate_domain.
+	
+	?system v:HC1_Follows+ ?upstream_device.
+	?upstream_device v:hasName ?upstream_device_name.
+	
+	?power_source v:Powers+ ?container.
+	?power_source v:hasName ?power_source_name.
+	
+	FILTER(?container_name = "eclss")
+	FILTER(?upstream_device_name = "selection_valve_2")
+	FILTER(?power_source_name = "auxiliary")
+}

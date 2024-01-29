@@ -1,0 +1,578 @@
+{ "head": {
+    "vars": [ "Slot_name" , "Id" , "Value" , "NominalValue" , "Unit" , "maxProbability" , "StateVariableName" , "SystemName" ]
+  } ,
+  "results": {
+    "bindings": [
+      { 
+        "Slot_name": { "type": "literal" , "value": "sustained_valve_fault" } ,
+        "Id": { "type": "literal" , "value": "sustained_valve_fault_2" } ,
+        "Value": { "type": "literal" , "value": "1000" } ,
+        "NominalValue": { "type": "literal" , "value": "1000" } ,
+        "Unit": { "type": "literal" , "value": "kmol/s/bar" } ,
+        "maxProbability": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#float" , "value": "0.8" } ,
+        "StateVariableName": { "type": "literal" , "value": "stiction" } ,
+        "SystemName": { "type": "literal" , "value": "selection_valve_1" }
+      } ,
+      { 
+        "Slot_name": { "type": "literal" , "value": "sustained_valve_fault" } ,
+        "Id": { "type": "literal" , "value": "sustained_valve_fault_2" } ,
+        "Value": { "type": "literal" , "value": "1000" } ,
+        "NominalValue": { "type": "literal" , "value": "1000" } ,
+        "Unit": { "type": "literal" , "value": "kmol/s/bar" } ,
+        "maxProbability": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#float" , "value": "0.8" } ,
+        "StateVariableName": { "type": "literal" , "value": "stiction" } ,
+        "SystemName": { "type": "literal" , "value": "selection_valve_2" }
+      } ,
+      { 
+        "Slot_name": { "type": "literal" , "value": "sustained_valve_fault" } ,
+        "Id": { "type": "literal" , "value": "sustained_valve_fault_2" } ,
+        "Value": { "type": "literal" , "value": "1000" } ,
+        "NominalValue": { "type": "literal" , "value": "1000" } ,
+        "Unit": { "type": "literal" , "value": "kmol/s/bar" } ,
+        "maxProbability": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#float" , "value": "0.8" } ,
+        "StateVariableName": { "type": "literal" , "value": "stiction" } ,
+        "SystemName": { "type": "literal" , "value": "selection_valve_3" }
+      } ,
+      { 
+        "Slot_name": { "type": "literal" , "value": "sustained_valve_fault" } ,
+        "Id": { "type": "literal" , "value": "sustained_valve_fault_2" } ,
+        "Value": { "type": "literal" , "value": "1000" } ,
+        "NominalValue": { "type": "literal" , "value": "1000" } ,
+        "Unit": { "type": "literal" , "value": "kmol/s/bar" } ,
+        "maxProbability": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#float" , "value": "0.8" } ,
+        "StateVariableName": { "type": "literal" , "value": "stiction" } ,
+        "SystemName": { "type": "literal" , "value": "selection_valve_4" }
+      } ,
+      { 
+        "Slot_name": { "type": "literal" , "value": "sustained_valve_fault" } ,
+        "Id": { "type": "literal" , "value": "sustained_valve_fault_2" } ,
+        "Value": { "type": "literal" , "value": "1000" } ,
+        "NominalValue": { "type": "literal" , "value": "1000" } ,
+        "Unit": { "type": "literal" , "value": "kmol/s/bar" } ,
+        "maxProbability": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#float" , "value": "0.8" } ,
+        "StateVariableName": { "type": "literal" , "value": "stiction" } ,
+        "SystemName": { "type": "literal" , "value": "check_valve_1" }
+      } ,
+      { 
+        "Slot_name": { "type": "literal" , "value": "sustained_valve_fault" } ,
+        "Id": { "type": "literal" , "value": "sustained_valve_fault_2" } ,
+        "Value": { "type": "literal" , "value": "1000" } ,
+        "NominalValue": { "type": "literal" , "value": "1000" } ,
+        "Unit": { "type": "literal" , "value": "kmol/s/bar" } ,
+        "maxProbability": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#float" , "value": "0.8" } ,
+        "StateVariableName": { "type": "literal" , "value": "stiction" } ,
+        "SystemName": { "type": "literal" , "value": "check_valve_2" }
+      } ,
+      { 
+        "Slot_name": { "type": "literal" , "value": "sustained_valve_fault" } ,
+        "Id": { "type": "literal" , "value": "sustained_valve_fault_2" } ,
+        "Value": { "type": "literal" , "value": "1000" } ,
+        "NominalValue": { "type": "literal" , "value": "1000" } ,
+        "Unit": { "type": "literal" , "value": "kmol/s/bar" } ,
+        "maxProbability": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#float" , "value": "0.8" } ,
+        "StateVariableName": { "type": "literal" , "value": "stiction" } ,
+        "SystemName": { "type": "literal" , "value": "in-outlet_valve_1" }
+      } ,
+      { 
+        "Slot_name": { "type": "literal" , "value": "sustained_valve_fault" } ,
+        "Id": { "type": "literal" , "value": "sustained_valve_fault_2" } ,
+        "Value": { "type": "literal" , "value": "1000" } ,
+        "NominalValue": { "type": "literal" , "value": "1000" } ,
+        "Unit": { "type": "literal" , "value": "kmol/s/bar" } ,
+        "maxProbability": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#float" , "value": "0.8" } ,
+        "StateVariableName": { "type": "literal" , "value": "stiction" } ,
+        "SystemName": { "type": "literal" , "value": "in-outlet_valve_2" }
+      } ,
+      { 
+        "Slot_name": { "type": "literal" , "value": "heater_fault" } ,
+        "Id": { "type": "literal" , "value": "heater_fault_2" } ,
+        "Value": { "type": "literal" , "value": "498" } ,
+        "NominalValue": { "type": "literal" , "value": "498" } ,
+        "Unit": { "type": "literal" , "value": "K" } ,
+        "maxProbability": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#float" , "value": "0.6" } ,
+        "StateVariableName": { "type": "literal" , "value": "temperature" } ,
+        "SystemName": { "type": "literal" , "value": "heater" }
+      } ,
+      { 
+        "Slot_name": { "type": "literal" , "value": "water_preload" } ,
+        "Id": { "type": "literal" , "value": "water_preload_1" } ,
+        "Value": { "type": "literal" , "value": "0" } ,
+        "NominalValue": { "type": "literal" , "value": "0" } ,
+        "Unit": { "type": "literal" , "value": "kmol/kmol" } ,
+        "maxProbability": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#float" , "value": "0.6" } ,
+        "StateVariableName": { "type": "literal" , "value": "water" } ,
+        "SystemName": { "type": "literal" , "value": "desiccant_bed_1" }
+      } ,
+      { 
+        "Slot_name": { "type": "literal" , "value": "water_preload" } ,
+        "Id": { "type": "literal" , "value": "water_preload_1" } ,
+        "Value": { "type": "literal" , "value": "0" } ,
+        "NominalValue": { "type": "literal" , "value": "0" } ,
+        "Unit": { "type": "literal" , "value": "kmol/kmol" } ,
+        "maxProbability": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#float" , "value": "0.6" } ,
+        "StateVariableName": { "type": "literal" , "value": "water" } ,
+        "SystemName": { "type": "literal" , "value": "desiccant_bed_2" }
+      } ,
+      { 
+        "Slot_name": { "type": "literal" , "value": "water_preload" } ,
+        "Id": { "type": "literal" , "value": "water_preload_1" } ,
+        "Value": { "type": "literal" , "value": "0" } ,
+        "NominalValue": { "type": "literal" , "value": "0" } ,
+        "Unit": { "type": "literal" , "value": "kmol/kmol" } ,
+        "maxProbability": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#float" , "value": "0.6" } ,
+        "StateVariableName": { "type": "literal" , "value": "water" } ,
+        "SystemName": { "type": "literal" , "value": "sorbent_bed_1" }
+      } ,
+      { 
+        "Slot_name": { "type": "literal" , "value": "water_preload" } ,
+        "Id": { "type": "literal" , "value": "water_preload_1" } ,
+        "Value": { "type": "literal" , "value": "0" } ,
+        "NominalValue": { "type": "literal" , "value": "0" } ,
+        "Unit": { "type": "literal" , "value": "kmol/kmol" } ,
+        "maxProbability": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#float" , "value": "0.6" } ,
+        "StateVariableName": { "type": "literal" , "value": "water" } ,
+        "SystemName": { "type": "literal" , "value": "sorbent_bed_2" }
+      } ,
+      { 
+        "Slot_name": { "type": "literal" , "value": "filter_clog_fault" } ,
+        "Id": { "type": "literal" , "value": "filter_clog_fault_2" } ,
+        "Value": { "type": "literal" , "value": "1000" } ,
+        "NominalValue": { "type": "literal" , "value": "1000" } ,
+        "Unit": { "type": "literal" , "value": "kmol/s/bar" } ,
+        "maxProbability": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#float" , "value": "0.6" } ,
+        "StateVariableName": { "type": "literal" , "value": "leakage" } ,
+        "SystemName": { "type": "literal" , "value": "selection_valve_1" }
+      } ,
+      { 
+        "Slot_name": { "type": "literal" , "value": "filter_clog_fault" } ,
+        "Id": { "type": "literal" , "value": "filter_clog_fault_2" } ,
+        "Value": { "type": "literal" , "value": "1000" } ,
+        "NominalValue": { "type": "literal" , "value": "1000" } ,
+        "Unit": { "type": "literal" , "value": "kmol/s/bar" } ,
+        "maxProbability": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#float" , "value": "0.6" } ,
+        "StateVariableName": { "type": "literal" , "value": "leakage" } ,
+        "SystemName": { "type": "literal" , "value": "selection_valve_2" }
+      } ,
+      { 
+        "Slot_name": { "type": "literal" , "value": "filter_clog_fault" } ,
+        "Id": { "type": "literal" , "value": "filter_clog_fault_2" } ,
+        "Value": { "type": "literal" , "value": "1000" } ,
+        "NominalValue": { "type": "literal" , "value": "1000" } ,
+        "Unit": { "type": "literal" , "value": "kmol/s/bar" } ,
+        "maxProbability": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#float" , "value": "0.6" } ,
+        "StateVariableName": { "type": "literal" , "value": "leakage" } ,
+        "SystemName": { "type": "literal" , "value": "selection_valve_3" }
+      } ,
+      { 
+        "Slot_name": { "type": "literal" , "value": "filter_clog_fault" } ,
+        "Id": { "type": "literal" , "value": "filter_clog_fault_2" } ,
+        "Value": { "type": "literal" , "value": "1000" } ,
+        "NominalValue": { "type": "literal" , "value": "1000" } ,
+        "Unit": { "type": "literal" , "value": "kmol/s/bar" } ,
+        "maxProbability": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#float" , "value": "0.6" } ,
+        "StateVariableName": { "type": "literal" , "value": "leakage" } ,
+        "SystemName": { "type": "literal" , "value": "selection_valve_4" }
+      } ,
+      { 
+        "Slot_name": { "type": "literal" , "value": "filter_clog_fault" } ,
+        "Id": { "type": "literal" , "value": "filter_clog_fault_2" } ,
+        "Value": { "type": "literal" , "value": "1000" } ,
+        "NominalValue": { "type": "literal" , "value": "1000" } ,
+        "Unit": { "type": "literal" , "value": "kmol/s/bar" } ,
+        "maxProbability": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#float" , "value": "0.6" } ,
+        "StateVariableName": { "type": "literal" , "value": "leakage" } ,
+        "SystemName": { "type": "literal" , "value": "check_valve_1" }
+      } ,
+      { 
+        "Slot_name": { "type": "literal" , "value": "filter_clog_fault" } ,
+        "Id": { "type": "literal" , "value": "filter_clog_fault_2" } ,
+        "Value": { "type": "literal" , "value": "1000" } ,
+        "NominalValue": { "type": "literal" , "value": "1000" } ,
+        "Unit": { "type": "literal" , "value": "kmol/s/bar" } ,
+        "maxProbability": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#float" , "value": "0.6" } ,
+        "StateVariableName": { "type": "literal" , "value": "leakage" } ,
+        "SystemName": { "type": "literal" , "value": "check_valve_2" }
+      } ,
+      { 
+        "Slot_name": { "type": "literal" , "value": "filter_clog_fault" } ,
+        "Id": { "type": "literal" , "value": "filter_clog_fault_2" } ,
+        "Value": { "type": "literal" , "value": "1000" } ,
+        "NominalValue": { "type": "literal" , "value": "1000" } ,
+        "Unit": { "type": "literal" , "value": "kmol/s/bar" } ,
+        "maxProbability": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#float" , "value": "0.6" } ,
+        "StateVariableName": { "type": "literal" , "value": "leakage" } ,
+        "SystemName": { "type": "literal" , "value": "in-outlet_valve_1" }
+      } ,
+      { 
+        "Slot_name": { "type": "literal" , "value": "filter_clog_fault" } ,
+        "Id": { "type": "literal" , "value": "filter_clog_fault_2" } ,
+        "Value": { "type": "literal" , "value": "1000" } ,
+        "NominalValue": { "type": "literal" , "value": "1000" } ,
+        "Unit": { "type": "literal" , "value": "kmol/s/bar" } ,
+        "maxProbability": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#float" , "value": "0.6" } ,
+        "StateVariableName": { "type": "literal" , "value": "leakage" } ,
+        "SystemName": { "type": "literal" , "value": "in-outlet_valve_2" }
+      } ,
+      { 
+        "Slot_name": { "type": "literal" , "value": "vacuum_severity" } ,
+        "Id": { "type": "literal" , "value": "vacuum_severity_1" } ,
+        "Value": { "type": "literal" , "value": "606" } ,
+        "NominalValue": { "type": "literal" , "value": "606" } ,
+        "Unit": { "type": "literal" , "value": "Pa" } ,
+        "maxProbability": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#float" , "value": "0.6" } ,
+        "StateVariableName": { "type": "literal" , "value": "pressure" } ,
+        "SystemName": { "type": "literal" , "value": "pipe" }
+      } ,
+      { 
+        "Slot_name": { "type": "literal" , "value": "mesh_size" } ,
+        "Id": { "type": "literal" , "value": "mesh_size_2" } ,
+        "Value": { "type": "literal" , "value": "60" } ,
+        "NominalValue": { "type": "literal" , "value": "60" } ,
+        "Unit": { "type": "literal" , "value": "μm" } ,
+        "maxProbability": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#float" , "value": "0.6" } ,
+        "StateVariableName": { "type": "literal" , "value": "clogging" } ,
+        "SystemName": { "type": "literal" , "value": "filter_1" }
+      } ,
+      { 
+        "Slot_name": { "type": "literal" , "value": "mesh_size" } ,
+        "Id": { "type": "literal" , "value": "mesh_size_2" } ,
+        "Value": { "type": "literal" , "value": "60" } ,
+        "NominalValue": { "type": "literal" , "value": "60" } ,
+        "Unit": { "type": "literal" , "value": "μm" } ,
+        "maxProbability": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#float" , "value": "0.6" } ,
+        "StateVariableName": { "type": "literal" , "value": "clogging" } ,
+        "SystemName": { "type": "literal" , "value": "filter_2" }
+      } ,
+      { 
+        "Slot_name": { "type": "literal" , "value": "crew_size" } ,
+        "Id": { "type": "literal" , "value": "crew_size_1" } ,
+        "Value": { "type": "literal" , "value": "2" } ,
+        "NominalValue": { "type": "literal" , "value": "∅" } ,
+        "Unit": { "type": "literal" , "value": "∅" } ,
+        "maxProbability": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#float" , "value": "0.6" } ,
+        "StateVariableName": { "type": "literal" , "value": "count" } ,
+        "SystemName": { "type": "literal" , "value": "crew" }
+      } ,
+      { 
+        "Slot_name": { "type": "literal" , "value": "lstm_param_filter" } ,
+        "Id": { "type": "literal" , "value": "lstm_param_filter_1" } ,
+        "Value": { "type": "literal" , "value": "Mok" } ,
+        "NominalValue": { "type": "literal" , "value": "Mok" } ,
+        "Unit": { "type": "literal" , "value": "∅" } ,
+        "maxProbability": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#float" , "value": "0.6" } ,
+        "StateVariableName": { "type": "literal" , "value": "clogging" } ,
+        "SystemName": { "type": "literal" , "value": "filter_1" }
+      } ,
+      { 
+        "Slot_name": { "type": "literal" , "value": "lstm_param_filter" } ,
+        "Id": { "type": "literal" , "value": "lstm_param_filter_1" } ,
+        "Value": { "type": "literal" , "value": "Mok" } ,
+        "NominalValue": { "type": "literal" , "value": "Mok" } ,
+        "Unit": { "type": "literal" , "value": "∅" } ,
+        "maxProbability": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#float" , "value": "0.6" } ,
+        "StateVariableName": { "type": "literal" , "value": "clogging" } ,
+        "SystemName": { "type": "literal" , "value": "filter_2" }
+      } ,
+      { 
+        "Slot_name": { "type": "literal" , "value": "vacuum_fault" } ,
+        "Id": { "type": "literal" , "value": "vacuum_fault_1" } ,
+        "Value": { "type": "literal" , "value": "10" } ,
+        "NominalValue": { "type": "literal" , "value": "10" } ,
+        "Unit": { "type": "literal" , "value": "kPa" } ,
+        "maxProbability": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#float" , "value": "0.6" } ,
+        "StateVariableName": { "type": "literal" , "value": "pressure" } ,
+        "SystemName": { "type": "literal" , "value": "pipe" }
+      } ,
+      { 
+        "Slot_name": { "type": "literal" , "value": "leak_fault" } ,
+        "Id": { "type": "literal" , "value": "leak_fault_1" } ,
+        "Value": { "type": "literal" , "value": "4.8e-10" } ,
+        "NominalValue": { "type": "literal" , "value": "1e-8" } ,
+        "Unit": { "type": "literal" , "value": "kmol/s" } ,
+        "maxProbability": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#float" , "value": "0.6" } ,
+        "StateVariableName": { "type": "literal" , "value": "leakage" } ,
+        "SystemName": { "type": "literal" , "value": "selection_valve_1" }
+      } ,
+      { 
+        "Slot_name": { "type": "literal" , "value": "leak_fault" } ,
+        "Id": { "type": "literal" , "value": "leak_fault_1" } ,
+        "Value": { "type": "literal" , "value": "4.8e-10" } ,
+        "NominalValue": { "type": "literal" , "value": "1e-8" } ,
+        "Unit": { "type": "literal" , "value": "kmol/s" } ,
+        "maxProbability": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#float" , "value": "0.6" } ,
+        "StateVariableName": { "type": "literal" , "value": "leakage" } ,
+        "SystemName": { "type": "literal" , "value": "selection_valve_2" }
+      } ,
+      { 
+        "Slot_name": { "type": "literal" , "value": "leak_fault" } ,
+        "Id": { "type": "literal" , "value": "leak_fault_1" } ,
+        "Value": { "type": "literal" , "value": "4.8e-10" } ,
+        "NominalValue": { "type": "literal" , "value": "1e-8" } ,
+        "Unit": { "type": "literal" , "value": "kmol/s" } ,
+        "maxProbability": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#float" , "value": "0.6" } ,
+        "StateVariableName": { "type": "literal" , "value": "leakage" } ,
+        "SystemName": { "type": "literal" , "value": "selection_valve_3" }
+      } ,
+      { 
+        "Slot_name": { "type": "literal" , "value": "leak_fault" } ,
+        "Id": { "type": "literal" , "value": "leak_fault_1" } ,
+        "Value": { "type": "literal" , "value": "4.8e-10" } ,
+        "NominalValue": { "type": "literal" , "value": "1e-8" } ,
+        "Unit": { "type": "literal" , "value": "kmol/s" } ,
+        "maxProbability": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#float" , "value": "0.6" } ,
+        "StateVariableName": { "type": "literal" , "value": "leakage" } ,
+        "SystemName": { "type": "literal" , "value": "selection_valve_4" }
+      } ,
+      { 
+        "Slot_name": { "type": "literal" , "value": "leak_fault" } ,
+        "Id": { "type": "literal" , "value": "leak_fault_1" } ,
+        "Value": { "type": "literal" , "value": "4.8e-10" } ,
+        "NominalValue": { "type": "literal" , "value": "1e-8" } ,
+        "Unit": { "type": "literal" , "value": "kmol/s" } ,
+        "maxProbability": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#float" , "value": "0.6" } ,
+        "StateVariableName": { "type": "literal" , "value": "leakage" } ,
+        "SystemName": { "type": "literal" , "value": "check_valve_1" }
+      } ,
+      { 
+        "Slot_name": { "type": "literal" , "value": "leak_fault" } ,
+        "Id": { "type": "literal" , "value": "leak_fault_1" } ,
+        "Value": { "type": "literal" , "value": "4.8e-10" } ,
+        "NominalValue": { "type": "literal" , "value": "1e-8" } ,
+        "Unit": { "type": "literal" , "value": "kmol/s" } ,
+        "maxProbability": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#float" , "value": "0.6" } ,
+        "StateVariableName": { "type": "literal" , "value": "leakage" } ,
+        "SystemName": { "type": "literal" , "value": "check_valve_2" }
+      } ,
+      { 
+        "Slot_name": { "type": "literal" , "value": "leak_fault" } ,
+        "Id": { "type": "literal" , "value": "leak_fault_1" } ,
+        "Value": { "type": "literal" , "value": "4.8e-10" } ,
+        "NominalValue": { "type": "literal" , "value": "1e-8" } ,
+        "Unit": { "type": "literal" , "value": "kmol/s" } ,
+        "maxProbability": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#float" , "value": "0.6" } ,
+        "StateVariableName": { "type": "literal" , "value": "leakage" } ,
+        "SystemName": { "type": "literal" , "value": "in-outlet_valve_1" }
+      } ,
+      { 
+        "Slot_name": { "type": "literal" , "value": "leak_fault" } ,
+        "Id": { "type": "literal" , "value": "leak_fault_1" } ,
+        "Value": { "type": "literal" , "value": "4.8e-10" } ,
+        "NominalValue": { "type": "literal" , "value": "1e-8" } ,
+        "Unit": { "type": "literal" , "value": "kmol/s" } ,
+        "maxProbability": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#float" , "value": "0.6" } ,
+        "StateVariableName": { "type": "literal" , "value": "leakage" } ,
+        "SystemName": { "type": "literal" , "value": "in-outlet_valve_2" }
+      } ,
+      { 
+        "Slot_name": { "type": "literal" , "value": "bed_length" } ,
+        "Id": { "type": "literal" , "value": "bed_length_1" } ,
+        "Value": { "type": "literal" , "value": "15" } ,
+        "NominalValue": { "type": "literal" , "value": "∅" } ,
+        "Unit": { "type": "literal" , "value": "in" } ,
+        "maxProbability": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#float" , "value": "0.6" } ,
+        "StateVariableName": { "type": "literal" , "value": "dimension" } ,
+        "SystemName": { "type": "literal" , "value": "desiccant_bed_1" }
+      } ,
+      { 
+        "Slot_name": { "type": "literal" , "value": "bed_length" } ,
+        "Id": { "type": "literal" , "value": "bed_length_1" } ,
+        "Value": { "type": "literal" , "value": "15" } ,
+        "NominalValue": { "type": "literal" , "value": "∅" } ,
+        "Unit": { "type": "literal" , "value": "in" } ,
+        "maxProbability": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#float" , "value": "0.6" } ,
+        "StateVariableName": { "type": "literal" , "value": "dimension" } ,
+        "SystemName": { "type": "literal" , "value": "desiccant_bed_2" }
+      } ,
+      { 
+        "Slot_name": { "type": "literal" , "value": "bed_length" } ,
+        "Id": { "type": "literal" , "value": "bed_length_1" } ,
+        "Value": { "type": "literal" , "value": "15" } ,
+        "NominalValue": { "type": "literal" , "value": "∅" } ,
+        "Unit": { "type": "literal" , "value": "in" } ,
+        "maxProbability": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#float" , "value": "0.6" } ,
+        "StateVariableName": { "type": "literal" , "value": "dimension" } ,
+        "SystemName": { "type": "literal" , "value": "sorbent_bed_1" }
+      } ,
+      { 
+        "Slot_name": { "type": "literal" , "value": "bed_length" } ,
+        "Id": { "type": "literal" , "value": "bed_length_1" } ,
+        "Value": { "type": "literal" , "value": "15" } ,
+        "NominalValue": { "type": "literal" , "value": "∅" } ,
+        "Unit": { "type": "literal" , "value": "in" } ,
+        "maxProbability": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#float" , "value": "0.6" } ,
+        "StateVariableName": { "type": "literal" , "value": "dimension" } ,
+        "SystemName": { "type": "literal" , "value": "sorbent_bed_2" }
+      } ,
+      { 
+        "Slot_name": { "type": "literal" , "value": "leak_severity" } ,
+        "Id": { "type": "literal" , "value": "leak_severity_1" } ,
+        "Value": { "type": "literal" , "value": "4.8e-10" } ,
+        "NominalValue": { "type": "literal" , "value": "4.8e-10" } ,
+        "Unit": { "type": "literal" , "value": "in^2" } ,
+        "maxProbability": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#float" , "value": "0.6" } ,
+        "StateVariableName": { "type": "literal" , "value": "leakage" } ,
+        "SystemName": { "type": "literal" , "value": "selection_valve_1" }
+      } ,
+      { 
+        "Slot_name": { "type": "literal" , "value": "leak_severity" } ,
+        "Id": { "type": "literal" , "value": "leak_severity_1" } ,
+        "Value": { "type": "literal" , "value": "4.8e-10" } ,
+        "NominalValue": { "type": "literal" , "value": "4.8e-10" } ,
+        "Unit": { "type": "literal" , "value": "in^2" } ,
+        "maxProbability": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#float" , "value": "0.6" } ,
+        "StateVariableName": { "type": "literal" , "value": "leakage" } ,
+        "SystemName": { "type": "literal" , "value": "selection_valve_2" }
+      } ,
+      { 
+        "Slot_name": { "type": "literal" , "value": "leak_severity" } ,
+        "Id": { "type": "literal" , "value": "leak_severity_1" } ,
+        "Value": { "type": "literal" , "value": "4.8e-10" } ,
+        "NominalValue": { "type": "literal" , "value": "4.8e-10" } ,
+        "Unit": { "type": "literal" , "value": "in^2" } ,
+        "maxProbability": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#float" , "value": "0.6" } ,
+        "StateVariableName": { "type": "literal" , "value": "leakage" } ,
+        "SystemName": { "type": "literal" , "value": "selection_valve_3" }
+      } ,
+      { 
+        "Slot_name": { "type": "literal" , "value": "leak_severity" } ,
+        "Id": { "type": "literal" , "value": "leak_severity_1" } ,
+        "Value": { "type": "literal" , "value": "4.8e-10" } ,
+        "NominalValue": { "type": "literal" , "value": "4.8e-10" } ,
+        "Unit": { "type": "literal" , "value": "in^2" } ,
+        "maxProbability": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#float" , "value": "0.6" } ,
+        "StateVariableName": { "type": "literal" , "value": "leakage" } ,
+        "SystemName": { "type": "literal" , "value": "selection_valve_4" }
+      } ,
+      { 
+        "Slot_name": { "type": "literal" , "value": "leak_severity" } ,
+        "Id": { "type": "literal" , "value": "leak_severity_1" } ,
+        "Value": { "type": "literal" , "value": "4.8e-10" } ,
+        "NominalValue": { "type": "literal" , "value": "4.8e-10" } ,
+        "Unit": { "type": "literal" , "value": "in^2" } ,
+        "maxProbability": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#float" , "value": "0.6" } ,
+        "StateVariableName": { "type": "literal" , "value": "leakage" } ,
+        "SystemName": { "type": "literal" , "value": "check_valve_1" }
+      } ,
+      { 
+        "Slot_name": { "type": "literal" , "value": "leak_severity" } ,
+        "Id": { "type": "literal" , "value": "leak_severity_1" } ,
+        "Value": { "type": "literal" , "value": "4.8e-10" } ,
+        "NominalValue": { "type": "literal" , "value": "4.8e-10" } ,
+        "Unit": { "type": "literal" , "value": "in^2" } ,
+        "maxProbability": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#float" , "value": "0.6" } ,
+        "StateVariableName": { "type": "literal" , "value": "leakage" } ,
+        "SystemName": { "type": "literal" , "value": "check_valve_2" }
+      } ,
+      { 
+        "Slot_name": { "type": "literal" , "value": "leak_severity" } ,
+        "Id": { "type": "literal" , "value": "leak_severity_1" } ,
+        "Value": { "type": "literal" , "value": "4.8e-10" } ,
+        "NominalValue": { "type": "literal" , "value": "4.8e-10" } ,
+        "Unit": { "type": "literal" , "value": "in^2" } ,
+        "maxProbability": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#float" , "value": "0.6" } ,
+        "StateVariableName": { "type": "literal" , "value": "leakage" } ,
+        "SystemName": { "type": "literal" , "value": "in-outlet_valve_1" }
+      } ,
+      { 
+        "Slot_name": { "type": "literal" , "value": "leak_severity" } ,
+        "Id": { "type": "literal" , "value": "leak_severity_1" } ,
+        "Value": { "type": "literal" , "value": "4.8e-10" } ,
+        "NominalValue": { "type": "literal" , "value": "4.8e-10" } ,
+        "Unit": { "type": "literal" , "value": "in^2" } ,
+        "maxProbability": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#float" , "value": "0.6" } ,
+        "StateVariableName": { "type": "literal" , "value": "leakage" } ,
+        "SystemName": { "type": "literal" , "value": "in-outlet_valve_2" }
+      } ,
+      { 
+        "Slot_name": { "type": "literal" , "value": "activate_backup" } ,
+        "Id": { "type": "literal" , "value": "activate_backup_2" } ,
+        "Value": { "type": "literal" , "value": "off" } ,
+        "NominalValue": { "type": "literal" , "value": "off" } ,
+        "Unit": { "type": "literal" , "value": "∅" } ,
+        "maxProbability": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#float" , "value": "0.6" } ,
+        "StateVariableName": { "type": "literal" , "value": "activation" } ,
+        "SystemName": { "type": "literal" , "value": "backup" }
+      } ,
+      { 
+        "Slot_name": { "type": "literal" , "value": "check_valve_severity" } ,
+        "Id": { "type": "literal" , "value": "check_valve_severity_1" } ,
+        "Value": { "type": "literal" , "value": "3e−7" } ,
+        "NominalValue": { "type": "literal" , "value": "3e−7" } ,
+        "Unit": { "type": "literal" , "value": "deg" } ,
+        "maxProbability": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#float" , "value": "0.6" } ,
+        "StateVariableName": { "type": "literal" , "value": "stiction" } ,
+        "SystemName": { "type": "literal" , "value": "selection_valve_1" }
+      } ,
+      { 
+        "Slot_name": { "type": "literal" , "value": "check_valve_severity" } ,
+        "Id": { "type": "literal" , "value": "check_valve_severity_1" } ,
+        "Value": { "type": "literal" , "value": "3e−7" } ,
+        "NominalValue": { "type": "literal" , "value": "3e−7" } ,
+        "Unit": { "type": "literal" , "value": "deg" } ,
+        "maxProbability": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#float" , "value": "0.6" } ,
+        "StateVariableName": { "type": "literal" , "value": "stiction" } ,
+        "SystemName": { "type": "literal" , "value": "selection_valve_2" }
+      } ,
+      { 
+        "Slot_name": { "type": "literal" , "value": "check_valve_severity" } ,
+        "Id": { "type": "literal" , "value": "check_valve_severity_1" } ,
+        "Value": { "type": "literal" , "value": "3e−7" } ,
+        "NominalValue": { "type": "literal" , "value": "3e−7" } ,
+        "Unit": { "type": "literal" , "value": "deg" } ,
+        "maxProbability": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#float" , "value": "0.6" } ,
+        "StateVariableName": { "type": "literal" , "value": "stiction" } ,
+        "SystemName": { "type": "literal" , "value": "selection_valve_3" }
+      } ,
+      { 
+        "Slot_name": { "type": "literal" , "value": "check_valve_severity" } ,
+        "Id": { "type": "literal" , "value": "check_valve_severity_1" } ,
+        "Value": { "type": "literal" , "value": "3e−7" } ,
+        "NominalValue": { "type": "literal" , "value": "3e−7" } ,
+        "Unit": { "type": "literal" , "value": "deg" } ,
+        "maxProbability": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#float" , "value": "0.6" } ,
+        "StateVariableName": { "type": "literal" , "value": "stiction" } ,
+        "SystemName": { "type": "literal" , "value": "selection_valve_4" }
+      } ,
+      { 
+        "Slot_name": { "type": "literal" , "value": "check_valve_severity" } ,
+        "Id": { "type": "literal" , "value": "check_valve_severity_1" } ,
+        "Value": { "type": "literal" , "value": "3e−7" } ,
+        "NominalValue": { "type": "literal" , "value": "3e−7" } ,
+        "Unit": { "type": "literal" , "value": "deg" } ,
+        "maxProbability": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#float" , "value": "0.6" } ,
+        "StateVariableName": { "type": "literal" , "value": "stiction" } ,
+        "SystemName": { "type": "literal" , "value": "check_valve_1" }
+      } ,
+      { 
+        "Slot_name": { "type": "literal" , "value": "check_valve_severity" } ,
+        "Id": { "type": "literal" , "value": "check_valve_severity_1" } ,
+        "Value": { "type": "literal" , "value": "3e−7" } ,
+        "NominalValue": { "type": "literal" , "value": "3e−7" } ,
+        "Unit": { "type": "literal" , "value": "deg" } ,
+        "maxProbability": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#float" , "value": "0.6" } ,
+        "StateVariableName": { "type": "literal" , "value": "stiction" } ,
+        "SystemName": { "type": "literal" , "value": "check_valve_2" }
+      } ,
+      { 
+        "Slot_name": { "type": "literal" , "value": "check_valve_severity" } ,
+        "Id": { "type": "literal" , "value": "check_valve_severity_1" } ,
+        "Value": { "type": "literal" , "value": "3e−7" } ,
+        "NominalValue": { "type": "literal" , "value": "3e−7" } ,
+        "Unit": { "type": "literal" , "value": "deg" } ,
+        "maxProbability": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#float" , "value": "0.6" } ,
+        "StateVariableName": { "type": "literal" , "value": "stiction" } ,
+        "SystemName": { "type": "literal" , "value": "in-outlet_valve_1" }
+      } ,
+      { 
+        "Slot_name": { "type": "literal" , "value": "check_valve_severity" } ,
+        "Id": { "type": "literal" , "value": "check_valve_severity_1" } ,
+        "Value": { "type": "literal" , "value": "3e−7" } ,
+        "NominalValue": { "type": "literal" , "value": "3e−7" } ,
+        "Unit": { "type": "literal" , "value": "deg" } ,
+        "maxProbability": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#float" , "value": "0.6" } ,
+        "StateVariableName": { "type": "literal" , "value": "stiction" } ,
+        "SystemName": { "type": "literal" , "value": "in-outlet_valve_2" }
+      }
+    ]
+  }
+}

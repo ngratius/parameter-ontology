@@ -1,0 +1,9 @@
+@dc:description "A vocabulary bundle for closed-world reasoning about parameters"
+vocabulary bundle <http://parameter.com/vocabulary/parameter-bundle#> as parameter-bundle {
+    
+    includes <http://purl.org/dc/elements/1.1/> as dc
+
+    // The parameter vocabulary bundle "includes" the parameter vocabulary
+    includes <http://parameter.com/vocabulary/parameter#>
+
+}

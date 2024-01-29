@@ -1,0 +1,1347 @@
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+
+<http://parameter.com/description/spacecraft#selection_valve_4>
+        rdf:type    <http://parameter.com/vocabulary/parameter#PhysicalEntity> , <http://parameter.com/vocabulary/parameter#Device> , <http://parameter.com/vocabulary/parameter#IdentifiedEntity> , owl:Thing ;
+        <http://parameter.com/vocabulary/parameter#HC1_Follows>
+                <http://parameter.com/description/spacecraft#selection_valve_3> ;
+        <http://parameter.com/vocabulary/parameter#HC2_Follows>
+                <http://parameter.com/description/spacecraft#selection_valve_3> ;
+        <http://parameter.com/vocabulary/parameter#HasHealthStatus>
+                <http://parameter.com/description/spacecraft#stiction> , <http://parameter.com/description/spacecraft#leakage> ;
+        <http://parameter.com/vocabulary/parameter#hasId>
+                "Device_2.4" ;
+        <http://parameter.com/vocabulary/parameter#hasName>
+                "selection_valve_4" ;
+        <http://parameter.com/vocabulary/parameter#isContainedIn>
+                <http://parameter.com/description/spacecraft#co2_removal> ;
+        owl:sameAs  <http://parameter.com/description/spacecraft#selection_valve_4> .
+
+<http://parameter.com/description/spacecraft#sorbent_bed_2>
+        rdf:type    <http://parameter.com/vocabulary/parameter#IdentifiedEntity> , <http://parameter.com/vocabulary/parameter#Device> , <http://parameter.com/vocabulary/parameter#PhysicalEntity> , owl:Thing ;
+        <http://parameter.com/vocabulary/parameter#HC1_Follows>
+                <http://parameter.com/description/spacecraft#selection_valve_2> ;
+        <http://parameter.com/vocabulary/parameter#HC1_Precedes>
+                <http://parameter.com/description/spacecraft#filter_2> ;
+        <http://parameter.com/vocabulary/parameter#HC2_Precedes>
+                <http://parameter.com/description/spacecraft#selection_valve_3> ;
+        <http://parameter.com/vocabulary/parameter#HasHealthStatus>
+                <http://parameter.com/description/spacecraft#water> , <http://parameter.com/description/spacecraft#dimension> ;
+        <http://parameter.com/vocabulary/parameter#hasId>
+                "Device_4.4" ;
+        <http://parameter.com/vocabulary/parameter#hasName>
+                "sorbent_bed_2" ;
+        <http://parameter.com/vocabulary/parameter#isContainedIn>
+                <http://parameter.com/description/spacecraft#co2_removal> ;
+        owl:sameAs  <http://parameter.com/description/spacecraft#sorbent_bed_2> .
+
+<http://parameter.com/description/spacecraft#dimension>
+        rdf:type    <http://parameter.com/vocabulary/parameter#StateVariable> , owl:Thing , <http://parameter.com/vocabulary/parameter#IdentifiedEntity> ;
+        <http://parameter.com/vocabulary/parameter#hasId>
+                "St_6" ;
+        <http://parameter.com/vocabulary/parameter#hasName>
+                "dimension" ;
+        owl:sameAs  <http://parameter.com/description/spacecraft#dimension> .
+
+<http://parameter.com/vocabulary/parameter#StateVariable>
+        rdf:type  owl:Class .
+
+<http://parameter.com/description/spacecraft#heater>
+        rdf:type    <http://parameter.com/vocabulary/parameter#Device> , owl:Thing , <http://parameter.com/vocabulary/parameter#IdentifiedEntity> , <http://parameter.com/vocabulary/parameter#PhysicalEntity> ;
+        <http://parameter.com/vocabulary/parameter#HasHealthStatus>
+                <http://parameter.com/description/spacecraft#temperature> ;
+        <http://parameter.com/vocabulary/parameter#hasId>
+                "Device_5" ;
+        <http://parameter.com/vocabulary/parameter#hasName>
+                "heater" ;
+        <http://parameter.com/vocabulary/parameter#isContainedIn>
+                <http://parameter.com/description/spacecraft#co2_removal> ;
+        owl:sameAs  <http://parameter.com/description/spacecraft#heater> .
+
+<http://parameter.com/description/spacecraft#leak_severity_1>
+        rdf:type    <http://parameter.com/vocabulary/parameter#ParameterCandidate> , owl:Thing , <http://parameter.com/vocabulary/parameter#IdentifiedEntity> ;
+        <http://parameter.com/vocabulary/parameter#hasId>
+                "PaC_2-1" ;
+        <http://parameter.com/vocabulary/parameter#hasName>
+                "leak_severity_1" ;
+        <http://parameter.com/vocabulary/parameter#hasProbability>
+                "0.6"^^xsd:float ;
+        <http://parameter.com/vocabulary/parameter#hasValue>
+                "4.8e-10" ;
+        owl:sameAs  <http://parameter.com/description/spacecraft#leak_severity_1> .
+
+<http://parameter.com/description/spacecraft#co2_removal>
+        rdf:type    <http://parameter.com/vocabulary/parameter#IdentifiedEntity> , <http://parameter.com/vocabulary/parameter#PhysicalEntity> , owl:Thing , <http://parameter.com/vocabulary/parameter#Component> ;
+        <http://parameter.com/vocabulary/parameter#Contains>
+                <http://parameter.com/description/spacecraft#filter_2> , <http://parameter.com/description/spacecraft#selection_valve_3> , <http://parameter.com/description/spacecraft#sorbent_bed_1> , <http://parameter.com/description/spacecraft#desiccant_bed_1> , <http://parameter.com/description/spacecraft#selection_valve_1> , <http://parameter.com/description/spacecraft#heater> , <http://parameter.com/description/spacecraft#selection_valve_2> , <http://parameter.com/description/spacecraft#pipe> , <http://parameter.com/description/spacecraft#sorbent_bed_2> , <http://parameter.com/description/spacecraft#filter_1> , <http://parameter.com/description/spacecraft#selection_valve_4> , <http://parameter.com/description/spacecraft#desiccant_bed_2> ;
+        <http://parameter.com/vocabulary/parameter#hasId>
+                "Component_1" ;
+        <http://parameter.com/vocabulary/parameter#hasName>
+                "co2_removal" ;
+        <http://parameter.com/vocabulary/parameter#isContainedIn>
+                <http://parameter.com/description/spacecraft#air_revitalization> ;
+        owl:sameAs  <http://parameter.com/description/spacecraft#co2_removal> .
+
+<http://parameter.com/description/spacecraft#check_valve_2>
+        rdf:type    <http://parameter.com/vocabulary/parameter#PhysicalEntity> , <http://parameter.com/vocabulary/parameter#IdentifiedEntity> , owl:Thing , <http://parameter.com/vocabulary/parameter#Device> ;
+        <http://parameter.com/vocabulary/parameter#HC1_Follows>
+                <http://parameter.com/description/spacecraft#filter_2> ;
+        <http://parameter.com/vocabulary/parameter#HC1_Precedes>
+                <http://parameter.com/description/spacecraft#desiccant_bed_2> ;
+        <http://parameter.com/vocabulary/parameter#HasHealthStatus>
+                <http://parameter.com/description/spacecraft#leakage> , <http://parameter.com/description/spacecraft#stiction> ;
+        <http://parameter.com/vocabulary/parameter#hasId>
+                "Device_2.04" ;
+        <http://parameter.com/vocabulary/parameter#hasName>
+                "check_valve_2" ;
+        owl:sameAs  <http://parameter.com/description/spacecraft#check_valve_2> .
+
+<http://parameter.com/description/spacecraft#vacuum_fault_2>
+        rdf:type    <http://parameter.com/vocabulary/parameter#ParameterCandidate> , owl:Thing , <http://parameter.com/vocabulary/parameter#IdentifiedEntity> ;
+        <http://parameter.com/vocabulary/parameter#hasId>
+                "PaC_10-2" ;
+        <http://parameter.com/vocabulary/parameter#hasName>
+                "vacuum_fault_2" ;
+        <http://parameter.com/vocabulary/parameter#hasProbability>
+                "0.4"^^xsd:float ;
+        <http://parameter.com/vocabulary/parameter#hasValue>
+                "80" ;
+        owl:sameAs  <http://parameter.com/description/spacecraft#vacuum_fault_2> .
+
+<http://parameter.com/description/spacecraft#activate_backup_2>
+        rdf:type    <http://parameter.com/vocabulary/parameter#ParameterCandidate> , owl:Thing , <http://parameter.com/vocabulary/parameter#IdentifiedEntity> ;
+        <http://parameter.com/vocabulary/parameter#hasId>
+                "PaC_15-2" ;
+        <http://parameter.com/vocabulary/parameter#hasName>
+                "activate_backup_2" ;
+        <http://parameter.com/vocabulary/parameter#hasProbability>
+                "0.6"^^xsd:float ;
+        <http://parameter.com/vocabulary/parameter#hasValue>
+                "off" ;
+        owl:sameAs  <http://parameter.com/description/spacecraft#activate_backup_2> .
+
+<http://parameter.com/description/spacecraft#flow_rate_2>
+        rdf:type    <http://parameter.com/vocabulary/parameter#ParameterCandidate> , owl:Thing , <http://parameter.com/vocabulary/parameter#IdentifiedEntity> ;
+        <http://parameter.com/vocabulary/parameter#hasId>
+                "PaC_7-2" ;
+        <http://parameter.com/vocabulary/parameter#hasName>
+                "flow_rate_2" ;
+        <http://parameter.com/vocabulary/parameter#hasProbability>
+                "0.4"^^xsd:float ;
+        <http://parameter.com/vocabulary/parameter#hasValue>
+                "10" ;
+        owl:sameAs  <http://parameter.com/description/spacecraft#flow_rate_2> .
+
+<http://parameter.com/description/spacecraft#crew_size_2>
+        rdf:type    <http://parameter.com/vocabulary/parameter#ParameterCandidate> , owl:Thing , <http://parameter.com/vocabulary/parameter#IdentifiedEntity> ;
+        <http://parameter.com/vocabulary/parameter#hasId>
+                "PaC_5-2" ;
+        <http://parameter.com/vocabulary/parameter#hasName>
+                "crew_size_2" ;
+        <http://parameter.com/vocabulary/parameter#hasProbability>
+                "0.4"^^xsd:float ;
+        <http://parameter.com/vocabulary/parameter#hasValue>
+                "10" ;
+        owl:sameAs  <http://parameter.com/description/spacecraft#crew_size_2> .
+
+<http://parameter.com/vocabulary/parameter#Component>
+        rdf:type  owl:Class .
+
+<http://parameter.com/description/spacecraft#filter_clog_fault_1>
+        rdf:type    <http://parameter.com/vocabulary/parameter#ParameterCandidate> , owl:Thing , <http://parameter.com/vocabulary/parameter#IdentifiedEntity> ;
+        <http://parameter.com/vocabulary/parameter#hasId>
+                "PaC_12-1" ;
+        <http://parameter.com/vocabulary/parameter#hasName>
+                "filter_clog_fault_1" ;
+        <http://parameter.com/vocabulary/parameter#hasProbability>
+                "0.4"^^xsd:float ;
+        <http://parameter.com/vocabulary/parameter#hasValue>
+                "1e-5" ;
+        owl:sameAs  <http://parameter.com/description/spacecraft#filter_clog_fault_1> .
+
+<http://parameter.com/description/spacecraft#in-outlet_valve_2>
+        rdf:type    <http://parameter.com/vocabulary/parameter#PhysicalEntity> , <http://parameter.com/vocabulary/parameter#Device> , owl:Thing , <http://parameter.com/vocabulary/parameter#IdentifiedEntity> ;
+        <http://parameter.com/vocabulary/parameter#HC1_Follows>
+                <http://parameter.com/description/spacecraft#desiccant_bed_2> ;
+        <http://parameter.com/vocabulary/parameter#HC2_Precedes>
+                <http://parameter.com/description/spacecraft#desiccant_bed_2> ;
+        <http://parameter.com/vocabulary/parameter#HasHealthStatus>
+                <http://parameter.com/description/spacecraft#stiction> , <http://parameter.com/description/spacecraft#leakage> ;
+        <http://parameter.com/vocabulary/parameter#hasId>
+                "Device_2.02" ;
+        <http://parameter.com/vocabulary/parameter#hasName>
+                "in-outlet_valve_2" ;
+        owl:sameAs  <http://parameter.com/description/spacecraft#in-outlet_valve_2> .
+
+<http://parameter.com/description/spacecraft#clogging>
+        rdf:type    <http://parameter.com/vocabulary/parameter#StateVariable> , owl:Thing , <http://parameter.com/vocabulary/parameter#IdentifiedEntity> ;
+        <http://parameter.com/vocabulary/parameter#hasId>
+                "St_1" ;
+        <http://parameter.com/vocabulary/parameter#hasName>
+                "clogging" ;
+        owl:sameAs  <http://parameter.com/description/spacecraft#clogging> .
+
+<http://parameter.com/vocabulary/parameter#Simulates>
+        rdf:type  owl:ObjectProperty .
+
+<http://parameter.com/description/spacecraft#filter_clog_fault>
+        rdf:type    <http://parameter.com/vocabulary/parameter#ModelComponent> , owl:Thing , <http://parameter.com/vocabulary/parameter#IdentifiedEntity> , <http://parameter.com/vocabulary/parameter#ParameterSlot> ;
+        <http://parameter.com/vocabulary/parameter#Receives>
+                <http://parameter.com/description/spacecraft#filter_clog_fault_2> , <http://parameter.com/description/spacecraft#filter_clog_fault_1> ;
+        <http://parameter.com/vocabulary/parameter#Represents>
+                <http://parameter.com/description/spacecraft#leakage> ;
+        <http://parameter.com/vocabulary/parameter#hasAssignedValue>
+                "1000" ;
+        <http://parameter.com/vocabulary/parameter#hasDomain>
+                "[1e-5;1000]" ;
+        <http://parameter.com/vocabulary/parameter#hasId>
+                "PaS_12" ;
+        <http://parameter.com/vocabulary/parameter#hasName>
+                "filter_clog_fault" ;
+        <http://parameter.com/vocabulary/parameter#hasNominalValue>
+                "1000" ;
+        <http://parameter.com/vocabulary/parameter#hasUnit>
+                "kmol/s/bar" ;
+        owl:sameAs  <http://parameter.com/description/spacecraft#filter_clog_fault> .
+
+<http://parameter.com/description/bundle/individuals>
+        rdf:type         owl:Ontology ;
+        rdfs:comment     "Generated by Owl Reason 2.6.0" ;
+        owl:imports      <http://parameter.com/description/bundle> ;
+        owl:versionInfo  "1703081050" .
+
+<http://parameter.com/vocabulary/parameter#Powers>
+        rdf:type  owl:ObjectProperty .
+
+<http://parameter.com/vocabulary/parameter#System>
+        rdf:type  owl:Class .
+
+<http://parameter.com/description/spacecraft#water_preload_2>
+        rdf:type    <http://parameter.com/vocabulary/parameter#ParameterCandidate> , owl:Thing , <http://parameter.com/vocabulary/parameter#IdentifiedEntity> ;
+        <http://parameter.com/vocabulary/parameter#hasId>
+                "PaC_13-2" ;
+        <http://parameter.com/vocabulary/parameter#hasName>
+                "water_preload_2" ;
+        <http://parameter.com/vocabulary/parameter#hasProbability>
+                "0.4"^^xsd:float ;
+        <http://parameter.com/vocabulary/parameter#hasValue>
+                "1e-3" ;
+        owl:sameAs  <http://parameter.com/description/spacecraft#water_preload_2> .
+
+<http://parameter.com/description/spacecraft#check_valve_severity>
+        rdf:type    owl:Thing , <http://parameter.com/vocabulary/parameter#IdentifiedEntity> , <http://parameter.com/vocabulary/parameter#ParameterSlot> , <http://parameter.com/vocabulary/parameter#ModelComponent> ;
+        <http://parameter.com/vocabulary/parameter#Receives>
+                <http://parameter.com/description/spacecraft#check_valve_severity_1> , <http://parameter.com/description/spacecraft#check_valve_severity_2> ;
+        <http://parameter.com/vocabulary/parameter#Represents>
+                <http://parameter.com/description/spacecraft#stiction> ;
+        <http://parameter.com/vocabulary/parameter#hasAssignedValue>
+                "3e−7" ;
+        <http://parameter.com/vocabulary/parameter#hasDomain>
+                "[3e−7;45]" ;
+        <http://parameter.com/vocabulary/parameter#hasId>
+                "PaS_3" ;
+        <http://parameter.com/vocabulary/parameter#hasName>
+                "check_valve_severity" ;
+        <http://parameter.com/vocabulary/parameter#hasNominalValue>
+                "3e−7" ;
+        <http://parameter.com/vocabulary/parameter#hasUnit>
+                "deg" ;
+        owl:sameAs  <http://parameter.com/description/spacecraft#check_valve_severity> .
+
+<http://parameter.com/description/spacecraft#air_blower>
+        rdf:type    <http://parameter.com/vocabulary/parameter#IdentifiedEntity> , <http://parameter.com/vocabulary/parameter#Device> , <http://parameter.com/vocabulary/parameter#PhysicalEntity> , owl:Thing ;
+        <http://parameter.com/vocabulary/parameter#HC1_Follows>
+                <http://parameter.com/description/spacecraft#selection_valve_1> ;
+        <http://parameter.com/vocabulary/parameter#HC1_Precedes>
+                <http://parameter.com/description/spacecraft#precooler> ;
+        <http://parameter.com/vocabulary/parameter#HC2_Follows>
+                <http://parameter.com/description/spacecraft#selection_valve_1> ;
+        <http://parameter.com/vocabulary/parameter#HC2_Precedes>
+                <http://parameter.com/description/spacecraft#precooler> ;
+        <http://parameter.com/vocabulary/parameter#hasId>
+                "Device_8" ;
+        <http://parameter.com/vocabulary/parameter#hasName>
+                "air_blower" ;
+        owl:sameAs  <http://parameter.com/description/spacecraft#air_blower> .
+
+<http://parameter.com/description/spacecraft#activation>
+        rdf:type    <http://parameter.com/vocabulary/parameter#StateVariable> , owl:Thing , <http://parameter.com/vocabulary/parameter#IdentifiedEntity> ;
+        <http://parameter.com/vocabulary/parameter#hasId>
+                "St_10" ;
+        <http://parameter.com/vocabulary/parameter#hasName>
+                "activation" ;
+        owl:sameAs  <http://parameter.com/description/spacecraft#activation> .
+
+<http://parameter.com/vocabulary/parameter#PhysicalEntity>
+        rdf:type  owl:Class .
+
+<http://parameter.com/vocabulary/parameter#HC1_Precedes>
+        rdf:type  owl:ObjectProperty .
+
+<http://parameter.com/description/spacecraft#selection_valve_3>
+        rdf:type    owl:Thing , <http://parameter.com/vocabulary/parameter#Device> , <http://parameter.com/vocabulary/parameter#PhysicalEntity> , <http://parameter.com/vocabulary/parameter#IdentifiedEntity> ;
+        <http://parameter.com/vocabulary/parameter#HC1_Follows>
+                <http://parameter.com/description/spacecraft#sorbent_bed_1> ;
+        <http://parameter.com/vocabulary/parameter#HC1_Precedes>
+                <http://parameter.com/description/spacecraft#selection_valve_4> ;
+        <http://parameter.com/vocabulary/parameter#HC2_Follows>
+                <http://parameter.com/description/spacecraft#sorbent_bed_2> ;
+        <http://parameter.com/vocabulary/parameter#HC2_Precedes>
+                <http://parameter.com/description/spacecraft#selection_valve_4> ;
+        <http://parameter.com/vocabulary/parameter#HasHealthStatus>
+                <http://parameter.com/description/spacecraft#stiction> , <http://parameter.com/description/spacecraft#leakage> ;
+        <http://parameter.com/vocabulary/parameter#hasId>
+                "Device_2.3" ;
+        <http://parameter.com/vocabulary/parameter#hasName>
+                "selection_valve_3" ;
+        <http://parameter.com/vocabulary/parameter#isContainedIn>
+                <http://parameter.com/description/spacecraft#co2_removal> ;
+        owl:sameAs  <http://parameter.com/description/spacecraft#selection_valve_3> .
+
+<http://parameter.com/description/spacecraft#sorbent_bed_1>
+        rdf:type    <http://parameter.com/vocabulary/parameter#PhysicalEntity> , owl:Thing , <http://parameter.com/vocabulary/parameter#Device> , <http://parameter.com/vocabulary/parameter#IdentifiedEntity> ;
+        <http://parameter.com/vocabulary/parameter#HC1_Precedes>
+                <http://parameter.com/description/spacecraft#selection_valve_3> ;
+        <http://parameter.com/vocabulary/parameter#HC2_Follows>
+                <http://parameter.com/description/spacecraft#selection_valve_2> ;
+        <http://parameter.com/vocabulary/parameter#HC2_Precedes>
+                <http://parameter.com/description/spacecraft#filter_1> ;
+        <http://parameter.com/vocabulary/parameter#HasHealthStatus>
+                <http://parameter.com/description/spacecraft#water> , <http://parameter.com/description/spacecraft#dimension> ;
+        <http://parameter.com/vocabulary/parameter#hasId>
+                "Device_4.3" ;
+        <http://parameter.com/vocabulary/parameter#hasName>
+                "sorbent_bed_1" ;
+        <http://parameter.com/vocabulary/parameter#isContainedIn>
+                <http://parameter.com/description/spacecraft#co2_removal> ;
+        owl:sameAs  <http://parameter.com/description/spacecraft#sorbent_bed_1> .
+
+<http://parameter.com/vocabulary/parameter#Represents>
+        rdf:type  owl:ObjectProperty .
+
+<http://parameter.com/vocabulary/parameter#hasNominalValue>
+        rdf:type  owl:FunctionalProperty , owl:DatatypeProperty .
+
+<http://parameter.com/vocabulary/parameter#Module>
+        rdf:type  owl:Class .
+
+<http://parameter.com/vocabulary/parameter#hasValue>
+        rdf:type  owl:FunctionalProperty , owl:DatatypeProperty .
+
+<http://parameter.com/description/spacecraft#generation>
+        rdf:type    owl:Thing , <http://parameter.com/vocabulary/parameter#Subsystem> , <http://parameter.com/vocabulary/parameter#IdentifiedEntity> , <http://parameter.com/vocabulary/parameter#PhysicalEntity> ;
+        <http://parameter.com/vocabulary/parameter#hasId>
+                "Subsystem_2" ;
+        <http://parameter.com/vocabulary/parameter#hasName>
+                "generation" ;
+        <http://parameter.com/vocabulary/parameter#isContainedIn>
+                <http://parameter.com/description/spacecraft#power_unit> ;
+        owl:sameAs  <http://parameter.com/description/spacecraft#generation> .
+
+<http://parameter.com/description/spacecraft#vacuum_fault_1>
+        rdf:type    <http://parameter.com/vocabulary/parameter#ParameterCandidate> , owl:Thing , <http://parameter.com/vocabulary/parameter#IdentifiedEntity> ;
+        <http://parameter.com/vocabulary/parameter#hasId>
+                "PaC_10-1" ;
+        <http://parameter.com/vocabulary/parameter#hasName>
+                "vacuum_fault_1" ;
+        <http://parameter.com/vocabulary/parameter#hasProbability>
+                "0.6"^^xsd:float ;
+        <http://parameter.com/vocabulary/parameter#hasValue>
+                "10" ;
+        owl:sameAs  <http://parameter.com/description/spacecraft#vacuum_fault_1> .
+
+<http://parameter.com/description/spacecraft#check_valve_1>
+        rdf:type    <http://parameter.com/vocabulary/parameter#Device> , <http://parameter.com/vocabulary/parameter#PhysicalEntity> , owl:Thing , <http://parameter.com/vocabulary/parameter#IdentifiedEntity> ;
+        <http://parameter.com/vocabulary/parameter#HC2_Follows>
+                <http://parameter.com/description/spacecraft#filter_1> ;
+        <http://parameter.com/vocabulary/parameter#HC2_Precedes>
+                <http://parameter.com/description/spacecraft#desiccant_bed_1> ;
+        <http://parameter.com/vocabulary/parameter#HasHealthStatus>
+                <http://parameter.com/description/spacecraft#stiction> , <http://parameter.com/description/spacecraft#leakage> ;
+        <http://parameter.com/vocabulary/parameter#hasId>
+                "Device_2.03" ;
+        <http://parameter.com/vocabulary/parameter#hasName>
+                "check_valve_1" ;
+        owl:sameAs  <http://parameter.com/description/spacecraft#check_valve_1> .
+
+<http://parameter.com/description/spacecraft#i-hab>
+        rdf:type    <http://parameter.com/vocabulary/parameter#IdentifiedEntity> , <http://parameter.com/vocabulary/parameter#PhysicalEntity> , owl:Thing , <http://parameter.com/vocabulary/parameter#Module> ;
+        <http://parameter.com/vocabulary/parameter#Contains>
+                <http://parameter.com/description/spacecraft#power_unit> , <http://parameter.com/description/spacecraft#eclss> ;
+        <http://parameter.com/vocabulary/parameter#hasId>
+                "Module_1" ;
+        <http://parameter.com/vocabulary/parameter#hasName>
+                "i-hab" ;
+        <http://parameter.com/vocabulary/parameter#isContainedIn>
+                <http://parameter.com/description/spacecraft#gateway> ;
+        owl:sameAs  <http://parameter.com/description/spacecraft#i-hab> .
+
+<http://parameter.com/description/spacecraft#activate_backup_1>
+        rdf:type    <http://parameter.com/vocabulary/parameter#ParameterCandidate> , owl:Thing , <http://parameter.com/vocabulary/parameter#IdentifiedEntity> ;
+        <http://parameter.com/vocabulary/parameter#hasId>
+                "PaC_15-1" ;
+        <http://parameter.com/vocabulary/parameter#hasName>
+                "activate_backup_1" ;
+        <http://parameter.com/vocabulary/parameter#hasProbability>
+                "0.4"^^xsd:float ;
+        <http://parameter.com/vocabulary/parameter#hasValue>
+                "on" ;
+        owl:sameAs  <http://parameter.com/description/spacecraft#activate_backup_1> .
+
+<http://parameter.com/description/spacecraft#flow_rate_1>
+        rdf:type    <http://parameter.com/vocabulary/parameter#ParameterCandidate> , owl:Thing , <http://parameter.com/vocabulary/parameter#IdentifiedEntity> ;
+        <http://parameter.com/vocabulary/parameter#hasId>
+                "PaC_7-1" ;
+        <http://parameter.com/vocabulary/parameter#hasName>
+                "flow_rate_1" ;
+        <http://parameter.com/vocabulary/parameter#hasProbability>
+                "0.6"^^xsd:float ;
+        <http://parameter.com/vocabulary/parameter#hasValue>
+                "5" ;
+        owl:sameAs  <http://parameter.com/description/spacecraft#flow_rate_1> .
+
+<http://parameter.com/vocabulary/parameter#Station>
+        rdf:type  owl:Class .
+
+<http://parameter.com/description/spacecraft#crew_size_1>
+        rdf:type    <http://parameter.com/vocabulary/parameter#ParameterCandidate> , owl:Thing , <http://parameter.com/vocabulary/parameter#IdentifiedEntity> ;
+        <http://parameter.com/vocabulary/parameter#hasId>
+                "PaC_5-1" ;
+        <http://parameter.com/vocabulary/parameter#hasName>
+                "crew_size_1" ;
+        <http://parameter.com/vocabulary/parameter#hasProbability>
+                "0.6"^^xsd:float ;
+        <http://parameter.com/vocabulary/parameter#hasValue>
+                "2" ;
+        owl:sameAs  <http://parameter.com/description/spacecraft#crew_size_1> .
+
+<http://parameter.com/vocabulary/parameter#isPoweredBy>
+        rdf:type  owl:ObjectProperty .
+
+<http://parameter.com/vocabulary/parameter#isContainedIn>
+        rdf:type  owl:ObjectProperty .
+
+<http://parameter.com/description/spacecraft#power_unit>
+        rdf:type    <http://parameter.com/vocabulary/parameter#System> , <http://parameter.com/vocabulary/parameter#PhysicalEntity> , <http://parameter.com/vocabulary/parameter#IdentifiedEntity> , owl:Thing ;
+        <http://parameter.com/vocabulary/parameter#Contains>
+                <http://parameter.com/description/spacecraft#generation> , <http://parameter.com/description/spacecraft#storage> ;
+        <http://parameter.com/vocabulary/parameter#hasId>
+                "System_2" ;
+        <http://parameter.com/vocabulary/parameter#hasName>
+                "power_unit" ;
+        <http://parameter.com/vocabulary/parameter#isContainedIn>
+                <http://parameter.com/description/spacecraft#i-hab> ;
+        owl:sameAs  <http://parameter.com/description/spacecraft#power_unit> .
+
+<http://parameter.com/description/spacecraft#mesh_size_2>
+        rdf:type    <http://parameter.com/vocabulary/parameter#ParameterCandidate> , owl:Thing , <http://parameter.com/vocabulary/parameter#IdentifiedEntity> ;
+        <http://parameter.com/vocabulary/parameter#hasId>
+                "PaC_1-2" ;
+        <http://parameter.com/vocabulary/parameter#hasName>
+                "mesh_size_2" ;
+        <http://parameter.com/vocabulary/parameter#hasProbability>
+                "0.6"^^xsd:float ;
+        <http://parameter.com/vocabulary/parameter#hasValue>
+                "60" ;
+        owl:sameAs  <http://parameter.com/description/spacecraft#mesh_size_2> .
+
+<http://parameter.com/description/spacecraft#in-outlet_valve_1>
+        rdf:type    <http://parameter.com/vocabulary/parameter#PhysicalEntity> , <http://parameter.com/vocabulary/parameter#IdentifiedEntity> , <http://parameter.com/vocabulary/parameter#Device> , owl:Thing ;
+        <http://parameter.com/vocabulary/parameter#HC1_Precedes>
+                <http://parameter.com/description/spacecraft#desiccant_bed_1> ;
+        <http://parameter.com/vocabulary/parameter#HC2_Follows>
+                <http://parameter.com/description/spacecraft#desiccant_bed_1> ;
+        <http://parameter.com/vocabulary/parameter#HasHealthStatus>
+                <http://parameter.com/description/spacecraft#leakage> , <http://parameter.com/description/spacecraft#stiction> ;
+        <http://parameter.com/vocabulary/parameter#hasId>
+                "Device_2.01" ;
+        <http://parameter.com/vocabulary/parameter#hasName>
+                "in-outlet_valve_1" ;
+        owl:sameAs  <http://parameter.com/description/spacecraft#in-outlet_valve_1> .
+
+<http://parameter.com/description/spacecraft#water_preload>
+        rdf:type    <http://parameter.com/vocabulary/parameter#IdentifiedEntity> , <http://parameter.com/vocabulary/parameter#ModelComponent> , <http://parameter.com/vocabulary/parameter#ParameterSlot> , owl:Thing ;
+        <http://parameter.com/vocabulary/parameter#Receives>
+                <http://parameter.com/description/spacecraft#water_preload_1> , <http://parameter.com/description/spacecraft#water_preload_2> ;
+        <http://parameter.com/vocabulary/parameter#Represents>
+                <http://parameter.com/description/spacecraft#water> ;
+        <http://parameter.com/vocabulary/parameter#hasAssignedValue>
+                "0" ;
+        <http://parameter.com/vocabulary/parameter#hasDomain>
+                "[0;1e-3]" ;
+        <http://parameter.com/vocabulary/parameter#hasId>
+                "PaS_13" ;
+        <http://parameter.com/vocabulary/parameter#hasName>
+                "water_preload" ;
+        <http://parameter.com/vocabulary/parameter#hasNominalValue>
+                "0" ;
+        <http://parameter.com/vocabulary/parameter#hasUnit>
+                "kmol/kmol" ;
+        owl:sameAs  <http://parameter.com/description/spacecraft#water_preload> .
+
+<http://parameter.com/vocabulary/parameter#hasAssignedValue>
+        rdf:type  owl:FunctionalProperty , owl:DatatypeProperty .
+
+<http://parameter.com/vocabulary/parameter#Output>
+        rdf:type  owl:Class .
+
+<http://parameter.com/description/spacecraft#water>
+        rdf:type    <http://parameter.com/vocabulary/parameter#StateVariable> , owl:Thing , <http://parameter.com/vocabulary/parameter#IdentifiedEntity> ;
+        <http://parameter.com/vocabulary/parameter#hasId>
+                "St_9" ;
+        <http://parameter.com/vocabulary/parameter#hasName>
+                "water" ;
+        owl:sameAs  <http://parameter.com/description/spacecraft#water> .
+
+<http://parameter.com/vocabulary/parameter#HC2_Follows>
+        rdf:type  owl:ObjectProperty .
+
+<http://parameter.com/vocabulary/parameter#ParameterSlot>
+        rdf:type  owl:Class .
+
+<http://parameter.com/description/spacecraft#vacuum_severity_2>
+        rdf:type    <http://parameter.com/vocabulary/parameter#ParameterCandidate> , owl:Thing , <http://parameter.com/vocabulary/parameter#IdentifiedEntity> ;
+        <http://parameter.com/vocabulary/parameter#hasId>
+                "PaC_4-2" ;
+        <http://parameter.com/vocabulary/parameter#hasName>
+                "vacuum_severity_2" ;
+        <http://parameter.com/vocabulary/parameter#hasProbability>
+                "0.4"^^xsd:float ;
+        <http://parameter.com/vocabulary/parameter#hasValue>
+                "1156" ;
+        owl:sameAs  <http://parameter.com/description/spacecraft#vacuum_severity_2> .
+
+<http://parameter.com/description/spacecraft#auxiliary>
+        rdf:type    <http://parameter.com/vocabulary/parameter#Component> , owl:Thing , <http://parameter.com/vocabulary/parameter#IdentifiedEntity> , <http://parameter.com/vocabulary/parameter#PhysicalEntity> ;
+        <http://parameter.com/vocabulary/parameter#Powers>
+                <http://parameter.com/description/spacecraft#eclss> ;
+        <http://parameter.com/vocabulary/parameter#hasId>
+                "Component_3" ;
+        <http://parameter.com/vocabulary/parameter#hasName>
+                "auxiliary" ;
+        <http://parameter.com/vocabulary/parameter#isContainedIn>
+                <http://parameter.com/description/spacecraft#storage> ;
+        owl:sameAs  <http://parameter.com/description/spacecraft#auxiliary> .
+
+<http://parameter.com/description/spacecraft#bed_length>
+        rdf:type    <http://parameter.com/vocabulary/parameter#ModelComponent> , <http://parameter.com/vocabulary/parameter#ParameterSlot> , <http://parameter.com/vocabulary/parameter#IdentifiedEntity> , owl:Thing ;
+        <http://parameter.com/vocabulary/parameter#Receives>
+                <http://parameter.com/description/spacecraft#bed_length_2> , <http://parameter.com/description/spacecraft#bed_length_1> ;
+        <http://parameter.com/vocabulary/parameter#Represents>
+                <http://parameter.com/description/spacecraft#dimension> ;
+        <http://parameter.com/vocabulary/parameter#hasAssignedValue>
+                "15" ;
+        <http://parameter.com/vocabulary/parameter#hasDomain>
+                "[15;25]" ;
+        <http://parameter.com/vocabulary/parameter#hasId>
+                "PaS_6" ;
+        <http://parameter.com/vocabulary/parameter#hasName>
+                "bed_length" ;
+        <http://parameter.com/vocabulary/parameter#hasNominalValue>
+                "∅" ;
+        <http://parameter.com/vocabulary/parameter#hasUnit>
+                "in" ;
+        owl:sameAs  <http://parameter.com/description/spacecraft#bed_length> .
+
+<http://parameter.com/description/spacecraft#leak_severity>
+        rdf:type    owl:Thing , <http://parameter.com/vocabulary/parameter#ParameterSlot> , <http://parameter.com/vocabulary/parameter#IdentifiedEntity> , <http://parameter.com/vocabulary/parameter#ModelComponent> ;
+        <http://parameter.com/vocabulary/parameter#Receives>
+                <http://parameter.com/description/spacecraft#leak_severity_1> , <http://parameter.com/description/spacecraft#leak_severity_2> ;
+        <http://parameter.com/vocabulary/parameter#Represents>
+                <http://parameter.com/description/spacecraft#leakage> ;
+        <http://parameter.com/vocabulary/parameter#hasAssignedValue>
+                "4.8e-10" ;
+        <http://parameter.com/vocabulary/parameter#hasDomain>
+                "[4.8e−10, 1e− 8]" ;
+        <http://parameter.com/vocabulary/parameter#hasId>
+                "PaS_2" ;
+        <http://parameter.com/vocabulary/parameter#hasName>
+                "leak_severity" ;
+        <http://parameter.com/vocabulary/parameter#hasNominalValue>
+                "4.8e-10" ;
+        <http://parameter.com/vocabulary/parameter#hasUnit>
+                "in^2" ;
+        owl:sameAs  <http://parameter.com/description/spacecraft#leak_severity> .
+
+<http://parameter.com/description/spacecraft#water_preload_1>
+        rdf:type    <http://parameter.com/vocabulary/parameter#ParameterCandidate> , owl:Thing , <http://parameter.com/vocabulary/parameter#IdentifiedEntity> ;
+        <http://parameter.com/vocabulary/parameter#hasId>
+                "PaC_13-1" ;
+        <http://parameter.com/vocabulary/parameter#hasName>
+                "water_preload_1" ;
+        <http://parameter.com/vocabulary/parameter#hasProbability>
+                "0.6"^^xsd:float ;
+        <http://parameter.com/vocabulary/parameter#hasValue>
+                "0" ;
+        owl:sameAs  <http://parameter.com/description/spacecraft#water_preload_1> .
+
+<http://parameter.com/vocabulary/parameter#Device>
+        rdf:type  owl:Class .
+
+owl:Nothing  rdf:type  owl:Class .
+
+<http://parameter.com/description/spacecraft#selection_valve_2>
+        rdf:type    <http://parameter.com/vocabulary/parameter#PhysicalEntity> , owl:Thing , <http://parameter.com/vocabulary/parameter#Device> , <http://parameter.com/vocabulary/parameter#IdentifiedEntity> ;
+        <http://parameter.com/vocabulary/parameter#HC1_Follows>
+                <http://parameter.com/description/spacecraft#precooler> ;
+        <http://parameter.com/vocabulary/parameter#HC1_Precedes>
+                <http://parameter.com/description/spacecraft#sorbent_bed_2> ;
+        <http://parameter.com/vocabulary/parameter#HC2_Follows>
+                <http://parameter.com/description/spacecraft#precooler> ;
+        <http://parameter.com/vocabulary/parameter#HC2_Precedes>
+                <http://parameter.com/description/spacecraft#sorbent_bed_1> ;
+        <http://parameter.com/vocabulary/parameter#HasHealthStatus>
+                <http://parameter.com/description/spacecraft#stiction> , <http://parameter.com/description/spacecraft#leakage> ;
+        <http://parameter.com/vocabulary/parameter#hasId>
+                "Device_2.2" ;
+        <http://parameter.com/vocabulary/parameter#hasName>
+                "selection_valve_2" ;
+        <http://parameter.com/vocabulary/parameter#isContainedIn>
+                <http://parameter.com/description/spacecraft#co2_removal> ;
+        owl:sameAs  <http://parameter.com/description/spacecraft#selection_valve_2> .
+
+<http://parameter.com/vocabulary/parameter#Subsystem>
+        rdf:type  owl:Class .
+
+<http://parameter.com/vocabulary/parameter#SimulationModel>
+        rdf:type  owl:Class .
+
+<http://parameter.com/vocabulary/parameter#hasDomain>
+        rdf:type  owl:DatatypeProperty .
+
+<http://parameter.com/vocabulary/parameter#hasProbability>
+        rdf:type  owl:FunctionalProperty , owl:DatatypeProperty .
+
+<http://parameter.com/description/spacecraft#bed_length_2>
+        rdf:type    <http://parameter.com/vocabulary/parameter#ParameterCandidate> , owl:Thing , <http://parameter.com/vocabulary/parameter#IdentifiedEntity> ;
+        <http://parameter.com/vocabulary/parameter#hasId>
+                "PaC_6-2" ;
+        <http://parameter.com/vocabulary/parameter#hasName>
+                "bed_length_2" ;
+        <http://parameter.com/vocabulary/parameter#hasProbability>
+                "0.4"^^xsd:float ;
+        <http://parameter.com/vocabulary/parameter#hasValue>
+                "25" ;
+        owl:sameAs  <http://parameter.com/description/spacecraft#bed_length_2> .
+
+<http://parameter.com/description/spacecraft#aspen>
+        rdf:type    <http://parameter.com/vocabulary/parameter#SimulationModel> , <http://parameter.com/vocabulary/parameter#IdentifiedEntity> , owl:Thing ;
+        <http://parameter.com/vocabulary/parameter#IsComposedOf>
+                <http://parameter.com/description/spacecraft#heater_fault> , <http://parameter.com/description/spacecraft#vacuum_fault> , <http://parameter.com/description/spacecraft#filter_clog_fault> , <http://parameter.com/description/spacecraft#leak_fault> , <http://parameter.com/description/spacecraft#sustained_valve_fault> , <http://parameter.com/description/spacecraft#crew_size> , <http://parameter.com/description/spacecraft#flow_rate> , <http://parameter.com/description/spacecraft#water_preload> , <http://parameter.com/description/spacecraft#bed_length> ;
+        <http://parameter.com/vocabulary/parameter#Simulates>
+                <http://parameter.com/description/spacecraft#crew> , <http://parameter.com/description/spacecraft#heater> , <http://parameter.com/description/spacecraft#desiccant_bed_1> , <http://parameter.com/description/spacecraft#sorbent_bed_1> , <http://parameter.com/description/spacecraft#selection_valve_2> , <http://parameter.com/description/spacecraft#pipe> , <http://parameter.com/description/spacecraft#desiccant_bed_2> , <http://parameter.com/description/spacecraft#selection_valve_3> , <http://parameter.com/description/spacecraft#sorbent_bed_2> , <http://parameter.com/description/spacecraft#filter_1> , <http://parameter.com/description/spacecraft#filter_2> , <http://parameter.com/description/spacecraft#selection_valve_4> , <http://parameter.com/description/spacecraft#selection_valve_1> ;
+        <http://parameter.com/vocabulary/parameter#hasId>
+                "Mo_2" ;
+        <http://parameter.com/vocabulary/parameter#hasName>
+                "aspen" ;
+        owl:sameAs  <http://parameter.com/description/spacecraft#aspen> .
+
+<http://parameter.com/description/spacecraft#temperature>
+        rdf:type    <http://parameter.com/vocabulary/parameter#StateVariable> , owl:Thing , <http://parameter.com/vocabulary/parameter#IdentifiedEntity> ;
+        <http://parameter.com/vocabulary/parameter#hasId>
+                "St_8" ;
+        <http://parameter.com/vocabulary/parameter#hasName>
+                "temperature" ;
+        owl:sameAs  <http://parameter.com/description/spacecraft#temperature> .
+
+<http://parameter.com/vocabulary/parameter#Input>
+        rdf:type  owl:Class .
+
+<http://parameter.com/description/spacecraft#mesh_size_1>
+        rdf:type    <http://parameter.com/vocabulary/parameter#ParameterCandidate> , owl:Thing , <http://parameter.com/vocabulary/parameter#IdentifiedEntity> ;
+        <http://parameter.com/vocabulary/parameter#hasId>
+                "PaC_1-1" ;
+        <http://parameter.com/vocabulary/parameter#hasName>
+                "mesh_size_1" ;
+        <http://parameter.com/vocabulary/parameter#hasProbability>
+                "0.4"^^xsd:float ;
+        <http://parameter.com/vocabulary/parameter#hasValue>
+                "2" ;
+        owl:sameAs  <http://parameter.com/description/spacecraft#mesh_size_1> .
+
+<http://parameter.com/description/spacecraft#count>
+        rdf:type    <http://parameter.com/vocabulary/parameter#StateVariable> , owl:Thing , <http://parameter.com/vocabulary/parameter#IdentifiedEntity> ;
+        <http://parameter.com/vocabulary/parameter#hasId>
+                "St_5" ;
+        <http://parameter.com/vocabulary/parameter#hasName>
+                "count" ;
+        owl:sameAs  <http://parameter.com/description/spacecraft#count> .
+
+<http://parameter.com/vocabulary/parameter#hasId>
+        rdf:type  owl:FunctionalProperty , owl:DatatypeProperty .
+
+<http://parameter.com/vocabulary/parameter#ModelComponent>
+        rdf:type  owl:Class .
+
+<http://parameter.com/vocabulary/parameter#HasHealthStatus>
+        rdf:type  owl:ObjectProperty .
+
+<http://parameter.com/description/spacecraft#vacuum_severity_1>
+        rdf:type    <http://parameter.com/vocabulary/parameter#ParameterCandidate> , owl:Thing , <http://parameter.com/vocabulary/parameter#IdentifiedEntity> ;
+        <http://parameter.com/vocabulary/parameter#hasId>
+                "PaC_4-1" ;
+        <http://parameter.com/vocabulary/parameter#hasName>
+                "vacuum_severity_1" ;
+        <http://parameter.com/vocabulary/parameter#hasProbability>
+                "0.6"^^xsd:float ;
+        <http://parameter.com/vocabulary/parameter#hasValue>
+                "606" ;
+        owl:sameAs  <http://parameter.com/description/spacecraft#vacuum_severity_1> .
+
+<http://parameter.com/description/spacecraft#primary>
+        rdf:type    <http://parameter.com/vocabulary/parameter#Component> , owl:Thing , <http://parameter.com/vocabulary/parameter#IdentifiedEntity> , <http://parameter.com/vocabulary/parameter#PhysicalEntity> ;
+        <http://parameter.com/vocabulary/parameter#hasId>
+                "Component_2" ;
+        <http://parameter.com/vocabulary/parameter#hasName>
+                "primary" ;
+        <http://parameter.com/vocabulary/parameter#isContainedIn>
+                <http://parameter.com/description/spacecraft#storage> ;
+        owl:sameAs  <http://parameter.com/description/spacecraft#primary> .
+
+<http://parameter.com/vocabulary/parameter#HC1_Follows>
+        rdf:type  owl:ObjectProperty .
+
+<http://parameter.com/description/spacecraft#crew_size>
+        rdf:type    <http://parameter.com/vocabulary/parameter#ModelComponent> , owl:Thing , <http://parameter.com/vocabulary/parameter#ParameterSlot> , <http://parameter.com/vocabulary/parameter#IdentifiedEntity> ;
+        <http://parameter.com/vocabulary/parameter#Receives>
+                <http://parameter.com/description/spacecraft#crew_size_1> , <http://parameter.com/description/spacecraft#crew_size_2> ;
+        <http://parameter.com/vocabulary/parameter#Represents>
+                <http://parameter.com/description/spacecraft#count> ;
+        <http://parameter.com/vocabulary/parameter#hasAssignedValue>
+                "2" ;
+        <http://parameter.com/vocabulary/parameter#hasDomain>
+                "[2;10]" ;
+        <http://parameter.com/vocabulary/parameter#hasId>
+                "PaS_5" ;
+        <http://parameter.com/vocabulary/parameter#hasName>
+                "crew_size" ;
+        <http://parameter.com/vocabulary/parameter#hasNominalValue>
+                "∅" ;
+        <http://parameter.com/vocabulary/parameter#hasUnit>
+                "∅" ;
+        owl:sameAs  <http://parameter.com/description/spacecraft#crew_size> .
+
+<http://parameter.com/description/spacecraft#airflow>
+        rdf:type    <http://parameter.com/vocabulary/parameter#StateVariable> , owl:Thing , <http://parameter.com/vocabulary/parameter#IdentifiedEntity> ;
+        <http://parameter.com/vocabulary/parameter#hasId>
+                "St_7" ;
+        <http://parameter.com/vocabulary/parameter#hasName>
+                "airflow" ;
+        owl:sameAs  <http://parameter.com/description/spacecraft#airflow> .
+
+<http://parameter.com/description/spacecraft#selection_valve_1>
+        rdf:type    owl:Thing , <http://parameter.com/vocabulary/parameter#Device> , <http://parameter.com/vocabulary/parameter#IdentifiedEntity> , <http://parameter.com/vocabulary/parameter#PhysicalEntity> ;
+        <http://parameter.com/vocabulary/parameter#HC1_Follows>
+                <http://parameter.com/description/spacecraft#desiccant_bed_1> ;
+        <http://parameter.com/vocabulary/parameter#HC1_Precedes>
+                <http://parameter.com/description/spacecraft#air_blower> ;
+        <http://parameter.com/vocabulary/parameter#HC2_Follows>
+                <http://parameter.com/description/spacecraft#desiccant_bed_2> ;
+        <http://parameter.com/vocabulary/parameter#HC2_Precedes>
+                <http://parameter.com/description/spacecraft#air_blower> ;
+        <http://parameter.com/vocabulary/parameter#HasHealthStatus>
+                <http://parameter.com/description/spacecraft#stiction> , <http://parameter.com/description/spacecraft#leakage> ;
+        <http://parameter.com/vocabulary/parameter#hasId>
+                "Device_2.1" ;
+        <http://parameter.com/vocabulary/parameter#hasName>
+                "selection_valve_1" ;
+        <http://parameter.com/vocabulary/parameter#isContainedIn>
+                <http://parameter.com/description/spacecraft#co2_removal> ;
+        owl:sameAs  <http://parameter.com/description/spacecraft#selection_valve_1> .
+
+owl:Thing  rdf:type  owl:Class .
+
+<http://parameter.com/description/spacecraft#activate_backup>
+        rdf:type    <http://parameter.com/vocabulary/parameter#IdentifiedEntity> , <http://parameter.com/vocabulary/parameter#ModelComponent> , owl:Thing , <http://parameter.com/vocabulary/parameter#ParameterSlot> ;
+        <http://parameter.com/vocabulary/parameter#Receives>
+                <http://parameter.com/description/spacecraft#activate_backup_1> , <http://parameter.com/description/spacecraft#activate_backup_2> ;
+        <http://parameter.com/vocabulary/parameter#Represents>
+                <http://parameter.com/description/spacecraft#activation> ;
+        <http://parameter.com/vocabulary/parameter#hasAssignedValue>
+                "off" ;
+        <http://parameter.com/vocabulary/parameter#hasDomain>
+                "[on;off]" ;
+        <http://parameter.com/vocabulary/parameter#hasId>
+                "PaS_15" ;
+        <http://parameter.com/vocabulary/parameter#hasName>
+                "activate_backup" ;
+        <http://parameter.com/vocabulary/parameter#hasNominalValue>
+                "off" ;
+        <http://parameter.com/vocabulary/parameter#hasUnit>
+                "∅" ;
+        owl:sameAs  <http://parameter.com/description/spacecraft#activate_backup> .
+
+<http://parameter.com/description/spacecraft#check_valve_severity_2>
+        rdf:type    <http://parameter.com/vocabulary/parameter#ParameterCandidate> , owl:Thing , <http://parameter.com/vocabulary/parameter#IdentifiedEntity> ;
+        <http://parameter.com/vocabulary/parameter#hasId>
+                "PaC_3-2" ;
+        <http://parameter.com/vocabulary/parameter#hasName>
+                "check_valve_severity_2" ;
+        <http://parameter.com/vocabulary/parameter#hasProbability>
+                "0.4"^^xsd:float ;
+        <http://parameter.com/vocabulary/parameter#hasValue>
+                "45" ;
+        owl:sameAs  <http://parameter.com/description/spacecraft#check_valve_severity_2> .
+
+<http://parameter.com/description/spacecraft#bed_length_1>
+        rdf:type    <http://parameter.com/vocabulary/parameter#ParameterCandidate> , owl:Thing , <http://parameter.com/vocabulary/parameter#IdentifiedEntity> ;
+        <http://parameter.com/vocabulary/parameter#hasId>
+                "PaC_6-1" ;
+        <http://parameter.com/vocabulary/parameter#hasName>
+                "bed_length_1" ;
+        <http://parameter.com/vocabulary/parameter#hasProbability>
+                "0.6"^^xsd:float ;
+        <http://parameter.com/vocabulary/parameter#hasValue>
+                "15" ;
+        owl:sameAs  <http://parameter.com/description/spacecraft#bed_length_1> .
+
+<http://parameter.com/description/spacecraft#mesh_size>
+        rdf:type    <http://parameter.com/vocabulary/parameter#ParameterSlot> , <http://parameter.com/vocabulary/parameter#IdentifiedEntity> , owl:Thing , <http://parameter.com/vocabulary/parameter#ModelComponent> ;
+        <http://parameter.com/vocabulary/parameter#Receives>
+                <http://parameter.com/description/spacecraft#mesh_size_1> , <http://parameter.com/description/spacecraft#mesh_size_2> ;
+        <http://parameter.com/vocabulary/parameter#Represents>
+                <http://parameter.com/description/spacecraft#clogging> ;
+        <http://parameter.com/vocabulary/parameter#hasAssignedValue>
+                "60" ;
+        <http://parameter.com/vocabulary/parameter#hasDomain>
+                "[2;60]" ;
+        <http://parameter.com/vocabulary/parameter#hasId>
+                "PaS_1" ;
+        <http://parameter.com/vocabulary/parameter#hasName>
+                "mesh_size" ;
+        <http://parameter.com/vocabulary/parameter#hasNominalValue>
+                "60" ;
+        <http://parameter.com/vocabulary/parameter#hasUnit>
+                "μm" ;
+        owl:sameAs  <http://parameter.com/description/spacecraft#mesh_size> .
+
+<http://parameter.com/description/spacecraft#crew>
+        rdf:type    owl:Thing , <http://parameter.com/vocabulary/parameter#IdentifiedEntity> , <http://parameter.com/vocabulary/parameter#PhysicalEntity> ;
+        <http://parameter.com/vocabulary/parameter#HasHealthStatus>
+                <http://parameter.com/description/spacecraft#count> ;
+        <http://parameter.com/vocabulary/parameter#hasId>
+                "PhysicalEntity_1" ;
+        <http://parameter.com/vocabulary/parameter#hasName>
+                "crew" ;
+        owl:sameAs  <http://parameter.com/description/spacecraft#crew> .
+
+<http://parameter.com/vocabulary/parameter#ParameterCandidate>
+        rdf:type  owl:Class .
+
+<http://parameter.com/description/spacecraft#flow_rate>
+        rdf:type    <http://parameter.com/vocabulary/parameter#IdentifiedEntity> , <http://parameter.com/vocabulary/parameter#ModelComponent> , <http://parameter.com/vocabulary/parameter#ParameterSlot> , owl:Thing ;
+        <http://parameter.com/vocabulary/parameter#Receives>
+                <http://parameter.com/description/spacecraft#flow_rate_2> , <http://parameter.com/description/spacecraft#flow_rate_1> ;
+        <http://parameter.com/vocabulary/parameter#Represents>
+                <http://parameter.com/description/spacecraft#airflow> ;
+        <http://parameter.com/vocabulary/parameter#hasAssignedValue>
+                "5" ;
+        <http://parameter.com/vocabulary/parameter#hasDomain>
+                "[5;10]" ;
+        <http://parameter.com/vocabulary/parameter#hasId>
+                "PaS_7" ;
+        <http://parameter.com/vocabulary/parameter#hasName>
+                "flow_rate" ;
+        <http://parameter.com/vocabulary/parameter#hasNominalValue>
+                "5" ;
+        <http://parameter.com/vocabulary/parameter#hasUnit>
+                "kmol/s" ;
+        owl:sameAs  <http://parameter.com/description/spacecraft#flow_rate> .
+
+<http://parameter.com/description/spacecraft#filter_2>
+        rdf:type    <http://parameter.com/vocabulary/parameter#PhysicalEntity> , <http://parameter.com/vocabulary/parameter#Device> , owl:Thing , <http://parameter.com/vocabulary/parameter#IdentifiedEntity> ;
+        <http://parameter.com/vocabulary/parameter#HC1_Follows>
+                <http://parameter.com/description/spacecraft#sorbent_bed_2> ;
+        <http://parameter.com/vocabulary/parameter#HC1_Precedes>
+                <http://parameter.com/description/spacecraft#check_valve_2> ;
+        <http://parameter.com/vocabulary/parameter#HasHealthStatus>
+                <http://parameter.com/description/spacecraft#clogging> ;
+        <http://parameter.com/vocabulary/parameter#hasId>
+                "Device_1.2" ;
+        <http://parameter.com/vocabulary/parameter#hasName>
+                "filter_2" ;
+        <http://parameter.com/vocabulary/parameter#isContainedIn>
+                <http://parameter.com/description/spacecraft#co2_removal> ;
+        owl:sameAs  <http://parameter.com/description/spacecraft#filter_2> .
+
+<http://parameter.com/description/spacecraft#heater_fault_2>
+        rdf:type    <http://parameter.com/vocabulary/parameter#ParameterCandidate> , owl:Thing , <http://parameter.com/vocabulary/parameter#IdentifiedEntity> ;
+        <http://parameter.com/vocabulary/parameter#hasId>
+                "PaC_9-2" ;
+        <http://parameter.com/vocabulary/parameter#hasName>
+                "heater_fault_2" ;
+        <http://parameter.com/vocabulary/parameter#hasProbability>
+                "0.6"^^xsd:float ;
+        <http://parameter.com/vocabulary/parameter#hasValue>
+                "498" ;
+        owl:sameAs  <http://parameter.com/description/spacecraft#heater_fault_2> .
+
+owl:topObjectProperty
+        rdf:type  owl:SymmetricProperty , owl:TransitiveProperty , owl:ObjectProperty .
+
+owl:topDataProperty  rdf:type  owl:DatatypeProperty .
+
+<http://parameter.com/description/spacecraft#sustained_valve_fault_2>
+        rdf:type    <http://parameter.com/vocabulary/parameter#ParameterCandidate> , owl:Thing , <http://parameter.com/vocabulary/parameter#IdentifiedEntity> ;
+        <http://parameter.com/vocabulary/parameter#hasId>
+                "PaC_8-2" ;
+        <http://parameter.com/vocabulary/parameter#hasName>
+                "sustained_valve_fault_2" ;
+        <http://parameter.com/vocabulary/parameter#hasProbability>
+                "0.8"^^xsd:float ;
+        <http://parameter.com/vocabulary/parameter#hasValue>
+                "1000" ;
+        owl:sameAs  <http://parameter.com/description/spacecraft#sustained_valve_fault_2> .
+
+<http://parameter.com/description/spacecraft#air_revitalization>
+        rdf:type    owl:Thing , <http://parameter.com/vocabulary/parameter#Subsystem> , <http://parameter.com/vocabulary/parameter#IdentifiedEntity> , <http://parameter.com/vocabulary/parameter#PhysicalEntity> ;
+        <http://parameter.com/vocabulary/parameter#Contains>
+                <http://parameter.com/description/spacecraft#co2_removal> ;
+        <http://parameter.com/vocabulary/parameter#hasId>
+                "Subsystem_1" ;
+        <http://parameter.com/vocabulary/parameter#hasName>
+                "air_revitalization" ;
+        <http://parameter.com/vocabulary/parameter#isContainedIn>
+                <http://parameter.com/description/spacecraft#eclss> ;
+        owl:sameAs  <http://parameter.com/description/spacecraft#air_revitalization> .
+
+<http://parameter.com/description/spacecraft#lstm_param_filter_2>
+        rdf:type    <http://parameter.com/vocabulary/parameter#ParameterCandidate> , owl:Thing , <http://parameter.com/vocabulary/parameter#IdentifiedEntity> ;
+        <http://parameter.com/vocabulary/parameter#hasId>
+                "PaC_14-2" ;
+        <http://parameter.com/vocabulary/parameter#hasName>
+                "lstm_param_filter_2" ;
+        <http://parameter.com/vocabulary/parameter#hasProbability>
+                "0.4"^^xsd:float ;
+        <http://parameter.com/vocabulary/parameter#hasValue>
+                "Mko" ;
+        owl:sameAs  <http://parameter.com/description/spacecraft#lstm_param_filter_2> .
+
+<http://parameter.com/description/spacecraft#lstm_param_filter>
+        rdf:type    owl:Thing , <http://parameter.com/vocabulary/parameter#ParameterSlot> , <http://parameter.com/vocabulary/parameter#ModelComponent> , <http://parameter.com/vocabulary/parameter#IdentifiedEntity> ;
+        <http://parameter.com/vocabulary/parameter#Receives>
+                <http://parameter.com/description/spacecraft#lstm_param_filter_1> , <http://parameter.com/description/spacecraft#lstm_param_filter_2> ;
+        <http://parameter.com/vocabulary/parameter#Represents>
+                <http://parameter.com/description/spacecraft#clogging> ;
+        <http://parameter.com/vocabulary/parameter#hasAssignedValue>
+                "Mok" ;
+        <http://parameter.com/vocabulary/parameter#hasDomain>
+                "[Mok;Mko]" ;
+        <http://parameter.com/vocabulary/parameter#hasId>
+                "PaS_14" ;
+        <http://parameter.com/vocabulary/parameter#hasName>
+                "lstm_param_filter" ;
+        <http://parameter.com/vocabulary/parameter#hasNominalValue>
+                "Mok" ;
+        <http://parameter.com/vocabulary/parameter#hasUnit>
+                "∅" ;
+        owl:sameAs  <http://parameter.com/description/spacecraft#lstm_param_filter> .
+
+<http://parameter.com/description/spacecraft#vacuum_fault>
+        rdf:type    owl:Thing , <http://parameter.com/vocabulary/parameter#IdentifiedEntity> , <http://parameter.com/vocabulary/parameter#ModelComponent> , <http://parameter.com/vocabulary/parameter#ParameterSlot> ;
+        <http://parameter.com/vocabulary/parameter#Receives>
+                <http://parameter.com/description/spacecraft#vacuum_fault_2> , <http://parameter.com/description/spacecraft#vacuum_fault_1> ;
+        <http://parameter.com/vocabulary/parameter#Represents>
+                <http://parameter.com/description/spacecraft#pressure> ;
+        <http://parameter.com/vocabulary/parameter#hasAssignedValue>
+                "10" ;
+        <http://parameter.com/vocabulary/parameter#hasDomain>
+                "[10;80]" ;
+        <http://parameter.com/vocabulary/parameter#hasId>
+                "PaS_10" ;
+        <http://parameter.com/vocabulary/parameter#hasName>
+                "vacuum_fault" ;
+        <http://parameter.com/vocabulary/parameter#hasNominalValue>
+                "10" ;
+        <http://parameter.com/vocabulary/parameter#hasUnit>
+                "kPa" ;
+        owl:sameAs  <http://parameter.com/description/spacecraft#vacuum_fault> .
+
+<http://parameter.com/description/spacecraft#pressure>
+        rdf:type    <http://parameter.com/vocabulary/parameter#StateVariable> , owl:Thing , <http://parameter.com/vocabulary/parameter#IdentifiedEntity> ;
+        <http://parameter.com/vocabulary/parameter#hasId>
+                "St_4" ;
+        <http://parameter.com/vocabulary/parameter#hasName>
+                "pressure" ;
+        owl:sameAs  <http://parameter.com/description/spacecraft#pressure> .
+
+<http://parameter.com/description/spacecraft#stiction>
+        rdf:type    <http://parameter.com/vocabulary/parameter#StateVariable> , owl:Thing , <http://parameter.com/vocabulary/parameter#IdentifiedEntity> ;
+        <http://parameter.com/vocabulary/parameter#hasId>
+                "St_3" ;
+        <http://parameter.com/vocabulary/parameter#hasName>
+                "stiction" ;
+        owl:sameAs  <http://parameter.com/description/spacecraft#stiction> .
+
+<http://parameter.com/description/spacecraft#leak_fault_2>
+        rdf:type    <http://parameter.com/vocabulary/parameter#ParameterCandidate> , owl:Thing , <http://parameter.com/vocabulary/parameter#IdentifiedEntity> ;
+        <http://parameter.com/vocabulary/parameter#hasId>
+                "PaC_11-2" ;
+        <http://parameter.com/vocabulary/parameter#hasName>
+                "leak_fault_2" ;
+        <http://parameter.com/vocabulary/parameter#hasProbability>
+                "0.4"^^xsd:float ;
+        <http://parameter.com/vocabulary/parameter#hasValue>
+                "1e-8" ;
+        owl:sameAs  <http://parameter.com/description/spacecraft#leak_fault_2> .
+
+<http://parameter.com/vocabulary/parameter#Receives>
+        rdf:type  owl:ObjectProperty .
+
+<http://parameter.com/description/spacecraft#vacuum_severity>
+        rdf:type    <http://parameter.com/vocabulary/parameter#ModelComponent> , owl:Thing , <http://parameter.com/vocabulary/parameter#ParameterSlot> , <http://parameter.com/vocabulary/parameter#IdentifiedEntity> ;
+        <http://parameter.com/vocabulary/parameter#Receives>
+                <http://parameter.com/description/spacecraft#vacuum_severity_2> , <http://parameter.com/description/spacecraft#vacuum_severity_1> ;
+        <http://parameter.com/vocabulary/parameter#Represents>
+                <http://parameter.com/description/spacecraft#pressure> ;
+        <http://parameter.com/vocabulary/parameter#hasAssignedValue>
+                "606" ;
+        <http://parameter.com/vocabulary/parameter#hasDomain>
+                "[606;1156]" ;
+        <http://parameter.com/vocabulary/parameter#hasId>
+                "PaS_4" ;
+        <http://parameter.com/vocabulary/parameter#hasName>
+                "vacuum_severity" ;
+        <http://parameter.com/vocabulary/parameter#hasNominalValue>
+                "606" ;
+        <http://parameter.com/vocabulary/parameter#hasUnit>
+                "Pa" ;
+        owl:sameAs  <http://parameter.com/description/spacecraft#vacuum_severity> .
+
+<http://parameter.com/vocabulary/parameter#hasName>
+        rdf:type  owl:FunctionalProperty , owl:DatatypeProperty .
+
+<http://parameter.com/description/spacecraft#check_valve_severity_1>
+        rdf:type    <http://parameter.com/vocabulary/parameter#ParameterCandidate> , owl:Thing , <http://parameter.com/vocabulary/parameter#IdentifiedEntity> ;
+        <http://parameter.com/vocabulary/parameter#hasId>
+                "PaC_3-1" ;
+        <http://parameter.com/vocabulary/parameter#hasName>
+                "check_valve_severity_1" ;
+        <http://parameter.com/vocabulary/parameter#hasProbability>
+                "0.6"^^xsd:float ;
+        <http://parameter.com/vocabulary/parameter#hasValue>
+                "3e−7" ;
+        owl:sameAs  <http://parameter.com/description/spacecraft#check_valve_severity_1> .
+
+<http://parameter.com/description/spacecraft#simulink>
+        rdf:type    <http://parameter.com/vocabulary/parameter#SimulationModel> , owl:Thing , <http://parameter.com/vocabulary/parameter#IdentifiedEntity> ;
+        <http://parameter.com/vocabulary/parameter#IsComposedOf>
+                <http://parameter.com/description/spacecraft#vacuum_severity> , <http://parameter.com/description/spacecraft#check_valve_severity> , <http://parameter.com/description/spacecraft#leak_severity> , <http://parameter.com/description/spacecraft#mesh_size> ;
+        <http://parameter.com/vocabulary/parameter#Simulates>
+                <http://parameter.com/description/spacecraft#filter_1> , <http://parameter.com/description/spacecraft#selection_valve_3> , <http://parameter.com/description/spacecraft#selection_valve_2> , <http://parameter.com/description/spacecraft#filter_2> , <http://parameter.com/description/spacecraft#selection_valve_1> , <http://parameter.com/description/spacecraft#pipe> , <http://parameter.com/description/spacecraft#selection_valve_4> ;
+        <http://parameter.com/vocabulary/parameter#hasId>
+                "Mo_1" ;
+        <http://parameter.com/vocabulary/parameter#hasName>
+                "simulink" ;
+        owl:sameAs  <http://parameter.com/description/spacecraft#simulink> .
+
+<http://parameter.com/description/spacecraft#desiccant_bed_2>
+        rdf:type    <http://parameter.com/vocabulary/parameter#IdentifiedEntity> , <http://parameter.com/vocabulary/parameter#PhysicalEntity> , <http://parameter.com/vocabulary/parameter#Device> , owl:Thing ;
+        <http://parameter.com/vocabulary/parameter#HC1_Follows>
+                <http://parameter.com/description/spacecraft#check_valve_2> ;
+        <http://parameter.com/vocabulary/parameter#HC1_Precedes>
+                <http://parameter.com/description/spacecraft#in-outlet_valve_2> ;
+        <http://parameter.com/vocabulary/parameter#HC2_Follows>
+                <http://parameter.com/description/spacecraft#in-outlet_valve_2> ;
+        <http://parameter.com/vocabulary/parameter#HC2_Precedes>
+                <http://parameter.com/description/spacecraft#selection_valve_1> ;
+        <http://parameter.com/vocabulary/parameter#HasHealthStatus>
+                <http://parameter.com/description/spacecraft#water> , <http://parameter.com/description/spacecraft#dimension> ;
+        <http://parameter.com/vocabulary/parameter#hasId>
+                "Device_4.2" ;
+        <http://parameter.com/vocabulary/parameter#hasName>
+                "desiccant_bed_2" ;
+        <http://parameter.com/vocabulary/parameter#isContainedIn>
+                <http://parameter.com/description/spacecraft#co2_removal> ;
+        owl:sameAs  <http://parameter.com/description/spacecraft#desiccant_bed_2> .
+
+<http://parameter.com/description/spacecraft#regression>
+        rdf:type    <http://parameter.com/vocabulary/parameter#SimulationModel> , owl:Thing , <http://parameter.com/vocabulary/parameter#IdentifiedEntity> ;
+        <http://parameter.com/vocabulary/parameter#IsComposedOf>
+                <http://parameter.com/description/spacecraft#activate_backup> ;
+        <http://parameter.com/vocabulary/parameter#Simulates>
+                <http://parameter.com/description/spacecraft#backup> ;
+        <http://parameter.com/vocabulary/parameter#hasId>
+                "Mo_4" ;
+        <http://parameter.com/vocabulary/parameter#hasName>
+                "regression" ;
+        owl:sameAs  <http://parameter.com/description/spacecraft#regression> .
+
+<http://parameter.com/description/spacecraft#precooler>
+        rdf:type    <http://parameter.com/vocabulary/parameter#Device> , <http://parameter.com/vocabulary/parameter#PhysicalEntity> , <http://parameter.com/vocabulary/parameter#IdentifiedEntity> , owl:Thing ;
+        <http://parameter.com/vocabulary/parameter#HC1_Follows>
+                <http://parameter.com/description/spacecraft#air_blower> ;
+        <http://parameter.com/vocabulary/parameter#HC1_Precedes>
+                <http://parameter.com/description/spacecraft#selection_valve_2> ;
+        <http://parameter.com/vocabulary/parameter#HC2_Follows>
+                <http://parameter.com/description/spacecraft#air_blower> ;
+        <http://parameter.com/vocabulary/parameter#HC2_Precedes>
+                <http://parameter.com/description/spacecraft#selection_valve_2> ;
+        <http://parameter.com/vocabulary/parameter#hasId>
+                "Device_7" ;
+        <http://parameter.com/vocabulary/parameter#hasName>
+                "precooler" ;
+        owl:sameAs  <http://parameter.com/description/spacecraft#precooler> .
+
+<http://parameter.com/description/spacecraft#leakage>
+        rdf:type    <http://parameter.com/vocabulary/parameter#StateVariable> , owl:Thing , <http://parameter.com/vocabulary/parameter#IdentifiedEntity> ;
+        <http://parameter.com/vocabulary/parameter#hasId>
+                "St_2" ;
+        <http://parameter.com/vocabulary/parameter#hasName>
+                "leakage" ;
+        owl:sameAs  <http://parameter.com/description/spacecraft#leakage> .
+
+<http://parameter.com/description/spacecraft#lstm>
+        rdf:type    <http://parameter.com/vocabulary/parameter#SimulationModel> , owl:Thing , <http://parameter.com/vocabulary/parameter#IdentifiedEntity> ;
+        <http://parameter.com/vocabulary/parameter#IsComposedOf>
+                <http://parameter.com/description/spacecraft#lstm_param_filter> ;
+        <http://parameter.com/vocabulary/parameter#Simulates>
+                <http://parameter.com/description/spacecraft#filter_1> , <http://parameter.com/description/spacecraft#filter_2> ;
+        <http://parameter.com/vocabulary/parameter#hasId>
+                "Mo_3" ;
+        <http://parameter.com/vocabulary/parameter#hasName>
+                "lstm" ;
+        owl:sameAs  <http://parameter.com/description/spacecraft#lstm> .
+
+<http://parameter.com/description/spacecraft#filter_1>
+        rdf:type    <http://parameter.com/vocabulary/parameter#IdentifiedEntity> , <http://parameter.com/vocabulary/parameter#PhysicalEntity> , <http://parameter.com/vocabulary/parameter#Device> , owl:Thing ;
+        <http://parameter.com/vocabulary/parameter#HC2_Follows>
+                <http://parameter.com/description/spacecraft#sorbent_bed_1> ;
+        <http://parameter.com/vocabulary/parameter#HC2_Precedes>
+                <http://parameter.com/description/spacecraft#check_valve_1> ;
+        <http://parameter.com/vocabulary/parameter#HasHealthStatus>
+                <http://parameter.com/description/spacecraft#clogging> ;
+        <http://parameter.com/vocabulary/parameter#hasId>
+                "Device_1.1" ;
+        <http://parameter.com/vocabulary/parameter#hasName>
+                "filter_1" ;
+        <http://parameter.com/vocabulary/parameter#isContainedIn>
+                <http://parameter.com/description/spacecraft#co2_removal> ;
+        owl:sameAs  <http://parameter.com/description/spacecraft#filter_1> .
+
+<http://parameter.com/description/spacecraft#gateway>
+        rdf:type    <http://parameter.com/vocabulary/parameter#Station> , owl:Thing , <http://parameter.com/vocabulary/parameter#IdentifiedEntity> , <http://parameter.com/vocabulary/parameter#PhysicalEntity> ;
+        <http://parameter.com/vocabulary/parameter#Contains>
+                <http://parameter.com/description/spacecraft#i-hab> ;
+        <http://parameter.com/vocabulary/parameter#hasId>
+                "Station_1" ;
+        <http://parameter.com/vocabulary/parameter#hasName>
+                "gateway" ;
+        owl:sameAs  <http://parameter.com/description/spacecraft#gateway> .
+
+<http://parameter.com/description/spacecraft#heater_fault_1>
+        rdf:type    <http://parameter.com/vocabulary/parameter#ParameterCandidate> , owl:Thing , <http://parameter.com/vocabulary/parameter#IdentifiedEntity> ;
+        <http://parameter.com/vocabulary/parameter#hasId>
+                "PaC_9-1" ;
+        <http://parameter.com/vocabulary/parameter#hasName>
+                "heater_fault_1" ;
+        <http://parameter.com/vocabulary/parameter#hasProbability>
+                "0.4"^^xsd:float ;
+        <http://parameter.com/vocabulary/parameter#hasValue>
+                "450" ;
+        owl:sameAs  <http://parameter.com/description/spacecraft#heater_fault_1> .
+
+<http://parameter.com/description/spacecraft#sustained_valve_fault_1>
+        rdf:type    <http://parameter.com/vocabulary/parameter#ParameterCandidate> , owl:Thing , <http://parameter.com/vocabulary/parameter#IdentifiedEntity> ;
+        <http://parameter.com/vocabulary/parameter#hasId>
+                "PaC_8-1" ;
+        <http://parameter.com/vocabulary/parameter#hasName>
+                "sustained_valve_fault_1" ;
+        <http://parameter.com/vocabulary/parameter#hasProbability>
+                "0.2"^^xsd:float ;
+        <http://parameter.com/vocabulary/parameter#hasValue>
+                "1e-5" ;
+        owl:sameAs  <http://parameter.com/description/spacecraft#sustained_valve_fault_1> .
+
+<http://parameter.com/description/spacecraft#leak_severity_2>
+        rdf:type    <http://parameter.com/vocabulary/parameter#ParameterCandidate> , owl:Thing , <http://parameter.com/vocabulary/parameter#IdentifiedEntity> ;
+        <http://parameter.com/vocabulary/parameter#hasId>
+                "PaC_2-2" ;
+        <http://parameter.com/vocabulary/parameter#hasName>
+                "leak_severity_2" ;
+        <http://parameter.com/vocabulary/parameter#hasProbability>
+                "0.4"^^xsd:float ;
+        <http://parameter.com/vocabulary/parameter#hasValue>
+                "1e−8" ;
+        owl:sameAs  <http://parameter.com/description/spacecraft#leak_severity_2> .
+
+<http://parameter.com/description/spacecraft#lstm_param_filter_1>
+        rdf:type    <http://parameter.com/vocabulary/parameter#ParameterCandidate> , owl:Thing , <http://parameter.com/vocabulary/parameter#IdentifiedEntity> ;
+        <http://parameter.com/vocabulary/parameter#hasId>
+                "PaC_14-1" ;
+        <http://parameter.com/vocabulary/parameter#hasName>
+                "lstm_param_filter_1" ;
+        <http://parameter.com/vocabulary/parameter#hasProbability>
+                "0.6"^^xsd:float ;
+        <http://parameter.com/vocabulary/parameter#hasValue>
+                "Mok" ;
+        owl:sameAs  <http://parameter.com/description/spacecraft#lstm_param_filter_1> .
+
+<http://parameter.com/vocabulary/parameter#Contains>
+        rdf:type  owl:ObjectProperty .
+
+<http://parameter.com/description/spacecraft#heater_fault>
+        rdf:type    <http://parameter.com/vocabulary/parameter#ModelComponent> , <http://parameter.com/vocabulary/parameter#IdentifiedEntity> , <http://parameter.com/vocabulary/parameter#ParameterSlot> , owl:Thing ;
+        <http://parameter.com/vocabulary/parameter#Receives>
+                <http://parameter.com/description/spacecraft#heater_fault_2> , <http://parameter.com/description/spacecraft#heater_fault_1> ;
+        <http://parameter.com/vocabulary/parameter#Represents>
+                <http://parameter.com/description/spacecraft#temperature> ;
+        <http://parameter.com/vocabulary/parameter#hasAssignedValue>
+                "498" ;
+        <http://parameter.com/vocabulary/parameter#hasDomain>
+                "[450;498]" ;
+        <http://parameter.com/vocabulary/parameter#hasId>
+                "PaS_9" ;
+        <http://parameter.com/vocabulary/parameter#hasName>
+                "heater_fault" ;
+        <http://parameter.com/vocabulary/parameter#hasNominalValue>
+                "498" ;
+        <http://parameter.com/vocabulary/parameter#hasUnit>
+                "K" ;
+        owl:sameAs  <http://parameter.com/description/spacecraft#heater_fault> .
+
+<http://parameter.com/description/spacecraft#storage>
+        rdf:type    <http://parameter.com/vocabulary/parameter#IdentifiedEntity> , owl:Thing , <http://parameter.com/vocabulary/parameter#PhysicalEntity> , <http://parameter.com/vocabulary/parameter#Subsystem> ;
+        <http://parameter.com/vocabulary/parameter#Contains>
+                <http://parameter.com/description/spacecraft#primary> , <http://parameter.com/description/spacecraft#auxiliary> ;
+        <http://parameter.com/vocabulary/parameter#hasId>
+                "Subsystem_3" ;
+        <http://parameter.com/vocabulary/parameter#hasName>
+                "storage" ;
+        <http://parameter.com/vocabulary/parameter#isContainedIn>
+                <http://parameter.com/description/spacecraft#power_unit> ;
+        owl:sameAs  <http://parameter.com/description/spacecraft#storage> .
+
+<http://parameter.com/description/spacecraft#leak_fault_1>
+        rdf:type    <http://parameter.com/vocabulary/parameter#ParameterCandidate> , owl:Thing , <http://parameter.com/vocabulary/parameter#IdentifiedEntity> ;
+        <http://parameter.com/vocabulary/parameter#hasId>
+                "PaC_11-1" ;
+        <http://parameter.com/vocabulary/parameter#hasName>
+                "leak_fault_1" ;
+        <http://parameter.com/vocabulary/parameter#hasProbability>
+                "0.6"^^xsd:float ;
+        <http://parameter.com/vocabulary/parameter#hasValue>
+                "4.8e-10" ;
+        owl:sameAs  <http://parameter.com/description/spacecraft#leak_fault_1> .
+
+<http://parameter.com/description/spacecraft#sustained_valve_fault>
+        rdf:type    <http://parameter.com/vocabulary/parameter#IdentifiedEntity> , <http://parameter.com/vocabulary/parameter#ParameterSlot> , <http://parameter.com/vocabulary/parameter#ModelComponent> , owl:Thing ;
+        <http://parameter.com/vocabulary/parameter#Receives>
+                <http://parameter.com/description/spacecraft#sustained_valve_fault_1> , <http://parameter.com/description/spacecraft#sustained_valve_fault_2> ;
+        <http://parameter.com/vocabulary/parameter#Represents>
+                <http://parameter.com/description/spacecraft#stiction> ;
+        <http://parameter.com/vocabulary/parameter#hasAssignedValue>
+                "1000" ;
+        <http://parameter.com/vocabulary/parameter#hasDomain>
+                "[1e-5;1000]" ;
+        <http://parameter.com/vocabulary/parameter#hasId>
+                "PaS_8" ;
+        <http://parameter.com/vocabulary/parameter#hasName>
+                "sustained_valve_fault" ;
+        <http://parameter.com/vocabulary/parameter#hasNominalValue>
+                "1000" ;
+        <http://parameter.com/vocabulary/parameter#hasUnit>
+                "kmol/s/bar" ;
+        owl:sameAs  <http://parameter.com/description/spacecraft#sustained_valve_fault> .
+
+<http://parameter.com/description/spacecraft#leak_fault>
+        rdf:type    <http://parameter.com/vocabulary/parameter#ParameterSlot> , <http://parameter.com/vocabulary/parameter#IdentifiedEntity> , owl:Thing , <http://parameter.com/vocabulary/parameter#ModelComponent> ;
+        <http://parameter.com/vocabulary/parameter#Receives>
+                <http://parameter.com/description/spacecraft#leak_fault_1> , <http://parameter.com/description/spacecraft#leak_fault_2> ;
+        <http://parameter.com/vocabulary/parameter#Represents>
+                <http://parameter.com/description/spacecraft#leakage> ;
+        <http://parameter.com/vocabulary/parameter#hasAssignedValue>
+                "4.8e-10" ;
+        <http://parameter.com/vocabulary/parameter#hasDomain>
+                "[4.8e-10;1e-8]" ;
+        <http://parameter.com/vocabulary/parameter#hasId>
+                "PaS_11" ;
+        <http://parameter.com/vocabulary/parameter#hasName>
+                "leak_fault" ;
+        <http://parameter.com/vocabulary/parameter#hasNominalValue>
+                "1e-8" ;
+        <http://parameter.com/vocabulary/parameter#hasUnit>
+                "kmol/s" ;
+        owl:sameAs  <http://parameter.com/description/spacecraft#leak_fault> .
+
+<http://parameter.com/vocabulary/parameter#IsComposedOf>
+        rdf:type  owl:ObjectProperty .
+
+<http://parameter.com/vocabulary/parameter#HC2_Precedes>
+        rdf:type  owl:ObjectProperty .
+
+<http://parameter.com/description/spacecraft#filter_clog_fault_2>
+        rdf:type    <http://parameter.com/vocabulary/parameter#ParameterCandidate> , owl:Thing , <http://parameter.com/vocabulary/parameter#IdentifiedEntity> ;
+        <http://parameter.com/vocabulary/parameter#hasId>
+                "PaC_12-2" ;
+        <http://parameter.com/vocabulary/parameter#hasName>
+                "filter_clog_fault_2" ;
+        <http://parameter.com/vocabulary/parameter#hasProbability>
+                "0.6"^^xsd:float ;
+        <http://parameter.com/vocabulary/parameter#hasValue>
+                "1000" ;
+        owl:sameAs  <http://parameter.com/description/spacecraft#filter_clog_fault_2> .
+
+<http://parameter.com/description/spacecraft#eclss>
+        rdf:type    <http://parameter.com/vocabulary/parameter#PhysicalEntity> , <http://parameter.com/vocabulary/parameter#System> , owl:Thing , <http://parameter.com/vocabulary/parameter#IdentifiedEntity> ;
+        <http://parameter.com/vocabulary/parameter#Contains>
+                <http://parameter.com/description/spacecraft#air_revitalization> ;
+        <http://parameter.com/vocabulary/parameter#hasId>
+                "System_1" ;
+        <http://parameter.com/vocabulary/parameter#hasName>
+                "eclss" ;
+        <http://parameter.com/vocabulary/parameter#isContainedIn>
+                <http://parameter.com/description/spacecraft#i-hab> ;
+        <http://parameter.com/vocabulary/parameter#isPoweredBy>
+                <http://parameter.com/description/spacecraft#auxiliary> ;
+        owl:sameAs  <http://parameter.com/description/spacecraft#eclss> .
+
+<http://parameter.com/description/spacecraft#pipe>
+        rdf:type    <http://parameter.com/vocabulary/parameter#Device> , owl:Thing , <http://parameter.com/vocabulary/parameter#IdentifiedEntity> , <http://parameter.com/vocabulary/parameter#PhysicalEntity> ;
+        <http://parameter.com/vocabulary/parameter#HasHealthStatus>
+                <http://parameter.com/description/spacecraft#pressure> ;
+        <http://parameter.com/vocabulary/parameter#hasId>
+                "Device_3" ;
+        <http://parameter.com/vocabulary/parameter#hasName>
+                "pipe" ;
+        <http://parameter.com/vocabulary/parameter#isContainedIn>
+                <http://parameter.com/description/spacecraft#co2_removal> ;
+        owl:sameAs  <http://parameter.com/description/spacecraft#pipe> .
+
+<http://parameter.com/vocabulary/parameter#hasUnit>
+        rdf:type  owl:FunctionalProperty , owl:DatatypeProperty .
+
+<http://parameter.com/description/spacecraft#desiccant_bed_1>
+        rdf:type    <http://parameter.com/vocabulary/parameter#PhysicalEntity> , <http://parameter.com/vocabulary/parameter#Device> , owl:Thing , <http://parameter.com/vocabulary/parameter#IdentifiedEntity> ;
+        <http://parameter.com/vocabulary/parameter#HC1_Follows>
+                <http://parameter.com/description/spacecraft#in-outlet_valve_1> ;
+        <http://parameter.com/vocabulary/parameter#HC1_Precedes>
+                <http://parameter.com/description/spacecraft#selection_valve_1> ;
+        <http://parameter.com/vocabulary/parameter#HC2_Follows>
+                <http://parameter.com/description/spacecraft#check_valve_1> ;
+        <http://parameter.com/vocabulary/parameter#HC2_Precedes>
+                <http://parameter.com/description/spacecraft#in-outlet_valve_1> ;
+        <http://parameter.com/vocabulary/parameter#HasHealthStatus>
+                <http://parameter.com/description/spacecraft#water> , <http://parameter.com/description/spacecraft#dimension> ;
+        <http://parameter.com/vocabulary/parameter#hasId>
+                "Device_4.1" ;
+        <http://parameter.com/vocabulary/parameter#hasName>
+                "desiccant_bed_1" ;
+        <http://parameter.com/vocabulary/parameter#isContainedIn>
+                <http://parameter.com/description/spacecraft#co2_removal> ;
+        owl:sameAs  <http://parameter.com/description/spacecraft#desiccant_bed_1> .
+
+<http://parameter.com/description/spacecraft#backup>
+        rdf:type    <http://parameter.com/vocabulary/parameter#Device> , owl:Thing , <http://parameter.com/vocabulary/parameter#IdentifiedEntity> , <http://parameter.com/vocabulary/parameter#PhysicalEntity> ;
+        <http://parameter.com/vocabulary/parameter#HasHealthStatus>
+                <http://parameter.com/description/spacecraft#activation> ;
+        <http://parameter.com/vocabulary/parameter#hasId>
+                "Device_6" ;
+        <http://parameter.com/vocabulary/parameter#hasName>
+                "backup" ;
+        owl:sameAs  <http://parameter.com/description/spacecraft#backup> .
+
+<http://parameter.com/vocabulary/parameter#IdentifiedEntity>
+        rdf:type  owl:Class .

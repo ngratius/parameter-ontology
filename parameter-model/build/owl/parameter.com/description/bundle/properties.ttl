@@ -1,0 +1,157 @@
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+
+<http://parameter.com/vocabulary/parameter#StateVariable>
+        rdf:type  owl:Class .
+
+<http://parameter.com/vocabulary/parameter#Component>
+        rdf:type  owl:Class .
+
+<http://parameter.com/vocabulary/parameter#Simulates>
+        rdf:type            owl:ObjectProperty ;
+        rdfs:subPropertyOf  <http://parameter.com/vocabulary/parameter#Simulates> .
+
+<http://parameter.com/vocabulary/parameter#Powers>
+        rdf:type            owl:ObjectProperty ;
+        rdfs:subPropertyOf  <http://parameter.com/vocabulary/parameter#Powers> ;
+        owl:inverseOf       <http://parameter.com/vocabulary/parameter#isPoweredBy> .
+
+<http://parameter.com/vocabulary/parameter#System>
+        rdf:type  owl:Class .
+
+<http://parameter.com/vocabulary/parameter#PhysicalEntity>
+        rdf:type  owl:Class .
+
+<http://parameter.com/vocabulary/parameter#HC1_Precedes>
+        rdf:type            owl:ObjectProperty ;
+        rdfs:subPropertyOf  <http://parameter.com/vocabulary/parameter#HC1_Precedes> ;
+        owl:inverseOf       <http://parameter.com/vocabulary/parameter#HC1_Follows> .
+
+<http://parameter.com/vocabulary/parameter#Represents>
+        rdf:type            owl:ObjectProperty ;
+        rdfs:subPropertyOf  <http://parameter.com/vocabulary/parameter#Represents> .
+
+<http://parameter.com/vocabulary/parameter#hasNominalValue>
+        rdf:type            owl:FunctionalProperty , owl:DatatypeProperty ;
+        rdfs:subPropertyOf  <http://parameter.com/vocabulary/parameter#hasNominalValue> .
+
+<http://parameter.com/vocabulary/parameter#Module>
+        rdf:type  owl:Class .
+
+<http://parameter.com/vocabulary/parameter#hasValue>
+        rdf:type            owl:FunctionalProperty , owl:DatatypeProperty ;
+        rdfs:subPropertyOf  <http://parameter.com/vocabulary/parameter#hasValue> .
+
+<http://parameter.com/vocabulary/parameter#Station>
+        rdf:type  owl:Class .
+
+<http://parameter.com/vocabulary/parameter#isPoweredBy>
+        rdf:type            owl:ObjectProperty ;
+        rdfs:subPropertyOf  <http://parameter.com/vocabulary/parameter#isPoweredBy> ;
+        owl:inverseOf       <http://parameter.com/vocabulary/parameter#Powers> .
+
+<http://parameter.com/vocabulary/parameter#isContainedIn>
+        rdf:type            owl:ObjectProperty ;
+        rdfs:subPropertyOf  <http://parameter.com/vocabulary/parameter#isContainedIn> ;
+        owl:inverseOf       <http://parameter.com/vocabulary/parameter#Contains> .
+
+<http://parameter.com/vocabulary/parameter#hasAssignedValue>
+        rdf:type            owl:FunctionalProperty , owl:DatatypeProperty ;
+        rdfs:subPropertyOf  <http://parameter.com/vocabulary/parameter#hasAssignedValue> .
+
+<http://parameter.com/vocabulary/parameter#Output>
+        rdf:type  owl:Class .
+
+<http://parameter.com/vocabulary/parameter#HC2_Follows>
+        rdf:type            owl:ObjectProperty ;
+        rdfs:subPropertyOf  <http://parameter.com/vocabulary/parameter#HC2_Follows> ;
+        owl:inverseOf       <http://parameter.com/vocabulary/parameter#HC2_Precedes> .
+
+<http://parameter.com/vocabulary/parameter#ParameterSlot>
+        rdf:type  owl:Class .
+
+<http://parameter.com/vocabulary/parameter#Device>
+        rdf:type  owl:Class .
+
+owl:Nothing  rdf:type  owl:Class .
+
+<http://parameter.com/vocabulary/parameter#Subsystem>
+        rdf:type  owl:Class .
+
+<http://parameter.com/vocabulary/parameter#SimulationModel>
+        rdf:type  owl:Class .
+
+<http://parameter.com/vocabulary/parameter#hasDomain>
+        rdf:type            owl:DatatypeProperty ;
+        rdfs:subPropertyOf  <http://parameter.com/vocabulary/parameter#hasDomain> .
+
+<http://parameter.com/vocabulary/parameter#hasProbability>
+        rdf:type            owl:FunctionalProperty , owl:DatatypeProperty ;
+        rdfs:subPropertyOf  <http://parameter.com/vocabulary/parameter#hasProbability> .
+
+<http://parameter.com/vocabulary/parameter#Input>
+        rdf:type  owl:Class .
+
+<http://parameter.com/vocabulary/parameter#hasId>
+        rdf:type            owl:FunctionalProperty , owl:DatatypeProperty ;
+        rdfs:subPropertyOf  <http://parameter.com/vocabulary/parameter#hasId> .
+
+<http://parameter.com/vocabulary/parameter#ModelComponent>
+        rdf:type  owl:Class .
+
+<http://parameter.com/vocabulary/parameter#HasHealthStatus>
+        rdf:type            owl:ObjectProperty ;
+        rdfs:subPropertyOf  <http://parameter.com/vocabulary/parameter#HasHealthStatus> .
+
+<http://parameter.com/vocabulary/parameter#HC1_Follows>
+        rdf:type            owl:ObjectProperty ;
+        rdfs:subPropertyOf  <http://parameter.com/vocabulary/parameter#HC1_Follows> ;
+        owl:inverseOf       <http://parameter.com/vocabulary/parameter#HC1_Precedes> .
+
+owl:Thing  rdf:type  owl:Class .
+
+<http://parameter.com/vocabulary/parameter#ParameterCandidate>
+        rdf:type  owl:Class .
+
+owl:topObjectProperty
+        rdf:type       owl:SymmetricProperty , owl:TransitiveProperty , owl:ObjectProperty ;
+        owl:inverseOf  owl:topObjectProperty .
+
+owl:topDataProperty  rdf:type  owl:DatatypeProperty .
+
+<http://parameter.com/vocabulary/parameter#Receives>
+        rdf:type            owl:ObjectProperty ;
+        rdfs:subPropertyOf  <http://parameter.com/vocabulary/parameter#Receives> .
+
+<http://parameter.com/vocabulary/parameter#hasName>
+        rdf:type            owl:FunctionalProperty , owl:DatatypeProperty ;
+        rdfs:subPropertyOf  <http://parameter.com/vocabulary/parameter#hasName> .
+
+<http://parameter.com/description/bundle/properties>
+        rdf:type         owl:Ontology ;
+        rdfs:comment     "Generated by Owl Reason 2.6.0" ;
+        owl:imports      <http://parameter.com/description/bundle> ;
+        owl:versionInfo  "1703081050" .
+
+<http://parameter.com/vocabulary/parameter#Contains>
+        rdf:type            owl:ObjectProperty ;
+        rdfs:subPropertyOf  <http://parameter.com/vocabulary/parameter#Contains> ;
+        owl:inverseOf       <http://parameter.com/vocabulary/parameter#isContainedIn> .
+
+<http://parameter.com/vocabulary/parameter#IsComposedOf>
+        rdf:type            owl:ObjectProperty ;
+        rdfs:subPropertyOf  <http://parameter.com/vocabulary/parameter#IsComposedOf> .
+
+<http://parameter.com/vocabulary/parameter#HC2_Precedes>
+        rdf:type            owl:ObjectProperty ;
+        rdfs:subPropertyOf  <http://parameter.com/vocabulary/parameter#HC2_Precedes> ;
+        owl:inverseOf       <http://parameter.com/vocabulary/parameter#HC2_Follows> .
+
+<http://parameter.com/vocabulary/parameter#hasUnit>
+        rdf:type            owl:FunctionalProperty , owl:DatatypeProperty ;
+        rdfs:subPropertyOf  <http://parameter.com/vocabulary/parameter#hasUnit> .
+
+<http://parameter.com/vocabulary/parameter#IdentifiedEntity>
+        rdf:type  owl:Class .

@@ -1,0 +1,48 @@
+{ "head": {
+    "vars": [ "Model_name" , "Slot_name" , "Id" , "AssignedValue" , "Unit" , "Probability" ]
+  } ,
+  "results": {
+    "bindings": [
+      { 
+        "Model_name": { "type": "literal" , "value": "simulink" } ,
+        "Slot_name": { "type": "literal" , "value": "check_valve_severity" } ,
+        "Id": { "type": "literal" , "value": "check_valve_severity_1" } ,
+        "AssignedValue": { "type": "literal" , "value": "3e−7" } ,
+        "Unit": { "type": "literal" , "value": "deg" } ,
+        "Probability": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#float" , "value": "0.6" }
+      } ,
+      { 
+        "Model_name": { "type": "literal" , "value": "simulink" } ,
+        "Slot_name": { "type": "literal" , "value": "leak_severity" } ,
+        "Id": { "type": "literal" , "value": "leak_severity_1" } ,
+        "AssignedValue": { "type": "literal" , "value": "4.8e-10" } ,
+        "Unit": { "type": "literal" , "value": "in^2" } ,
+        "Probability": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#float" , "value": "0.6" }
+      } ,
+      { 
+        "Model_name": { "type": "literal" , "value": "simulink" } ,
+        "Slot_name": { "type": "literal" , "value": "mesh_size" } ,
+        "Id": { "type": "literal" , "value": "mesh_size_2" } ,
+        "AssignedValue": { "type": "literal" , "value": "60" } ,
+        "Unit": { "type": "literal" , "value": "μm" } ,
+        "Probability": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#float" , "value": "0.6" }
+      } ,
+      { 
+        "Model_name": { "type": "literal" , "value": "simulink" } ,
+        "Slot_name": { "type": "literal" , "value": "vacuum_severity" } ,
+        "Id": { "type": "literal" , "value": "vacuum_severity_1" } ,
+        "AssignedValue": { "type": "literal" , "value": "606" } ,
+        "Unit": { "type": "literal" , "value": "Pa" } ,
+        "Probability": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#float" , "value": "0.6" }
+      } ,
+      { 
+        "Model_name": { "type": "literal" , "value": "lstm" } ,
+        "Slot_name": { "type": "literal" , "value": "lstm_param_filter" } ,
+        "Id": { "type": "literal" , "value": "lstm_param_filter_1" } ,
+        "AssignedValue": { "type": "literal" , "value": "Mok" } ,
+        "Unit": { "type": "literal" , "value": "∅" } ,
+        "Probability": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#float" , "value": "0.6" }
+      }
+    ]
+  }
+}

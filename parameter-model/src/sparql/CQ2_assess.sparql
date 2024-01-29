@@ -1,0 +1,20 @@
+PREFIX v:       <http://parameter.com/vocabulary/parameter#>
+PREFIX rdfs:    <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?Model_name ?Slot_name ?Id ?AssignedValue ?Unit ?Probability
+
+WHERE{
+	?Model v:IsComposedOf ?Slot.
+	?Model v:hasName ?Model_name.
+	
+	?Slot v:hasName ?Slot_name.
+	?Slot v:Receives ?Candidate.
+	?Slot v:hasAssignedValue ?AssignedValue.
+	?Slot v:hasUnit ?Unit.
+	?Candidate v:hasName ?Id.
+	?Candidate v:hasValue ?AvailableValue.
+	?Candidate v:hasProbability ?Probability.
+	
+	FILTER(?AssignedValue = ?AvailableValue)
+	FILTER(?Model_name = "simulink" || ?Model_name = "lstm")
+}

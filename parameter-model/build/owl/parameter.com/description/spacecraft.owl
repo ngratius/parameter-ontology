@@ -1,0 +1,1437 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://parameter.com/description/spacecraft#"
+     xml:base="http://parameter.com/description/spacecraft"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:parameter="http://parameter.com/vocabulary/parameter#"
+     xmlns:spacecraft="http://parameter.com/description/spacecraft#">
+    <owl:Ontology rdf:about="http://parameter.com/description/spacecraft">
+        <owl:imports rdf:resource="http://parameter.com/vocabulary/parameter"/>
+        <owl:imports rdf:resource="http://purl.org/dc/elements/1.1"/>
+        <dc:description>A description of the simulation parameters of a specific spacecraft</dc:description>
+        <dc:type rdf:resource="http://opencaesar.io/oml#Description"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://parameter.com/vocabulary/parameter#Contains -->
+
+
+    <owl:ObjectProperty rdf:about="http://parameter.com/vocabulary/parameter#Contains"/>
+    
+
+
+    <!-- http://parameter.com/vocabulary/parameter#HC1_Follows -->
+
+
+    <owl:ObjectProperty rdf:about="http://parameter.com/vocabulary/parameter#HC1_Follows"/>
+    
+
+
+    <!-- http://parameter.com/vocabulary/parameter#HC2_Follows -->
+
+
+    <owl:ObjectProperty rdf:about="http://parameter.com/vocabulary/parameter#HC2_Follows"/>
+    
+
+
+    <!-- http://parameter.com/vocabulary/parameter#HasHealthStatus -->
+
+
+    <owl:ObjectProperty rdf:about="http://parameter.com/vocabulary/parameter#HasHealthStatus"/>
+    
+
+
+    <!-- http://parameter.com/vocabulary/parameter#IsComposedOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://parameter.com/vocabulary/parameter#IsComposedOf"/>
+    
+
+
+    <!-- http://parameter.com/vocabulary/parameter#Powers -->
+
+
+    <owl:ObjectProperty rdf:about="http://parameter.com/vocabulary/parameter#Powers"/>
+    
+
+
+    <!-- http://parameter.com/vocabulary/parameter#Receives -->
+
+
+    <owl:ObjectProperty rdf:about="http://parameter.com/vocabulary/parameter#Receives"/>
+    
+
+
+    <!-- http://parameter.com/vocabulary/parameter#Represents -->
+
+
+    <owl:ObjectProperty rdf:about="http://parameter.com/vocabulary/parameter#Represents"/>
+    
+
+
+    <!-- http://parameter.com/vocabulary/parameter#Simulates -->
+
+
+    <owl:ObjectProperty rdf:about="http://parameter.com/vocabulary/parameter#Simulates"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://parameter.com/vocabulary/parameter#hasAssignedValue -->
+
+
+    <owl:DatatypeProperty rdf:about="http://parameter.com/vocabulary/parameter#hasAssignedValue"/>
+    
+
+
+    <!-- http://parameter.com/vocabulary/parameter#hasDomain -->
+
+
+    <owl:DatatypeProperty rdf:about="http://parameter.com/vocabulary/parameter#hasDomain"/>
+    
+
+
+    <!-- http://parameter.com/vocabulary/parameter#hasId -->
+
+
+    <owl:DatatypeProperty rdf:about="http://parameter.com/vocabulary/parameter#hasId"/>
+    
+
+
+    <!-- http://parameter.com/vocabulary/parameter#hasName -->
+
+
+    <owl:DatatypeProperty rdf:about="http://parameter.com/vocabulary/parameter#hasName"/>
+    
+
+
+    <!-- http://parameter.com/vocabulary/parameter#hasNominalValue -->
+
+
+    <owl:DatatypeProperty rdf:about="http://parameter.com/vocabulary/parameter#hasNominalValue"/>
+    
+
+
+    <!-- http://parameter.com/vocabulary/parameter#hasProbability -->
+
+
+    <owl:DatatypeProperty rdf:about="http://parameter.com/vocabulary/parameter#hasProbability"/>
+    
+
+
+    <!-- http://parameter.com/vocabulary/parameter#hasUnit -->
+
+
+    <owl:DatatypeProperty rdf:about="http://parameter.com/vocabulary/parameter#hasUnit"/>
+    
+
+
+    <!-- http://parameter.com/vocabulary/parameter#hasValue -->
+
+
+    <owl:DatatypeProperty rdf:about="http://parameter.com/vocabulary/parameter#hasValue"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://parameter.com/description/spacecraft#activate_backup -->
+
+
+    <owl:NamedIndividual rdf:about="http://parameter.com/description/spacecraft#activate_backup">
+        <rdf:type rdf:resource="http://parameter.com/vocabulary/parameter#ParameterSlot"/>
+        <parameter:Receives rdf:resource="http://parameter.com/description/spacecraft#activate_backup_1"/>
+        <parameter:Receives rdf:resource="http://parameter.com/description/spacecraft#activate_backup_2"/>
+        <parameter:Represents rdf:resource="http://parameter.com/description/spacecraft#activation"/>
+        <parameter:hasAssignedValue>off</parameter:hasAssignedValue>
+        <parameter:hasDomain>[on;off]</parameter:hasDomain>
+        <parameter:hasId>PaS_15</parameter:hasId>
+        <parameter:hasName>activate_backup</parameter:hasName>
+        <parameter:hasNominalValue>off</parameter:hasNominalValue>
+        <parameter:hasUnit>∅</parameter:hasUnit>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://parameter.com/description/spacecraft#activate_backup_1 -->
+
+
+    <owl:NamedIndividual rdf:about="http://parameter.com/description/spacecraft#activate_backup_1">
+        <rdf:type rdf:resource="http://parameter.com/vocabulary/parameter#ParameterCandidate"/>
+        <parameter:hasId>PaC_15-1</parameter:hasId>
+        <parameter:hasName>activate_backup_1</parameter:hasName>
+        <parameter:hasProbability rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.4</parameter:hasProbability>
+        <parameter:hasValue>on</parameter:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://parameter.com/description/spacecraft#activate_backup_2 -->
+
+
+    <owl:NamedIndividual rdf:about="http://parameter.com/description/spacecraft#activate_backup_2">
+        <rdf:type rdf:resource="http://parameter.com/vocabulary/parameter#ParameterCandidate"/>
+        <parameter:hasId>PaC_15-2</parameter:hasId>
+        <parameter:hasName>activate_backup_2</parameter:hasName>
+        <parameter:hasProbability rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.6</parameter:hasProbability>
+        <parameter:hasValue>off</parameter:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://parameter.com/description/spacecraft#activation -->
+
+
+    <owl:NamedIndividual rdf:about="http://parameter.com/description/spacecraft#activation">
+        <rdf:type rdf:resource="http://parameter.com/vocabulary/parameter#StateVariable"/>
+        <parameter:hasId>St_10</parameter:hasId>
+        <parameter:hasName>activation</parameter:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://parameter.com/description/spacecraft#air_blower -->
+
+
+    <owl:NamedIndividual rdf:about="http://parameter.com/description/spacecraft#air_blower">
+        <rdf:type rdf:resource="http://parameter.com/vocabulary/parameter#Device"/>
+        <parameter:HC1_Follows rdf:resource="http://parameter.com/description/spacecraft#selection_valve_1"/>
+        <parameter:HC2_Follows rdf:resource="http://parameter.com/description/spacecraft#selection_valve_1"/>
+        <parameter:hasId>Device_8</parameter:hasId>
+        <parameter:hasName>air_blower</parameter:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://parameter.com/description/spacecraft#air_revitalization -->
+
+
+    <owl:NamedIndividual rdf:about="http://parameter.com/description/spacecraft#air_revitalization">
+        <rdf:type rdf:resource="http://parameter.com/vocabulary/parameter#Subsystem"/>
+        <parameter:Contains rdf:resource="http://parameter.com/description/spacecraft#co2_removal"/>
+        <parameter:hasId>Subsystem_1</parameter:hasId>
+        <parameter:hasName>air_revitalization</parameter:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://parameter.com/description/spacecraft#airflow -->
+
+
+    <owl:NamedIndividual rdf:about="http://parameter.com/description/spacecraft#airflow">
+        <rdf:type rdf:resource="http://parameter.com/vocabulary/parameter#StateVariable"/>
+        <parameter:hasId>St_7</parameter:hasId>
+        <parameter:hasName>airflow</parameter:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://parameter.com/description/spacecraft#aspen -->
+
+
+    <owl:NamedIndividual rdf:about="http://parameter.com/description/spacecraft#aspen">
+        <rdf:type rdf:resource="http://parameter.com/vocabulary/parameter#SimulationModel"/>
+        <parameter:IsComposedOf rdf:resource="http://parameter.com/description/spacecraft#bed_length"/>
+        <parameter:IsComposedOf rdf:resource="http://parameter.com/description/spacecraft#crew_size"/>
+        <parameter:IsComposedOf rdf:resource="http://parameter.com/description/spacecraft#filter_clog_fault"/>
+        <parameter:IsComposedOf rdf:resource="http://parameter.com/description/spacecraft#flow_rate"/>
+        <parameter:IsComposedOf rdf:resource="http://parameter.com/description/spacecraft#heater_fault"/>
+        <parameter:IsComposedOf rdf:resource="http://parameter.com/description/spacecraft#leak_fault"/>
+        <parameter:IsComposedOf rdf:resource="http://parameter.com/description/spacecraft#sustained_valve_fault"/>
+        <parameter:IsComposedOf rdf:resource="http://parameter.com/description/spacecraft#vacuum_fault"/>
+        <parameter:IsComposedOf rdf:resource="http://parameter.com/description/spacecraft#water_preload"/>
+        <parameter:Simulates rdf:resource="http://parameter.com/description/spacecraft#crew"/>
+        <parameter:Simulates rdf:resource="http://parameter.com/description/spacecraft#desiccant_bed_1"/>
+        <parameter:Simulates rdf:resource="http://parameter.com/description/spacecraft#desiccant_bed_2"/>
+        <parameter:Simulates rdf:resource="http://parameter.com/description/spacecraft#filter_1"/>
+        <parameter:Simulates rdf:resource="http://parameter.com/description/spacecraft#filter_2"/>
+        <parameter:Simulates rdf:resource="http://parameter.com/description/spacecraft#heater"/>
+        <parameter:Simulates rdf:resource="http://parameter.com/description/spacecraft#pipe"/>
+        <parameter:Simulates rdf:resource="http://parameter.com/description/spacecraft#selection_valve_1"/>
+        <parameter:Simulates rdf:resource="http://parameter.com/description/spacecraft#selection_valve_2"/>
+        <parameter:Simulates rdf:resource="http://parameter.com/description/spacecraft#selection_valve_3"/>
+        <parameter:Simulates rdf:resource="http://parameter.com/description/spacecraft#selection_valve_4"/>
+        <parameter:Simulates rdf:resource="http://parameter.com/description/spacecraft#sorbent_bed_1"/>
+        <parameter:Simulates rdf:resource="http://parameter.com/description/spacecraft#sorbent_bed_2"/>
+        <parameter:hasId>Mo_2</parameter:hasId>
+        <parameter:hasName>aspen</parameter:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://parameter.com/description/spacecraft#auxiliary -->
+
+
+    <owl:NamedIndividual rdf:about="http://parameter.com/description/spacecraft#auxiliary">
+        <rdf:type rdf:resource="http://parameter.com/vocabulary/parameter#Component"/>
+        <parameter:Powers rdf:resource="http://parameter.com/description/spacecraft#eclss"/>
+        <parameter:hasId>Component_3</parameter:hasId>
+        <parameter:hasName>auxiliary</parameter:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://parameter.com/description/spacecraft#backup -->
+
+
+    <owl:NamedIndividual rdf:about="http://parameter.com/description/spacecraft#backup">
+        <rdf:type rdf:resource="http://parameter.com/vocabulary/parameter#Device"/>
+        <parameter:HasHealthStatus rdf:resource="http://parameter.com/description/spacecraft#activation"/>
+        <parameter:hasId>Device_6</parameter:hasId>
+        <parameter:hasName>backup</parameter:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://parameter.com/description/spacecraft#bed_length -->
+
+
+    <owl:NamedIndividual rdf:about="http://parameter.com/description/spacecraft#bed_length">
+        <rdf:type rdf:resource="http://parameter.com/vocabulary/parameter#ParameterSlot"/>
+        <parameter:Receives rdf:resource="http://parameter.com/description/spacecraft#bed_length_1"/>
+        <parameter:Receives rdf:resource="http://parameter.com/description/spacecraft#bed_length_2"/>
+        <parameter:Represents rdf:resource="http://parameter.com/description/spacecraft#dimension"/>
+        <parameter:hasAssignedValue>15</parameter:hasAssignedValue>
+        <parameter:hasDomain>[15;25]</parameter:hasDomain>
+        <parameter:hasId>PaS_6</parameter:hasId>
+        <parameter:hasName>bed_length</parameter:hasName>
+        <parameter:hasNominalValue>∅</parameter:hasNominalValue>
+        <parameter:hasUnit>in</parameter:hasUnit>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://parameter.com/description/spacecraft#bed_length_1 -->
+
+
+    <owl:NamedIndividual rdf:about="http://parameter.com/description/spacecraft#bed_length_1">
+        <rdf:type rdf:resource="http://parameter.com/vocabulary/parameter#ParameterCandidate"/>
+        <parameter:hasId>PaC_6-1</parameter:hasId>
+        <parameter:hasName>bed_length_1</parameter:hasName>
+        <parameter:hasProbability rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.6</parameter:hasProbability>
+        <parameter:hasValue>15</parameter:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://parameter.com/description/spacecraft#bed_length_2 -->
+
+
+    <owl:NamedIndividual rdf:about="http://parameter.com/description/spacecraft#bed_length_2">
+        <rdf:type rdf:resource="http://parameter.com/vocabulary/parameter#ParameterCandidate"/>
+        <parameter:hasId>PaC_6-2</parameter:hasId>
+        <parameter:hasName>bed_length_2</parameter:hasName>
+        <parameter:hasProbability rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.4</parameter:hasProbability>
+        <parameter:hasValue>25</parameter:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://parameter.com/description/spacecraft#check_valve_1 -->
+
+
+    <owl:NamedIndividual rdf:about="http://parameter.com/description/spacecraft#check_valve_1">
+        <rdf:type rdf:resource="http://parameter.com/vocabulary/parameter#Device"/>
+        <parameter:HC2_Follows rdf:resource="http://parameter.com/description/spacecraft#filter_1"/>
+        <parameter:HasHealthStatus rdf:resource="http://parameter.com/description/spacecraft#leakage"/>
+        <parameter:HasHealthStatus rdf:resource="http://parameter.com/description/spacecraft#stiction"/>
+        <parameter:hasId>Device_2.03</parameter:hasId>
+        <parameter:hasName>check_valve_1</parameter:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://parameter.com/description/spacecraft#check_valve_2 -->
+
+
+    <owl:NamedIndividual rdf:about="http://parameter.com/description/spacecraft#check_valve_2">
+        <rdf:type rdf:resource="http://parameter.com/vocabulary/parameter#Device"/>
+        <parameter:HC1_Follows rdf:resource="http://parameter.com/description/spacecraft#filter_2"/>
+        <parameter:HasHealthStatus rdf:resource="http://parameter.com/description/spacecraft#leakage"/>
+        <parameter:HasHealthStatus rdf:resource="http://parameter.com/description/spacecraft#stiction"/>
+        <parameter:hasId>Device_2.04</parameter:hasId>
+        <parameter:hasName>check_valve_2</parameter:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://parameter.com/description/spacecraft#check_valve_severity -->
+
+
+    <owl:NamedIndividual rdf:about="http://parameter.com/description/spacecraft#check_valve_severity">
+        <rdf:type rdf:resource="http://parameter.com/vocabulary/parameter#ParameterSlot"/>
+        <parameter:Receives rdf:resource="http://parameter.com/description/spacecraft#check_valve_severity_1"/>
+        <parameter:Receives rdf:resource="http://parameter.com/description/spacecraft#check_valve_severity_2"/>
+        <parameter:Represents rdf:resource="http://parameter.com/description/spacecraft#stiction"/>
+        <parameter:hasAssignedValue>3e−7</parameter:hasAssignedValue>
+        <parameter:hasDomain>[3e−7;45]</parameter:hasDomain>
+        <parameter:hasId>PaS_3</parameter:hasId>
+        <parameter:hasName>check_valve_severity</parameter:hasName>
+        <parameter:hasNominalValue>3e−7</parameter:hasNominalValue>
+        <parameter:hasUnit>deg</parameter:hasUnit>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://parameter.com/description/spacecraft#check_valve_severity_1 -->
+
+
+    <owl:NamedIndividual rdf:about="http://parameter.com/description/spacecraft#check_valve_severity_1">
+        <rdf:type rdf:resource="http://parameter.com/vocabulary/parameter#ParameterCandidate"/>
+        <parameter:hasId>PaC_3-1</parameter:hasId>
+        <parameter:hasName>check_valve_severity_1</parameter:hasName>
+        <parameter:hasProbability rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.6</parameter:hasProbability>
+        <parameter:hasValue>3e−7</parameter:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://parameter.com/description/spacecraft#check_valve_severity_2 -->
+
+
+    <owl:NamedIndividual rdf:about="http://parameter.com/description/spacecraft#check_valve_severity_2">
+        <rdf:type rdf:resource="http://parameter.com/vocabulary/parameter#ParameterCandidate"/>
+        <parameter:hasId>PaC_3-2</parameter:hasId>
+        <parameter:hasName>check_valve_severity_2</parameter:hasName>
+        <parameter:hasProbability rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.4</parameter:hasProbability>
+        <parameter:hasValue>45</parameter:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://parameter.com/description/spacecraft#clogging -->
+
+
+    <owl:NamedIndividual rdf:about="http://parameter.com/description/spacecraft#clogging">
+        <rdf:type rdf:resource="http://parameter.com/vocabulary/parameter#StateVariable"/>
+        <parameter:hasId>St_1</parameter:hasId>
+        <parameter:hasName>clogging</parameter:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://parameter.com/description/spacecraft#co2_removal -->
+
+
+    <owl:NamedIndividual rdf:about="http://parameter.com/description/spacecraft#co2_removal">
+        <rdf:type rdf:resource="http://parameter.com/vocabulary/parameter#Component"/>
+        <parameter:Contains rdf:resource="http://parameter.com/description/spacecraft#desiccant_bed_1"/>
+        <parameter:Contains rdf:resource="http://parameter.com/description/spacecraft#desiccant_bed_2"/>
+        <parameter:Contains rdf:resource="http://parameter.com/description/spacecraft#filter_1"/>
+        <parameter:Contains rdf:resource="http://parameter.com/description/spacecraft#filter_2"/>
+        <parameter:Contains rdf:resource="http://parameter.com/description/spacecraft#heater"/>
+        <parameter:Contains rdf:resource="http://parameter.com/description/spacecraft#pipe"/>
+        <parameter:Contains rdf:resource="http://parameter.com/description/spacecraft#selection_valve_1"/>
+        <parameter:Contains rdf:resource="http://parameter.com/description/spacecraft#selection_valve_2"/>
+        <parameter:Contains rdf:resource="http://parameter.com/description/spacecraft#selection_valve_3"/>
+        <parameter:Contains rdf:resource="http://parameter.com/description/spacecraft#selection_valve_4"/>
+        <parameter:Contains rdf:resource="http://parameter.com/description/spacecraft#sorbent_bed_1"/>
+        <parameter:Contains rdf:resource="http://parameter.com/description/spacecraft#sorbent_bed_2"/>
+        <parameter:hasId>Component_1</parameter:hasId>
+        <parameter:hasName>co2_removal</parameter:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://parameter.com/description/spacecraft#count -->
+
+
+    <owl:NamedIndividual rdf:about="http://parameter.com/description/spacecraft#count">
+        <rdf:type rdf:resource="http://parameter.com/vocabulary/parameter#StateVariable"/>
+        <parameter:hasId>St_5</parameter:hasId>
+        <parameter:hasName>count</parameter:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://parameter.com/description/spacecraft#crew -->
+
+
+    <owl:NamedIndividual rdf:about="http://parameter.com/description/spacecraft#crew">
+        <rdf:type rdf:resource="http://parameter.com/vocabulary/parameter#PhysicalEntity"/>
+        <parameter:HasHealthStatus rdf:resource="http://parameter.com/description/spacecraft#count"/>
+        <parameter:hasId>PhysicalEntity_1</parameter:hasId>
+        <parameter:hasName>crew</parameter:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://parameter.com/description/spacecraft#crew_size -->
+
+
+    <owl:NamedIndividual rdf:about="http://parameter.com/description/spacecraft#crew_size">
+        <rdf:type rdf:resource="http://parameter.com/vocabulary/parameter#ParameterSlot"/>
+        <parameter:Receives rdf:resource="http://parameter.com/description/spacecraft#crew_size_1"/>
+        <parameter:Receives rdf:resource="http://parameter.com/description/spacecraft#crew_size_2"/>
+        <parameter:Represents rdf:resource="http://parameter.com/description/spacecraft#count"/>
+        <parameter:hasAssignedValue>2</parameter:hasAssignedValue>
+        <parameter:hasDomain>[2;10]</parameter:hasDomain>
+        <parameter:hasId>PaS_5</parameter:hasId>
+        <parameter:hasName>crew_size</parameter:hasName>
+        <parameter:hasNominalValue>∅</parameter:hasNominalValue>
+        <parameter:hasUnit>∅</parameter:hasUnit>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://parameter.com/description/spacecraft#crew_size_1 -->
+
+
+    <owl:NamedIndividual rdf:about="http://parameter.com/description/spacecraft#crew_size_1">
+        <rdf:type rdf:resource="http://parameter.com/vocabulary/parameter#ParameterCandidate"/>
+        <parameter:hasId>PaC_5-1</parameter:hasId>
+        <parameter:hasName>crew_size_1</parameter:hasName>
+        <parameter:hasProbability rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.6</parameter:hasProbability>
+        <parameter:hasValue>2</parameter:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://parameter.com/description/spacecraft#crew_size_2 -->
+
+
+    <owl:NamedIndividual rdf:about="http://parameter.com/description/spacecraft#crew_size_2">
+        <rdf:type rdf:resource="http://parameter.com/vocabulary/parameter#ParameterCandidate"/>
+        <parameter:hasId>PaC_5-2</parameter:hasId>
+        <parameter:hasName>crew_size_2</parameter:hasName>
+        <parameter:hasProbability rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.4</parameter:hasProbability>
+        <parameter:hasValue>10</parameter:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://parameter.com/description/spacecraft#desiccant_bed_1 -->
+
+
+    <owl:NamedIndividual rdf:about="http://parameter.com/description/spacecraft#desiccant_bed_1">
+        <rdf:type rdf:resource="http://parameter.com/vocabulary/parameter#Device"/>
+        <parameter:HC1_Follows rdf:resource="http://parameter.com/description/spacecraft#in-outlet_valve_1"/>
+        <parameter:HC2_Follows rdf:resource="http://parameter.com/description/spacecraft#check_valve_1"/>
+        <parameter:HasHealthStatus rdf:resource="http://parameter.com/description/spacecraft#dimension"/>
+        <parameter:HasHealthStatus rdf:resource="http://parameter.com/description/spacecraft#water"/>
+        <parameter:hasId>Device_4.1</parameter:hasId>
+        <parameter:hasName>desiccant_bed_1</parameter:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://parameter.com/description/spacecraft#desiccant_bed_2 -->
+
+
+    <owl:NamedIndividual rdf:about="http://parameter.com/description/spacecraft#desiccant_bed_2">
+        <rdf:type rdf:resource="http://parameter.com/vocabulary/parameter#Device"/>
+        <parameter:HC1_Follows rdf:resource="http://parameter.com/description/spacecraft#check_valve_2"/>
+        <parameter:HC2_Follows rdf:resource="http://parameter.com/description/spacecraft#in-outlet_valve_2"/>
+        <parameter:HasHealthStatus rdf:resource="http://parameter.com/description/spacecraft#dimension"/>
+        <parameter:HasHealthStatus rdf:resource="http://parameter.com/description/spacecraft#water"/>
+        <parameter:hasId>Device_4.2</parameter:hasId>
+        <parameter:hasName>desiccant_bed_2</parameter:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://parameter.com/description/spacecraft#dimension -->
+
+
+    <owl:NamedIndividual rdf:about="http://parameter.com/description/spacecraft#dimension">
+        <rdf:type rdf:resource="http://parameter.com/vocabulary/parameter#StateVariable"/>
+        <parameter:hasId>St_6</parameter:hasId>
+        <parameter:hasName>dimension</parameter:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://parameter.com/description/spacecraft#eclss -->
+
+
+    <owl:NamedIndividual rdf:about="http://parameter.com/description/spacecraft#eclss">
+        <rdf:type rdf:resource="http://parameter.com/vocabulary/parameter#System"/>
+        <parameter:Contains rdf:resource="http://parameter.com/description/spacecraft#air_revitalization"/>
+        <parameter:hasId>System_1</parameter:hasId>
+        <parameter:hasName>eclss</parameter:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://parameter.com/description/spacecraft#filter_1 -->
+
+
+    <owl:NamedIndividual rdf:about="http://parameter.com/description/spacecraft#filter_1">
+        <rdf:type rdf:resource="http://parameter.com/vocabulary/parameter#Device"/>
+        <parameter:HC2_Follows rdf:resource="http://parameter.com/description/spacecraft#sorbent_bed_1"/>
+        <parameter:HasHealthStatus rdf:resource="http://parameter.com/description/spacecraft#clogging"/>
+        <parameter:hasId>Device_1.1</parameter:hasId>
+        <parameter:hasName>filter_1</parameter:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://parameter.com/description/spacecraft#filter_2 -->
+
+
+    <owl:NamedIndividual rdf:about="http://parameter.com/description/spacecraft#filter_2">
+        <rdf:type rdf:resource="http://parameter.com/vocabulary/parameter#Device"/>
+        <parameter:HC1_Follows rdf:resource="http://parameter.com/description/spacecraft#sorbent_bed_2"/>
+        <parameter:HasHealthStatus rdf:resource="http://parameter.com/description/spacecraft#clogging"/>
+        <parameter:hasId>Device_1.2</parameter:hasId>
+        <parameter:hasName>filter_2</parameter:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://parameter.com/description/spacecraft#filter_clog_fault -->
+
+
+    <owl:NamedIndividual rdf:about="http://parameter.com/description/spacecraft#filter_clog_fault">
+        <rdf:type rdf:resource="http://parameter.com/vocabulary/parameter#ParameterSlot"/>
+        <parameter:Receives rdf:resource="http://parameter.com/description/spacecraft#filter_clog_fault_1"/>
+        <parameter:Receives rdf:resource="http://parameter.com/description/spacecraft#filter_clog_fault_2"/>
+        <parameter:Represents rdf:resource="http://parameter.com/description/spacecraft#leakage"/>
+        <parameter:hasAssignedValue>1000</parameter:hasAssignedValue>
+        <parameter:hasDomain>[1e-5;1000]</parameter:hasDomain>
+        <parameter:hasId>PaS_12</parameter:hasId>
+        <parameter:hasName>filter_clog_fault</parameter:hasName>
+        <parameter:hasNominalValue>1000</parameter:hasNominalValue>
+        <parameter:hasUnit>kmol/s/bar</parameter:hasUnit>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://parameter.com/description/spacecraft#filter_clog_fault_1 -->
+
+
+    <owl:NamedIndividual rdf:about="http://parameter.com/description/spacecraft#filter_clog_fault_1">
+        <rdf:type rdf:resource="http://parameter.com/vocabulary/parameter#ParameterCandidate"/>
+        <parameter:hasId>PaC_12-1</parameter:hasId>
+        <parameter:hasName>filter_clog_fault_1</parameter:hasName>
+        <parameter:hasProbability rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.4</parameter:hasProbability>
+        <parameter:hasValue>1e-5</parameter:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://parameter.com/description/spacecraft#filter_clog_fault_2 -->
+
+
+    <owl:NamedIndividual rdf:about="http://parameter.com/description/spacecraft#filter_clog_fault_2">
+        <rdf:type rdf:resource="http://parameter.com/vocabulary/parameter#ParameterCandidate"/>
+        <parameter:hasId>PaC_12-2</parameter:hasId>
+        <parameter:hasName>filter_clog_fault_2</parameter:hasName>
+        <parameter:hasProbability rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.6</parameter:hasProbability>
+        <parameter:hasValue>1000</parameter:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://parameter.com/description/spacecraft#flow_rate -->
+
+
+    <owl:NamedIndividual rdf:about="http://parameter.com/description/spacecraft#flow_rate">
+        <rdf:type rdf:resource="http://parameter.com/vocabulary/parameter#ParameterSlot"/>
+        <parameter:Receives rdf:resource="http://parameter.com/description/spacecraft#flow_rate_1"/>
+        <parameter:Receives rdf:resource="http://parameter.com/description/spacecraft#flow_rate_2"/>
+        <parameter:Represents rdf:resource="http://parameter.com/description/spacecraft#airflow"/>
+        <parameter:hasAssignedValue>5</parameter:hasAssignedValue>
+        <parameter:hasDomain>[5;10]</parameter:hasDomain>
+        <parameter:hasId>PaS_7</parameter:hasId>
+        <parameter:hasName>flow_rate</parameter:hasName>
+        <parameter:hasNominalValue>5</parameter:hasNominalValue>
+        <parameter:hasUnit>kmol/s</parameter:hasUnit>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://parameter.com/description/spacecraft#flow_rate_1 -->
+
+
+    <owl:NamedIndividual rdf:about="http://parameter.com/description/spacecraft#flow_rate_1">
+        <rdf:type rdf:resource="http://parameter.com/vocabulary/parameter#ParameterCandidate"/>
+        <parameter:hasId>PaC_7-1</parameter:hasId>
+        <parameter:hasName>flow_rate_1</parameter:hasName>
+        <parameter:hasProbability rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.6</parameter:hasProbability>
+        <parameter:hasValue>5</parameter:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://parameter.com/description/spacecraft#flow_rate_2 -->
+
+
+    <owl:NamedIndividual rdf:about="http://parameter.com/description/spacecraft#flow_rate_2">
+        <rdf:type rdf:resource="http://parameter.com/vocabulary/parameter#ParameterCandidate"/>
+        <parameter:hasId>PaC_7-2</parameter:hasId>
+        <parameter:hasName>flow_rate_2</parameter:hasName>
+        <parameter:hasProbability rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.4</parameter:hasProbability>
+        <parameter:hasValue>10</parameter:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://parameter.com/description/spacecraft#gateway -->
+
+
+    <owl:NamedIndividual rdf:about="http://parameter.com/description/spacecraft#gateway">
+        <rdf:type rdf:resource="http://parameter.com/vocabulary/parameter#Station"/>
+        <parameter:Contains rdf:resource="http://parameter.com/description/spacecraft#i-hab"/>
+        <parameter:hasId>Station_1</parameter:hasId>
+        <parameter:hasName>gateway</parameter:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://parameter.com/description/spacecraft#generation -->
+
+
+    <owl:NamedIndividual rdf:about="http://parameter.com/description/spacecraft#generation">
+        <rdf:type rdf:resource="http://parameter.com/vocabulary/parameter#Subsystem"/>
+        <parameter:hasId>Subsystem_2</parameter:hasId>
+        <parameter:hasName>generation</parameter:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://parameter.com/description/spacecraft#heater -->
+
+
+    <owl:NamedIndividual rdf:about="http://parameter.com/description/spacecraft#heater">
+        <rdf:type rdf:resource="http://parameter.com/vocabulary/parameter#Device"/>
+        <parameter:HasHealthStatus rdf:resource="http://parameter.com/description/spacecraft#temperature"/>
+        <parameter:hasId>Device_5</parameter:hasId>
+        <parameter:hasName>heater</parameter:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://parameter.com/description/spacecraft#heater_fault -->
+
+
+    <owl:NamedIndividual rdf:about="http://parameter.com/description/spacecraft#heater_fault">
+        <rdf:type rdf:resource="http://parameter.com/vocabulary/parameter#ParameterSlot"/>
+        <parameter:Receives rdf:resource="http://parameter.com/description/spacecraft#heater_fault_1"/>
+        <parameter:Receives rdf:resource="http://parameter.com/description/spacecraft#heater_fault_2"/>
+        <parameter:Represents rdf:resource="http://parameter.com/description/spacecraft#temperature"/>
+        <parameter:hasAssignedValue>498</parameter:hasAssignedValue>
+        <parameter:hasDomain>[450;498]</parameter:hasDomain>
+        <parameter:hasId>PaS_9</parameter:hasId>
+        <parameter:hasName>heater_fault</parameter:hasName>
+        <parameter:hasNominalValue>498</parameter:hasNominalValue>
+        <parameter:hasUnit>K</parameter:hasUnit>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://parameter.com/description/spacecraft#heater_fault_1 -->
+
+
+    <owl:NamedIndividual rdf:about="http://parameter.com/description/spacecraft#heater_fault_1">
+        <rdf:type rdf:resource="http://parameter.com/vocabulary/parameter#ParameterCandidate"/>
+        <parameter:hasId>PaC_9-1</parameter:hasId>
+        <parameter:hasName>heater_fault_1</parameter:hasName>
+        <parameter:hasProbability rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.4</parameter:hasProbability>
+        <parameter:hasValue>450</parameter:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://parameter.com/description/spacecraft#heater_fault_2 -->
+
+
+    <owl:NamedIndividual rdf:about="http://parameter.com/description/spacecraft#heater_fault_2">
+        <rdf:type rdf:resource="http://parameter.com/vocabulary/parameter#ParameterCandidate"/>
+        <parameter:hasId>PaC_9-2</parameter:hasId>
+        <parameter:hasName>heater_fault_2</parameter:hasName>
+        <parameter:hasProbability rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.6</parameter:hasProbability>
+        <parameter:hasValue>498</parameter:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://parameter.com/description/spacecraft#i-hab -->
+
+
+    <owl:NamedIndividual rdf:about="http://parameter.com/description/spacecraft#i-hab">
+        <rdf:type rdf:resource="http://parameter.com/vocabulary/parameter#Module"/>
+        <parameter:Contains rdf:resource="http://parameter.com/description/spacecraft#eclss"/>
+        <parameter:Contains rdf:resource="http://parameter.com/description/spacecraft#power_unit"/>
+        <parameter:hasId>Module_1</parameter:hasId>
+        <parameter:hasName>i-hab</parameter:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://parameter.com/description/spacecraft#in-outlet_valve_1 -->
+
+
+    <owl:NamedIndividual rdf:about="http://parameter.com/description/spacecraft#in-outlet_valve_1">
+        <rdf:type rdf:resource="http://parameter.com/vocabulary/parameter#Device"/>
+        <parameter:HC2_Follows rdf:resource="http://parameter.com/description/spacecraft#desiccant_bed_1"/>
+        <parameter:HasHealthStatus rdf:resource="http://parameter.com/description/spacecraft#leakage"/>
+        <parameter:HasHealthStatus rdf:resource="http://parameter.com/description/spacecraft#stiction"/>
+        <parameter:hasId>Device_2.01</parameter:hasId>
+        <parameter:hasName>in-outlet_valve_1</parameter:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://parameter.com/description/spacecraft#in-outlet_valve_2 -->
+
+
+    <owl:NamedIndividual rdf:about="http://parameter.com/description/spacecraft#in-outlet_valve_2">
+        <rdf:type rdf:resource="http://parameter.com/vocabulary/parameter#Device"/>
+        <parameter:HC1_Follows rdf:resource="http://parameter.com/description/spacecraft#desiccant_bed_2"/>
+        <parameter:HasHealthStatus rdf:resource="http://parameter.com/description/spacecraft#leakage"/>
+        <parameter:HasHealthStatus rdf:resource="http://parameter.com/description/spacecraft#stiction"/>
+        <parameter:hasId>Device_2.02</parameter:hasId>
+        <parameter:hasName>in-outlet_valve_2</parameter:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://parameter.com/description/spacecraft#leak_fault -->
+
+
+    <owl:NamedIndividual rdf:about="http://parameter.com/description/spacecraft#leak_fault">
+        <rdf:type rdf:resource="http://parameter.com/vocabulary/parameter#ParameterSlot"/>
+        <parameter:Receives rdf:resource="http://parameter.com/description/spacecraft#leak_fault_1"/>
+        <parameter:Receives rdf:resource="http://parameter.com/description/spacecraft#leak_fault_2"/>
+        <parameter:Represents rdf:resource="http://parameter.com/description/spacecraft#leakage"/>
+        <parameter:hasAssignedValue>4.8e-10</parameter:hasAssignedValue>
+        <parameter:hasDomain>[4.8e-10;1e-8]</parameter:hasDomain>
+        <parameter:hasId>PaS_11</parameter:hasId>
+        <parameter:hasName>leak_fault</parameter:hasName>
+        <parameter:hasNominalValue>1e-8</parameter:hasNominalValue>
+        <parameter:hasUnit>kmol/s</parameter:hasUnit>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://parameter.com/description/spacecraft#leak_fault_1 -->
+
+
+    <owl:NamedIndividual rdf:about="http://parameter.com/description/spacecraft#leak_fault_1">
+        <rdf:type rdf:resource="http://parameter.com/vocabulary/parameter#ParameterCandidate"/>
+        <parameter:hasId>PaC_11-1</parameter:hasId>
+        <parameter:hasName>leak_fault_1</parameter:hasName>
+        <parameter:hasProbability rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.6</parameter:hasProbability>
+        <parameter:hasValue>4.8e-10</parameter:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://parameter.com/description/spacecraft#leak_fault_2 -->
+
+
+    <owl:NamedIndividual rdf:about="http://parameter.com/description/spacecraft#leak_fault_2">
+        <rdf:type rdf:resource="http://parameter.com/vocabulary/parameter#ParameterCandidate"/>
+        <parameter:hasId>PaC_11-2</parameter:hasId>
+        <parameter:hasName>leak_fault_2</parameter:hasName>
+        <parameter:hasProbability rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.4</parameter:hasProbability>
+        <parameter:hasValue>1e-8</parameter:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://parameter.com/description/spacecraft#leak_severity -->
+
+
+    <owl:NamedIndividual rdf:about="http://parameter.com/description/spacecraft#leak_severity">
+        <rdf:type rdf:resource="http://parameter.com/vocabulary/parameter#ParameterSlot"/>
+        <parameter:Receives rdf:resource="http://parameter.com/description/spacecraft#leak_severity_1"/>
+        <parameter:Receives rdf:resource="http://parameter.com/description/spacecraft#leak_severity_2"/>
+        <parameter:Represents rdf:resource="http://parameter.com/description/spacecraft#leakage"/>
+        <parameter:hasAssignedValue>4.8e-10</parameter:hasAssignedValue>
+        <parameter:hasDomain>[4.8e−10, 1e− 8]</parameter:hasDomain>
+        <parameter:hasId>PaS_2</parameter:hasId>
+        <parameter:hasName>leak_severity</parameter:hasName>
+        <parameter:hasNominalValue>4.8e-10</parameter:hasNominalValue>
+        <parameter:hasUnit>in^2</parameter:hasUnit>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://parameter.com/description/spacecraft#leak_severity_1 -->
+
+
+    <owl:NamedIndividual rdf:about="http://parameter.com/description/spacecraft#leak_severity_1">
+        <rdf:type rdf:resource="http://parameter.com/vocabulary/parameter#ParameterCandidate"/>
+        <parameter:hasId>PaC_2-1</parameter:hasId>
+        <parameter:hasName>leak_severity_1</parameter:hasName>
+        <parameter:hasProbability rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.6</parameter:hasProbability>
+        <parameter:hasValue>4.8e-10</parameter:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://parameter.com/description/spacecraft#leak_severity_2 -->
+
+
+    <owl:NamedIndividual rdf:about="http://parameter.com/description/spacecraft#leak_severity_2">
+        <rdf:type rdf:resource="http://parameter.com/vocabulary/parameter#ParameterCandidate"/>
+        <parameter:hasId>PaC_2-2</parameter:hasId>
+        <parameter:hasName>leak_severity_2</parameter:hasName>
+        <parameter:hasProbability rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.4</parameter:hasProbability>
+        <parameter:hasValue>1e−8</parameter:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://parameter.com/description/spacecraft#leakage -->
+
+
+    <owl:NamedIndividual rdf:about="http://parameter.com/description/spacecraft#leakage">
+        <rdf:type rdf:resource="http://parameter.com/vocabulary/parameter#StateVariable"/>
+        <parameter:hasId>St_2</parameter:hasId>
+        <parameter:hasName>leakage</parameter:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://parameter.com/description/spacecraft#lstm -->
+
+
+    <owl:NamedIndividual rdf:about="http://parameter.com/description/spacecraft#lstm">
+        <rdf:type rdf:resource="http://parameter.com/vocabulary/parameter#SimulationModel"/>
+        <parameter:IsComposedOf rdf:resource="http://parameter.com/description/spacecraft#lstm_param_filter"/>
+        <parameter:Simulates rdf:resource="http://parameter.com/description/spacecraft#filter_1"/>
+        <parameter:Simulates rdf:resource="http://parameter.com/description/spacecraft#filter_2"/>
+        <parameter:hasId>Mo_3</parameter:hasId>
+        <parameter:hasName>lstm</parameter:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://parameter.com/description/spacecraft#lstm_param_filter -->
+
+
+    <owl:NamedIndividual rdf:about="http://parameter.com/description/spacecraft#lstm_param_filter">
+        <rdf:type rdf:resource="http://parameter.com/vocabulary/parameter#ParameterSlot"/>
+        <parameter:Receives rdf:resource="http://parameter.com/description/spacecraft#lstm_param_filter_1"/>
+        <parameter:Receives rdf:resource="http://parameter.com/description/spacecraft#lstm_param_filter_2"/>
+        <parameter:Represents rdf:resource="http://parameter.com/description/spacecraft#clogging"/>
+        <parameter:hasAssignedValue>Mok</parameter:hasAssignedValue>
+        <parameter:hasDomain>[Mok;Mko]</parameter:hasDomain>
+        <parameter:hasId>PaS_14</parameter:hasId>
+        <parameter:hasName>lstm_param_filter</parameter:hasName>
+        <parameter:hasNominalValue>Mok</parameter:hasNominalValue>
+        <parameter:hasUnit>∅</parameter:hasUnit>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://parameter.com/description/spacecraft#lstm_param_filter_1 -->
+
+
+    <owl:NamedIndividual rdf:about="http://parameter.com/description/spacecraft#lstm_param_filter_1">
+        <rdf:type rdf:resource="http://parameter.com/vocabulary/parameter#ParameterCandidate"/>
+        <parameter:hasId>PaC_14-1</parameter:hasId>
+        <parameter:hasName>lstm_param_filter_1</parameter:hasName>
+        <parameter:hasProbability rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.6</parameter:hasProbability>
+        <parameter:hasValue>Mok</parameter:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://parameter.com/description/spacecraft#lstm_param_filter_2 -->
+
+
+    <owl:NamedIndividual rdf:about="http://parameter.com/description/spacecraft#lstm_param_filter_2">
+        <rdf:type rdf:resource="http://parameter.com/vocabulary/parameter#ParameterCandidate"/>
+        <parameter:hasId>PaC_14-2</parameter:hasId>
+        <parameter:hasName>lstm_param_filter_2</parameter:hasName>
+        <parameter:hasProbability rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.4</parameter:hasProbability>
+        <parameter:hasValue>Mko</parameter:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://parameter.com/description/spacecraft#mesh_size -->
+
+
+    <owl:NamedIndividual rdf:about="http://parameter.com/description/spacecraft#mesh_size">
+        <rdf:type rdf:resource="http://parameter.com/vocabulary/parameter#ParameterSlot"/>
+        <parameter:Receives rdf:resource="http://parameter.com/description/spacecraft#mesh_size_1"/>
+        <parameter:Receives rdf:resource="http://parameter.com/description/spacecraft#mesh_size_2"/>
+        <parameter:Represents rdf:resource="http://parameter.com/description/spacecraft#clogging"/>
+        <parameter:hasAssignedValue>60</parameter:hasAssignedValue>
+        <parameter:hasDomain>[2;60]</parameter:hasDomain>
+        <parameter:hasId>PaS_1</parameter:hasId>
+        <parameter:hasName>mesh_size</parameter:hasName>
+        <parameter:hasNominalValue>60</parameter:hasNominalValue>
+        <parameter:hasUnit>μm</parameter:hasUnit>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://parameter.com/description/spacecraft#mesh_size_1 -->
+
+
+    <owl:NamedIndividual rdf:about="http://parameter.com/description/spacecraft#mesh_size_1">
+        <rdf:type rdf:resource="http://parameter.com/vocabulary/parameter#ParameterCandidate"/>
+        <parameter:hasId>PaC_1-1</parameter:hasId>
+        <parameter:hasName>mesh_size_1</parameter:hasName>
+        <parameter:hasProbability rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.4</parameter:hasProbability>
+        <parameter:hasValue>2</parameter:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://parameter.com/description/spacecraft#mesh_size_2 -->
+
+
+    <owl:NamedIndividual rdf:about="http://parameter.com/description/spacecraft#mesh_size_2">
+        <rdf:type rdf:resource="http://parameter.com/vocabulary/parameter#ParameterCandidate"/>
+        <parameter:hasId>PaC_1-2</parameter:hasId>
+        <parameter:hasName>mesh_size_2</parameter:hasName>
+        <parameter:hasProbability rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.6</parameter:hasProbability>
+        <parameter:hasValue>60</parameter:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://parameter.com/description/spacecraft#pipe -->
+
+
+    <owl:NamedIndividual rdf:about="http://parameter.com/description/spacecraft#pipe">
+        <rdf:type rdf:resource="http://parameter.com/vocabulary/parameter#Device"/>
+        <parameter:HasHealthStatus rdf:resource="http://parameter.com/description/spacecraft#pressure"/>
+        <parameter:hasId>Device_3</parameter:hasId>
+        <parameter:hasName>pipe</parameter:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://parameter.com/description/spacecraft#power_unit -->
+
+
+    <owl:NamedIndividual rdf:about="http://parameter.com/description/spacecraft#power_unit">
+        <rdf:type rdf:resource="http://parameter.com/vocabulary/parameter#System"/>
+        <parameter:Contains rdf:resource="http://parameter.com/description/spacecraft#generation"/>
+        <parameter:Contains rdf:resource="http://parameter.com/description/spacecraft#storage"/>
+        <parameter:hasId>System_2</parameter:hasId>
+        <parameter:hasName>power_unit</parameter:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://parameter.com/description/spacecraft#precooler -->
+
+
+    <owl:NamedIndividual rdf:about="http://parameter.com/description/spacecraft#precooler">
+        <rdf:type rdf:resource="http://parameter.com/vocabulary/parameter#Device"/>
+        <parameter:HC1_Follows rdf:resource="http://parameter.com/description/spacecraft#air_blower"/>
+        <parameter:HC2_Follows rdf:resource="http://parameter.com/description/spacecraft#air_blower"/>
+        <parameter:hasId>Device_7</parameter:hasId>
+        <parameter:hasName>precooler</parameter:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://parameter.com/description/spacecraft#pressure -->
+
+
+    <owl:NamedIndividual rdf:about="http://parameter.com/description/spacecraft#pressure">
+        <rdf:type rdf:resource="http://parameter.com/vocabulary/parameter#StateVariable"/>
+        <parameter:hasId>St_4</parameter:hasId>
+        <parameter:hasName>pressure</parameter:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://parameter.com/description/spacecraft#primary -->
+
+
+    <owl:NamedIndividual rdf:about="http://parameter.com/description/spacecraft#primary">
+        <rdf:type rdf:resource="http://parameter.com/vocabulary/parameter#Component"/>
+        <parameter:hasId>Component_2</parameter:hasId>
+        <parameter:hasName>primary</parameter:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://parameter.com/description/spacecraft#regression -->
+
+
+    <owl:NamedIndividual rdf:about="http://parameter.com/description/spacecraft#regression">
+        <rdf:type rdf:resource="http://parameter.com/vocabulary/parameter#SimulationModel"/>
+        <parameter:IsComposedOf rdf:resource="http://parameter.com/description/spacecraft#activate_backup"/>
+        <parameter:Simulates rdf:resource="http://parameter.com/description/spacecraft#backup"/>
+        <parameter:hasId>Mo_4</parameter:hasId>
+        <parameter:hasName>regression</parameter:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://parameter.com/description/spacecraft#selection_valve_1 -->
+
+
+    <owl:NamedIndividual rdf:about="http://parameter.com/description/spacecraft#selection_valve_1">
+        <rdf:type rdf:resource="http://parameter.com/vocabulary/parameter#Device"/>
+        <parameter:HC1_Follows rdf:resource="http://parameter.com/description/spacecraft#desiccant_bed_1"/>
+        <parameter:HC2_Follows rdf:resource="http://parameter.com/description/spacecraft#desiccant_bed_2"/>
+        <parameter:HasHealthStatus rdf:resource="http://parameter.com/description/spacecraft#leakage"/>
+        <parameter:HasHealthStatus rdf:resource="http://parameter.com/description/spacecraft#stiction"/>
+        <parameter:hasId>Device_2.1</parameter:hasId>
+        <parameter:hasName>selection_valve_1</parameter:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://parameter.com/description/spacecraft#selection_valve_2 -->
+
+
+    <owl:NamedIndividual rdf:about="http://parameter.com/description/spacecraft#selection_valve_2">
+        <rdf:type rdf:resource="http://parameter.com/vocabulary/parameter#Device"/>
+        <parameter:HC1_Follows rdf:resource="http://parameter.com/description/spacecraft#precooler"/>
+        <parameter:HC2_Follows rdf:resource="http://parameter.com/description/spacecraft#precooler"/>
+        <parameter:HasHealthStatus rdf:resource="http://parameter.com/description/spacecraft#leakage"/>
+        <parameter:HasHealthStatus rdf:resource="http://parameter.com/description/spacecraft#stiction"/>
+        <parameter:hasId>Device_2.2</parameter:hasId>
+        <parameter:hasName>selection_valve_2</parameter:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://parameter.com/description/spacecraft#selection_valve_3 -->
+
+
+    <owl:NamedIndividual rdf:about="http://parameter.com/description/spacecraft#selection_valve_3">
+        <rdf:type rdf:resource="http://parameter.com/vocabulary/parameter#Device"/>
+        <parameter:HC1_Follows rdf:resource="http://parameter.com/description/spacecraft#sorbent_bed_1"/>
+        <parameter:HC2_Follows rdf:resource="http://parameter.com/description/spacecraft#sorbent_bed_2"/>
+        <parameter:HasHealthStatus rdf:resource="http://parameter.com/description/spacecraft#leakage"/>
+        <parameter:HasHealthStatus rdf:resource="http://parameter.com/description/spacecraft#stiction"/>
+        <parameter:hasId>Device_2.3</parameter:hasId>
+        <parameter:hasName>selection_valve_3</parameter:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://parameter.com/description/spacecraft#selection_valve_4 -->
+
+
+    <owl:NamedIndividual rdf:about="http://parameter.com/description/spacecraft#selection_valve_4">
+        <rdf:type rdf:resource="http://parameter.com/vocabulary/parameter#Device"/>
+        <parameter:HC1_Follows rdf:resource="http://parameter.com/description/spacecraft#selection_valve_3"/>
+        <parameter:HC2_Follows rdf:resource="http://parameter.com/description/spacecraft#selection_valve_3"/>
+        <parameter:HasHealthStatus rdf:resource="http://parameter.com/description/spacecraft#leakage"/>
+        <parameter:HasHealthStatus rdf:resource="http://parameter.com/description/spacecraft#stiction"/>
+        <parameter:hasId>Device_2.4</parameter:hasId>
+        <parameter:hasName>selection_valve_4</parameter:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://parameter.com/description/spacecraft#simulink -->
+
+
+    <owl:NamedIndividual rdf:about="http://parameter.com/description/spacecraft#simulink">
+        <rdf:type rdf:resource="http://parameter.com/vocabulary/parameter#SimulationModel"/>
+        <parameter:IsComposedOf rdf:resource="http://parameter.com/description/spacecraft#check_valve_severity"/>
+        <parameter:IsComposedOf rdf:resource="http://parameter.com/description/spacecraft#leak_severity"/>
+        <parameter:IsComposedOf rdf:resource="http://parameter.com/description/spacecraft#mesh_size"/>
+        <parameter:IsComposedOf rdf:resource="http://parameter.com/description/spacecraft#vacuum_severity"/>
+        <parameter:Simulates rdf:resource="http://parameter.com/description/spacecraft#filter_1"/>
+        <parameter:Simulates rdf:resource="http://parameter.com/description/spacecraft#filter_2"/>
+        <parameter:Simulates rdf:resource="http://parameter.com/description/spacecraft#pipe"/>
+        <parameter:Simulates rdf:resource="http://parameter.com/description/spacecraft#selection_valve_1"/>
+        <parameter:Simulates rdf:resource="http://parameter.com/description/spacecraft#selection_valve_2"/>
+        <parameter:Simulates rdf:resource="http://parameter.com/description/spacecraft#selection_valve_3"/>
+        <parameter:Simulates rdf:resource="http://parameter.com/description/spacecraft#selection_valve_4"/>
+        <parameter:hasId>Mo_1</parameter:hasId>
+        <parameter:hasName>simulink</parameter:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://parameter.com/description/spacecraft#sorbent_bed_1 -->
+
+
+    <owl:NamedIndividual rdf:about="http://parameter.com/description/spacecraft#sorbent_bed_1">
+        <rdf:type rdf:resource="http://parameter.com/vocabulary/parameter#Device"/>
+        <parameter:HC2_Follows rdf:resource="http://parameter.com/description/spacecraft#selection_valve_2"/>
+        <parameter:HasHealthStatus rdf:resource="http://parameter.com/description/spacecraft#dimension"/>
+        <parameter:HasHealthStatus rdf:resource="http://parameter.com/description/spacecraft#water"/>
+        <parameter:hasId>Device_4.3</parameter:hasId>
+        <parameter:hasName>sorbent_bed_1</parameter:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://parameter.com/description/spacecraft#sorbent_bed_2 -->
+
+
+    <owl:NamedIndividual rdf:about="http://parameter.com/description/spacecraft#sorbent_bed_2">
+        <rdf:type rdf:resource="http://parameter.com/vocabulary/parameter#Device"/>
+        <parameter:HC1_Follows rdf:resource="http://parameter.com/description/spacecraft#selection_valve_2"/>
+        <parameter:HasHealthStatus rdf:resource="http://parameter.com/description/spacecraft#dimension"/>
+        <parameter:HasHealthStatus rdf:resource="http://parameter.com/description/spacecraft#water"/>
+        <parameter:hasId>Device_4.4</parameter:hasId>
+        <parameter:hasName>sorbent_bed_2</parameter:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://parameter.com/description/spacecraft#stiction -->
+
+
+    <owl:NamedIndividual rdf:about="http://parameter.com/description/spacecraft#stiction">
+        <rdf:type rdf:resource="http://parameter.com/vocabulary/parameter#StateVariable"/>
+        <parameter:hasId>St_3</parameter:hasId>
+        <parameter:hasName>stiction</parameter:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://parameter.com/description/spacecraft#storage -->
+
+
+    <owl:NamedIndividual rdf:about="http://parameter.com/description/spacecraft#storage">
+        <rdf:type rdf:resource="http://parameter.com/vocabulary/parameter#Subsystem"/>
+        <parameter:Contains rdf:resource="http://parameter.com/description/spacecraft#auxiliary"/>
+        <parameter:Contains rdf:resource="http://parameter.com/description/spacecraft#primary"/>
+        <parameter:hasId>Subsystem_3</parameter:hasId>
+        <parameter:hasName>storage</parameter:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://parameter.com/description/spacecraft#sustained_valve_fault -->
+
+
+    <owl:NamedIndividual rdf:about="http://parameter.com/description/spacecraft#sustained_valve_fault">
+        <rdf:type rdf:resource="http://parameter.com/vocabulary/parameter#ParameterSlot"/>
+        <parameter:Receives rdf:resource="http://parameter.com/description/spacecraft#sustained_valve_fault_1"/>
+        <parameter:Receives rdf:resource="http://parameter.com/description/spacecraft#sustained_valve_fault_2"/>
+        <parameter:Represents rdf:resource="http://parameter.com/description/spacecraft#stiction"/>
+        <parameter:hasAssignedValue>1000</parameter:hasAssignedValue>
+        <parameter:hasDomain>[1e-5;1000]</parameter:hasDomain>
+        <parameter:hasId>PaS_8</parameter:hasId>
+        <parameter:hasName>sustained_valve_fault</parameter:hasName>
+        <parameter:hasNominalValue>1000</parameter:hasNominalValue>
+        <parameter:hasUnit>kmol/s/bar</parameter:hasUnit>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://parameter.com/description/spacecraft#sustained_valve_fault_1 -->
+
+
+    <owl:NamedIndividual rdf:about="http://parameter.com/description/spacecraft#sustained_valve_fault_1">
+        <rdf:type rdf:resource="http://parameter.com/vocabulary/parameter#ParameterCandidate"/>
+        <parameter:hasId>PaC_8-1</parameter:hasId>
+        <parameter:hasName>sustained_valve_fault_1</parameter:hasName>
+        <parameter:hasProbability rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.2</parameter:hasProbability>
+        <parameter:hasValue>1e-5</parameter:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://parameter.com/description/spacecraft#sustained_valve_fault_2 -->
+
+
+    <owl:NamedIndividual rdf:about="http://parameter.com/description/spacecraft#sustained_valve_fault_2">
+        <rdf:type rdf:resource="http://parameter.com/vocabulary/parameter#ParameterCandidate"/>
+        <parameter:hasId>PaC_8-2</parameter:hasId>
+        <parameter:hasName>sustained_valve_fault_2</parameter:hasName>
+        <parameter:hasProbability rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.8</parameter:hasProbability>
+        <parameter:hasValue>1000</parameter:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://parameter.com/description/spacecraft#temperature -->
+
+
+    <owl:NamedIndividual rdf:about="http://parameter.com/description/spacecraft#temperature">
+        <rdf:type rdf:resource="http://parameter.com/vocabulary/parameter#StateVariable"/>
+        <parameter:hasId>St_8</parameter:hasId>
+        <parameter:hasName>temperature</parameter:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://parameter.com/description/spacecraft#vacuum_fault -->
+
+
+    <owl:NamedIndividual rdf:about="http://parameter.com/description/spacecraft#vacuum_fault">
+        <rdf:type rdf:resource="http://parameter.com/vocabulary/parameter#ParameterSlot"/>
+        <parameter:Receives rdf:resource="http://parameter.com/description/spacecraft#vacuum_fault_1"/>
+        <parameter:Receives rdf:resource="http://parameter.com/description/spacecraft#vacuum_fault_2"/>
+        <parameter:Represents rdf:resource="http://parameter.com/description/spacecraft#pressure"/>
+        <parameter:hasAssignedValue>10</parameter:hasAssignedValue>
+        <parameter:hasDomain>[10;80]</parameter:hasDomain>
+        <parameter:hasId>PaS_10</parameter:hasId>
+        <parameter:hasName>vacuum_fault</parameter:hasName>
+        <parameter:hasNominalValue>10</parameter:hasNominalValue>
+        <parameter:hasUnit>kPa</parameter:hasUnit>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://parameter.com/description/spacecraft#vacuum_fault_1 -->
+
+
+    <owl:NamedIndividual rdf:about="http://parameter.com/description/spacecraft#vacuum_fault_1">
+        <rdf:type rdf:resource="http://parameter.com/vocabulary/parameter#ParameterCandidate"/>
+        <parameter:hasId>PaC_10-1</parameter:hasId>
+        <parameter:hasName>vacuum_fault_1</parameter:hasName>
+        <parameter:hasProbability rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.6</parameter:hasProbability>
+        <parameter:hasValue>10</parameter:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://parameter.com/description/spacecraft#vacuum_fault_2 -->
+
+
+    <owl:NamedIndividual rdf:about="http://parameter.com/description/spacecraft#vacuum_fault_2">
+        <rdf:type rdf:resource="http://parameter.com/vocabulary/parameter#ParameterCandidate"/>
+        <parameter:hasId>PaC_10-2</parameter:hasId>
+        <parameter:hasName>vacuum_fault_2</parameter:hasName>
+        <parameter:hasProbability rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.4</parameter:hasProbability>
+        <parameter:hasValue>80</parameter:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://parameter.com/description/spacecraft#vacuum_severity -->
+
+
+    <owl:NamedIndividual rdf:about="http://parameter.com/description/spacecraft#vacuum_severity">
+        <rdf:type rdf:resource="http://parameter.com/vocabulary/parameter#ParameterSlot"/>
+        <parameter:Receives rdf:resource="http://parameter.com/description/spacecraft#vacuum_severity_1"/>
+        <parameter:Receives rdf:resource="http://parameter.com/description/spacecraft#vacuum_severity_2"/>
+        <parameter:Represents rdf:resource="http://parameter.com/description/spacecraft#pressure"/>
+        <parameter:hasAssignedValue>606</parameter:hasAssignedValue>
+        <parameter:hasDomain>[606;1156]</parameter:hasDomain>
+        <parameter:hasId>PaS_4</parameter:hasId>
+        <parameter:hasName>vacuum_severity</parameter:hasName>
+        <parameter:hasNominalValue>606</parameter:hasNominalValue>
+        <parameter:hasUnit>Pa</parameter:hasUnit>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://parameter.com/description/spacecraft#vacuum_severity_1 -->
+
+
+    <owl:NamedIndividual rdf:about="http://parameter.com/description/spacecraft#vacuum_severity_1">
+        <rdf:type rdf:resource="http://parameter.com/vocabulary/parameter#ParameterCandidate"/>
+        <parameter:hasId>PaC_4-1</parameter:hasId>
+        <parameter:hasName>vacuum_severity_1</parameter:hasName>
+        <parameter:hasProbability rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.6</parameter:hasProbability>
+        <parameter:hasValue>606</parameter:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://parameter.com/description/spacecraft#vacuum_severity_2 -->
+
+
+    <owl:NamedIndividual rdf:about="http://parameter.com/description/spacecraft#vacuum_severity_2">
+        <rdf:type rdf:resource="http://parameter.com/vocabulary/parameter#ParameterCandidate"/>
+        <parameter:hasId>PaC_4-2</parameter:hasId>
+        <parameter:hasName>vacuum_severity_2</parameter:hasName>
+        <parameter:hasProbability rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.4</parameter:hasProbability>
+        <parameter:hasValue>1156</parameter:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://parameter.com/description/spacecraft#water -->
+
+
+    <owl:NamedIndividual rdf:about="http://parameter.com/description/spacecraft#water">
+        <rdf:type rdf:resource="http://parameter.com/vocabulary/parameter#StateVariable"/>
+        <parameter:hasId>St_9</parameter:hasId>
+        <parameter:hasName>water</parameter:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://parameter.com/description/spacecraft#water_preload -->
+
+
+    <owl:NamedIndividual rdf:about="http://parameter.com/description/spacecraft#water_preload">
+        <rdf:type rdf:resource="http://parameter.com/vocabulary/parameter#ParameterSlot"/>
+        <parameter:Receives rdf:resource="http://parameter.com/description/spacecraft#water_preload_1"/>
+        <parameter:Receives rdf:resource="http://parameter.com/description/spacecraft#water_preload_2"/>
+        <parameter:Represents rdf:resource="http://parameter.com/description/spacecraft#water"/>
+        <parameter:hasAssignedValue>0</parameter:hasAssignedValue>
+        <parameter:hasDomain>[0;1e-3]</parameter:hasDomain>
+        <parameter:hasId>PaS_13</parameter:hasId>
+        <parameter:hasName>water_preload</parameter:hasName>
+        <parameter:hasNominalValue>0</parameter:hasNominalValue>
+        <parameter:hasUnit>kmol/kmol</parameter:hasUnit>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://parameter.com/description/spacecraft#water_preload_1 -->
+
+
+    <owl:NamedIndividual rdf:about="http://parameter.com/description/spacecraft#water_preload_1">
+        <rdf:type rdf:resource="http://parameter.com/vocabulary/parameter#ParameterCandidate"/>
+        <parameter:hasId>PaC_13-1</parameter:hasId>
+        <parameter:hasName>water_preload_1</parameter:hasName>
+        <parameter:hasProbability rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.6</parameter:hasProbability>
+        <parameter:hasValue>0</parameter:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://parameter.com/description/spacecraft#water_preload_2 -->
+
+
+    <owl:NamedIndividual rdf:about="http://parameter.com/description/spacecraft#water_preload_2">
+        <rdf:type rdf:resource="http://parameter.com/vocabulary/parameter#ParameterCandidate"/>
+        <parameter:hasId>PaC_13-2</parameter:hasId>
+        <parameter:hasName>water_preload_2</parameter:hasName>
+        <parameter:hasProbability rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.4</parameter:hasProbability>
+        <parameter:hasValue>1e-3</parameter:hasValue>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.17.2020-11-07T15:03:35Z) https://github.com/owlcs/owlapi/ -->
+
+

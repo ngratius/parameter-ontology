@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuites name="http://parameter.com/description/bundle">
+  <testsuite name="Consistency">
+    <testcase name="http://parameter.com/description/bundle"/>
+  </testsuite>
+  <testsuite name="Satisfiability">
+    <testcase name="http://parameter.com/vocabulary/parameter#Subsystem"/>
+    <testcase name="http://parameter.com/vocabulary/parameter#IdentifiedEntity"/>
+    <testcase name="http://parameter.com/vocabulary/parameter#Input"/>
+    <testcase name="http://parameter.com/vocabulary/parameter#ModelComponent"/>
+    <testcase name="http://parameter.com/vocabulary/parameter#PhysicalEntity"/>
+    <testcase name="http://parameter.com/vocabulary/parameter#Component"/>
+    <testcase name="http://parameter.com/vocabulary/parameter#Station"/>
+    <testcase name="http://parameter.com/vocabulary/parameter#Output"/>
+    <testcase name="http://parameter.com/vocabulary/parameter#ParameterCandidate"/>
+    <testcase name="http://parameter.com/vocabulary/parameter#Module"/>
+    <testcase name="http://parameter.com/vocabulary/parameter#Device"/>
+    <testcase name="http://parameter.com/vocabulary/parameter#ParameterSlot"/>
+    <testcase name="http://parameter.com/vocabulary/parameter#SimulationModel"/>
+    <testcase name="http://parameter.com/vocabulary/parameter#StateVariable"/>
+    <testcase name="http://parameter.com/vocabulary/parameter#System"/>
+  </testsuite>
+</testsuites>

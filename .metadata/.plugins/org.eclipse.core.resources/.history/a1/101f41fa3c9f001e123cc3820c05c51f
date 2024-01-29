@@ -1,0 +1,154 @@
+vocabulary <http://parameter.com/vocabulary/parameter#> as parameter {
+
+	extends <http://www.w3.org/2001/XMLSchema#> as xsd
+
+	extends <http://www.w3.org/2000/01/rdf-schema#> as rdfs
+
+	// Top level
+	@rdfs:comment "The class of things that are uniquely identified by id"
+	aspect IdentifiedEntity [
+		key hasId
+	]
+
+	@rdfs:comment "The id property of an identified thing"
+	scalar property hasId [
+		domain IdentifiedEntity
+		range xsd:string
+		functional
+	]
+
+	// Identified Things
+	@rdfs:comment "The class of simulation models"
+	concept SimulationModel < IdentifiedEntity
+
+	@rdfs:comment "The class of model components"
+	concept ModelComponent < IdentifiedEntity
+
+	@rdfs:comment "The class of systems"
+	concept PhysicalEntity < IdentifiedEntity
+
+	relation IsComposedOf [
+		from SimulationModel
+		to ModelComponent
+	]
+
+	concept Input < ModelComponent
+
+	concept ParameterSlot < ModelComponent
+
+	concept Output < ModelComponent
+
+	relation Simulates [
+		from SimulationModel
+		to PhysicalEntity
+	]
+
+	concept StateVariable < IdentifiedEntity
+
+	relation HasHealthStatus [
+		from PhysicalEntity
+		to StateVariable
+	]
+
+	scalar property hasName [
+		domain IdentifiedEntity
+		range xsd:string
+		functional
+	]
+
+	scalar property hasAssignedValue [
+		domain ParameterSlot
+		range xsd:string
+		functional
+	]
+
+	@rdfs:comment "The class of parameter candidates"
+	concept ParameterCandidate < IdentifiedEntity
+
+	scalar property hasNominalValue [
+		domain ParameterSlot
+		range xsd:string
+		functional
+	]
+
+	scalar property hasUnit [
+		domain ParameterSlot
+		range xsd:string
+		functional
+	]
+
+	scalar property hasDomain [
+		domain ParameterSlot
+		range xsd:string
+	]
+
+	scalar property hasValue [
+		domain ParameterCandidate
+		range xsd:string
+		functional
+	]
+
+	scalar property hasProbability [
+		domain ParameterCandidate
+		range xsd:float
+		functional
+	]
+
+	relation Receives [
+		from ParameterSlot
+		to ParameterCandidate
+	]
+
+	relation Represents [
+		from ParameterSlot
+		to StateVariable
+	]
+
+	concept Module < PhysicalEntity
+
+	concept System < PhysicalEntity
+
+	concept Station < PhysicalEntity
+
+	concept Subsystem < PhysicalEntity
+
+	concept Component < PhysicalEntity
+
+	concept Device < PhysicalEntity
+
+	relation Contains [
+		from PhysicalEntity
+		to PhysicalEntity
+		reverse isContainedIn
+		transitive
+		asymmetric
+		irreflexive
+	]
+
+	relation Powers [
+		from PhysicalEntity
+		to PhysicalEntity
+		reverse isPoweredBy
+		transitive
+		asymmetric
+		irreflexive
+	]
+
+	relation HC1_Follows [
+		from Device
+		to Device
+		reverse HC1_Precedes
+		transitive
+		asymmetric
+		irreflexive
+	]
+
+	relation HC2_Follows [
+		from Device
+		to Device
+		reverse HC2_Precedes
+		transitive
+		asymmetric
+		irreflexive
+	]
+}

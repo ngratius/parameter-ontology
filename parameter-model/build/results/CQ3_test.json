@@ -1,0 +1,238 @@
+{ "head": {
+    "vars": [ "system_id" , "system_name" , "model_id" , "model_name" , "slot_id" , "slot_name" , "candidate_domain" , "slot_unit" ]
+  } ,
+  "results": {
+    "bindings": [
+      { 
+        "system_id": { "type": "literal" , "value": "Device_1.1" } ,
+        "system_name": { "type": "literal" , "value": "filter_1" } ,
+        "model_id": { "type": "literal" , "value": "Mo_2" } ,
+        "model_name": { "type": "literal" , "value": "aspen" } ,
+        "slot_id": { "type": "literal" , "value": "PaS_6" } ,
+        "slot_name": { "type": "literal" , "value": "bed_length" } ,
+        "candidate_domain": { "type": "literal" , "value": "[15;25]" } ,
+        "slot_unit": { "type": "literal" , "value": "in" }
+      } ,
+      { 
+        "system_id": { "type": "literal" , "value": "Device_1.1" } ,
+        "system_name": { "type": "literal" , "value": "filter_1" } ,
+        "model_id": { "type": "literal" , "value": "Mo_2" } ,
+        "model_name": { "type": "literal" , "value": "aspen" } ,
+        "slot_id": { "type": "literal" , "value": "PaS_5" } ,
+        "slot_name": { "type": "literal" , "value": "crew_size" } ,
+        "candidate_domain": { "type": "literal" , "value": "[2;10]" } ,
+        "slot_unit": { "type": "literal" , "value": "∅" }
+      } ,
+      { 
+        "system_id": { "type": "literal" , "value": "Device_1.1" } ,
+        "system_name": { "type": "literal" , "value": "filter_1" } ,
+        "model_id": { "type": "literal" , "value": "Mo_2" } ,
+        "model_name": { "type": "literal" , "value": "aspen" } ,
+        "slot_id": { "type": "literal" , "value": "PaS_12" } ,
+        "slot_name": { "type": "literal" , "value": "filter_clog_fault" } ,
+        "candidate_domain": { "type": "literal" , "value": "[1e-5;1000]" } ,
+        "slot_unit": { "type": "literal" , "value": "kmol/s/bar" }
+      } ,
+      { 
+        "system_id": { "type": "literal" , "value": "Device_1.1" } ,
+        "system_name": { "type": "literal" , "value": "filter_1" } ,
+        "model_id": { "type": "literal" , "value": "Mo_2" } ,
+        "model_name": { "type": "literal" , "value": "aspen" } ,
+        "slot_id": { "type": "literal" , "value": "PaS_7" } ,
+        "slot_name": { "type": "literal" , "value": "flow_rate" } ,
+        "candidate_domain": { "type": "literal" , "value": "[5;10]" } ,
+        "slot_unit": { "type": "literal" , "value": "kmol/s" }
+      } ,
+      { 
+        "system_id": { "type": "literal" , "value": "Device_1.1" } ,
+        "system_name": { "type": "literal" , "value": "filter_1" } ,
+        "model_id": { "type": "literal" , "value": "Mo_2" } ,
+        "model_name": { "type": "literal" , "value": "aspen" } ,
+        "slot_id": { "type": "literal" , "value": "PaS_9" } ,
+        "slot_name": { "type": "literal" , "value": "heater_fault" } ,
+        "candidate_domain": { "type": "literal" , "value": "[450;498]" } ,
+        "slot_unit": { "type": "literal" , "value": "K" }
+      } ,
+      { 
+        "system_id": { "type": "literal" , "value": "Device_1.1" } ,
+        "system_name": { "type": "literal" , "value": "filter_1" } ,
+        "model_id": { "type": "literal" , "value": "Mo_2" } ,
+        "model_name": { "type": "literal" , "value": "aspen" } ,
+        "slot_id": { "type": "literal" , "value": "PaS_11" } ,
+        "slot_name": { "type": "literal" , "value": "leak_fault" } ,
+        "candidate_domain": { "type": "literal" , "value": "[4.8e-10;1e-8]" } ,
+        "slot_unit": { "type": "literal" , "value": "kmol/s" }
+      } ,
+      { 
+        "system_id": { "type": "literal" , "value": "Device_1.1" } ,
+        "system_name": { "type": "literal" , "value": "filter_1" } ,
+        "model_id": { "type": "literal" , "value": "Mo_2" } ,
+        "model_name": { "type": "literal" , "value": "aspen" } ,
+        "slot_id": { "type": "literal" , "value": "PaS_8" } ,
+        "slot_name": { "type": "literal" , "value": "sustained_valve_fault" } ,
+        "candidate_domain": { "type": "literal" , "value": "[1e-5;1000]" } ,
+        "slot_unit": { "type": "literal" , "value": "kmol/s/bar" }
+      } ,
+      { 
+        "system_id": { "type": "literal" , "value": "Device_1.1" } ,
+        "system_name": { "type": "literal" , "value": "filter_1" } ,
+        "model_id": { "type": "literal" , "value": "Mo_2" } ,
+        "model_name": { "type": "literal" , "value": "aspen" } ,
+        "slot_id": { "type": "literal" , "value": "PaS_10" } ,
+        "slot_name": { "type": "literal" , "value": "vacuum_fault" } ,
+        "candidate_domain": { "type": "literal" , "value": "[10;80]" } ,
+        "slot_unit": { "type": "literal" , "value": "kPa" }
+      } ,
+      { 
+        "system_id": { "type": "literal" , "value": "Device_1.1" } ,
+        "system_name": { "type": "literal" , "value": "filter_1" } ,
+        "model_id": { "type": "literal" , "value": "Mo_2" } ,
+        "model_name": { "type": "literal" , "value": "aspen" } ,
+        "slot_id": { "type": "literal" , "value": "PaS_13" } ,
+        "slot_name": { "type": "literal" , "value": "water_preload" } ,
+        "candidate_domain": { "type": "literal" , "value": "[0;1e-3]" } ,
+        "slot_unit": { "type": "literal" , "value": "kmol/kmol" }
+      } ,
+      { 
+        "system_id": { "type": "literal" , "value": "Device_1.1" } ,
+        "system_name": { "type": "literal" , "value": "filter_1" } ,
+        "model_id": { "type": "literal" , "value": "Mo_3" } ,
+        "model_name": { "type": "literal" , "value": "lstm" } ,
+        "slot_id": { "type": "literal" , "value": "PaS_14" } ,
+        "slot_name": { "type": "literal" , "value": "lstm_param_filter" } ,
+        "candidate_domain": { "type": "literal" , "value": "[Mok;Mko]" } ,
+        "slot_unit": { "type": "literal" , "value": "∅" }
+      } ,
+      { 
+        "system_id": { "type": "literal" , "value": "Device_1.1" } ,
+        "system_name": { "type": "literal" , "value": "filter_1" } ,
+        "model_id": { "type": "literal" , "value": "Mo_1" } ,
+        "model_name": { "type": "literal" , "value": "simulink" } ,
+        "slot_id": { "type": "literal" , "value": "PaS_3" } ,
+        "slot_name": { "type": "literal" , "value": "check_valve_severity" } ,
+        "candidate_domain": { "type": "literal" , "value": "[3e−7;45]" } ,
+        "slot_unit": { "type": "literal" , "value": "deg" }
+      } ,
+      { 
+        "system_id": { "type": "literal" , "value": "Device_1.1" } ,
+        "system_name": { "type": "literal" , "value": "filter_1" } ,
+        "model_id": { "type": "literal" , "value": "Mo_1" } ,
+        "model_name": { "type": "literal" , "value": "simulink" } ,
+        "slot_id": { "type": "literal" , "value": "PaS_2" } ,
+        "slot_name": { "type": "literal" , "value": "leak_severity" } ,
+        "candidate_domain": { "type": "literal" , "value": "[4.8e−10, 1e− 8]" } ,
+        "slot_unit": { "type": "literal" , "value": "in^2" }
+      } ,
+      { 
+        "system_id": { "type": "literal" , "value": "Device_1.1" } ,
+        "system_name": { "type": "literal" , "value": "filter_1" } ,
+        "model_id": { "type": "literal" , "value": "Mo_1" } ,
+        "model_name": { "type": "literal" , "value": "simulink" } ,
+        "slot_id": { "type": "literal" , "value": "PaS_1" } ,
+        "slot_name": { "type": "literal" , "value": "mesh_size" } ,
+        "candidate_domain": { "type": "literal" , "value": "[2;60]" } ,
+        "slot_unit": { "type": "literal" , "value": "μm" }
+      } ,
+      { 
+        "system_id": { "type": "literal" , "value": "Device_1.1" } ,
+        "system_name": { "type": "literal" , "value": "filter_1" } ,
+        "model_id": { "type": "literal" , "value": "Mo_1" } ,
+        "model_name": { "type": "literal" , "value": "simulink" } ,
+        "slot_id": { "type": "literal" , "value": "PaS_4" } ,
+        "slot_name": { "type": "literal" , "value": "vacuum_severity" } ,
+        "candidate_domain": { "type": "literal" , "value": "[606;1156]" } ,
+        "slot_unit": { "type": "literal" , "value": "Pa" }
+      } ,
+      { 
+        "system_id": { "type": "literal" , "value": "Device_4.1" } ,
+        "system_name": { "type": "literal" , "value": "desiccant_bed_1" } ,
+        "model_id": { "type": "literal" , "value": "Mo_2" } ,
+        "model_name": { "type": "literal" , "value": "aspen" } ,
+        "slot_id": { "type": "literal" , "value": "PaS_6" } ,
+        "slot_name": { "type": "literal" , "value": "bed_length" } ,
+        "candidate_domain": { "type": "literal" , "value": "[15;25]" } ,
+        "slot_unit": { "type": "literal" , "value": "in" }
+      } ,
+      { 
+        "system_id": { "type": "literal" , "value": "Device_4.1" } ,
+        "system_name": { "type": "literal" , "value": "desiccant_bed_1" } ,
+        "model_id": { "type": "literal" , "value": "Mo_2" } ,
+        "model_name": { "type": "literal" , "value": "aspen" } ,
+        "slot_id": { "type": "literal" , "value": "PaS_5" } ,
+        "slot_name": { "type": "literal" , "value": "crew_size" } ,
+        "candidate_domain": { "type": "literal" , "value": "[2;10]" } ,
+        "slot_unit": { "type": "literal" , "value": "∅" }
+      } ,
+      { 
+        "system_id": { "type": "literal" , "value": "Device_4.1" } ,
+        "system_name": { "type": "literal" , "value": "desiccant_bed_1" } ,
+        "model_id": { "type": "literal" , "value": "Mo_2" } ,
+        "model_name": { "type": "literal" , "value": "aspen" } ,
+        "slot_id": { "type": "literal" , "value": "PaS_12" } ,
+        "slot_name": { "type": "literal" , "value": "filter_clog_fault" } ,
+        "candidate_domain": { "type": "literal" , "value": "[1e-5;1000]" } ,
+        "slot_unit": { "type": "literal" , "value": "kmol/s/bar" }
+      } ,
+      { 
+        "system_id": { "type": "literal" , "value": "Device_4.1" } ,
+        "system_name": { "type": "literal" , "value": "desiccant_bed_1" } ,
+        "model_id": { "type": "literal" , "value": "Mo_2" } ,
+        "model_name": { "type": "literal" , "value": "aspen" } ,
+        "slot_id": { "type": "literal" , "value": "PaS_7" } ,
+        "slot_name": { "type": "literal" , "value": "flow_rate" } ,
+        "candidate_domain": { "type": "literal" , "value": "[5;10]" } ,
+        "slot_unit": { "type": "literal" , "value": "kmol/s" }
+      } ,
+      { 
+        "system_id": { "type": "literal" , "value": "Device_4.1" } ,
+        "system_name": { "type": "literal" , "value": "desiccant_bed_1" } ,
+        "model_id": { "type": "literal" , "value": "Mo_2" } ,
+        "model_name": { "type": "literal" , "value": "aspen" } ,
+        "slot_id": { "type": "literal" , "value": "PaS_9" } ,
+        "slot_name": { "type": "literal" , "value": "heater_fault" } ,
+        "candidate_domain": { "type": "literal" , "value": "[450;498]" } ,
+        "slot_unit": { "type": "literal" , "value": "K" }
+      } ,
+      { 
+        "system_id": { "type": "literal" , "value": "Device_4.1" } ,
+        "system_name": { "type": "literal" , "value": "desiccant_bed_1" } ,
+        "model_id": { "type": "literal" , "value": "Mo_2" } ,
+        "model_name": { "type": "literal" , "value": "aspen" } ,
+        "slot_id": { "type": "literal" , "value": "PaS_11" } ,
+        "slot_name": { "type": "literal" , "value": "leak_fault" } ,
+        "candidate_domain": { "type": "literal" , "value": "[4.8e-10;1e-8]" } ,
+        "slot_unit": { "type": "literal" , "value": "kmol/s" }
+      } ,
+      { 
+        "system_id": { "type": "literal" , "value": "Device_4.1" } ,
+        "system_name": { "type": "literal" , "value": "desiccant_bed_1" } ,
+        "model_id": { "type": "literal" , "value": "Mo_2" } ,
+        "model_name": { "type": "literal" , "value": "aspen" } ,
+        "slot_id": { "type": "literal" , "value": "PaS_8" } ,
+        "slot_name": { "type": "literal" , "value": "sustained_valve_fault" } ,
+        "candidate_domain": { "type": "literal" , "value": "[1e-5;1000]" } ,
+        "slot_unit": { "type": "literal" , "value": "kmol/s/bar" }
+      } ,
+      { 
+        "system_id": { "type": "literal" , "value": "Device_4.1" } ,
+        "system_name": { "type": "literal" , "value": "desiccant_bed_1" } ,
+        "model_id": { "type": "literal" , "value": "Mo_2" } ,
+        "model_name": { "type": "literal" , "value": "aspen" } ,
+        "slot_id": { "type": "literal" , "value": "PaS_10" } ,
+        "slot_name": { "type": "literal" , "value": "vacuum_fault" } ,
+        "candidate_domain": { "type": "literal" , "value": "[10;80]" } ,
+        "slot_unit": { "type": "literal" , "value": "kPa" }
+      } ,
+      { 
+        "system_id": { "type": "literal" , "value": "Device_4.1" } ,
+        "system_name": { "type": "literal" , "value": "desiccant_bed_1" } ,
+        "model_id": { "type": "literal" , "value": "Mo_2" } ,
+        "model_name": { "type": "literal" , "value": "aspen" } ,
+        "slot_id": { "type": "literal" , "value": "PaS_13" } ,
+        "slot_name": { "type": "literal" , "value": "water_preload" } ,
+        "candidate_domain": { "type": "literal" , "value": "[0;1e-3]" } ,
+        "slot_unit": { "type": "literal" , "value": "kmol/kmol" }
+      }
+    ]
+  }
+}

@@ -1,0 +1,26 @@
+PREFIX v:       <http://parameter.com/vocabulary/parameter#>
+PREFIX rdfs:    <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?Slot_name ?Id ?Value ?NominalValue ?Unit ?maxProbability ?StateVariableName ?SystemName
+WHERE{
+	?Slot v:hasName ?Slot_name.
+	?Slot v:Receives ?Candidate.
+	?Candidate v:hasName ?Id.
+	?Candidate v:hasValue ?Value.
+	?Slot v:hasUnit ?Unit.
+	?Candidate v:hasProbability ?maxProbability.
+	?Slot v:Represents ?StateVariable.
+	?StateVariable v:hasName ?StateVariableName.
+	?System v:HasHealthStatus ?StateVariable.
+	?System v:hasName ?SystemName.
+	?Slot v:hasNominalValue ?NominalValue.
+	
+	{
+		SELECT ?Slot (MAX(?Probability) as ?maxProbability)
+		WHERE {
+		?Slot v:Receives ?Candidate.
+		?Candidate v:hasProbability ?Probability.
+		}
+		GROUP BY ?Slot
+	}
+}

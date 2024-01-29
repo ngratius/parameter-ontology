@@ -1,0 +1,529 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://parameter.com/vocabulary/parameter#"
+     xml:base="http://parameter.com/vocabulary/parameter"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:parameter="http://parameter.com/vocabulary/parameter#">
+    <owl:Ontology rdf:about="http://parameter.com/vocabulary/parameter">
+        <dc:type rdf:resource="http://opencaesar.io/oml#Vocabulary"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/type -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/type"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://parameter.com/vocabulary/parameter#Contains -->
+
+
+    <owl:ObjectProperty rdf:about="http://parameter.com/vocabulary/parameter#Contains">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://parameter.com/vocabulary/parameter#PhysicalEntity"/>
+        <rdfs:range rdf:resource="http://parameter.com/vocabulary/parameter#PhysicalEntity"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#UnreifiedRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://parameter.com/vocabulary/parameter#HC1_Follows -->
+
+
+    <owl:ObjectProperty rdf:about="http://parameter.com/vocabulary/parameter#HC1_Follows">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://parameter.com/vocabulary/parameter#Device"/>
+        <rdfs:range rdf:resource="http://parameter.com/vocabulary/parameter#Device"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#UnreifiedRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://parameter.com/vocabulary/parameter#HC1_Precedes -->
+
+
+    <owl:ObjectProperty rdf:about="http://parameter.com/vocabulary/parameter#HC1_Precedes">
+        <owl:inverseOf rdf:resource="http://parameter.com/vocabulary/parameter#HC1_Follows"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://parameter.com/vocabulary/parameter#Device"/>
+        <rdfs:range rdf:resource="http://parameter.com/vocabulary/parameter#Device"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#reverseRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://parameter.com/vocabulary/parameter#HC2_Follows -->
+
+
+    <owl:ObjectProperty rdf:about="http://parameter.com/vocabulary/parameter#HC2_Follows">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://parameter.com/vocabulary/parameter#Device"/>
+        <rdfs:range rdf:resource="http://parameter.com/vocabulary/parameter#Device"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#UnreifiedRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://parameter.com/vocabulary/parameter#HC2_Precedes -->
+
+
+    <owl:ObjectProperty rdf:about="http://parameter.com/vocabulary/parameter#HC2_Precedes">
+        <owl:inverseOf rdf:resource="http://parameter.com/vocabulary/parameter#HC2_Follows"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://parameter.com/vocabulary/parameter#Device"/>
+        <rdfs:range rdf:resource="http://parameter.com/vocabulary/parameter#Device"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#reverseRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://parameter.com/vocabulary/parameter#HasHealthStatus -->
+
+
+    <owl:ObjectProperty rdf:about="http://parameter.com/vocabulary/parameter#HasHealthStatus">
+        <rdfs:domain rdf:resource="http://parameter.com/vocabulary/parameter#PhysicalEntity"/>
+        <rdfs:range rdf:resource="http://parameter.com/vocabulary/parameter#StateVariable"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#UnreifiedRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://parameter.com/vocabulary/parameter#IsComposedOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://parameter.com/vocabulary/parameter#IsComposedOf">
+        <rdfs:domain rdf:resource="http://parameter.com/vocabulary/parameter#SimulationModel"/>
+        <rdfs:range rdf:resource="http://parameter.com/vocabulary/parameter#ModelComponent"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#UnreifiedRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://parameter.com/vocabulary/parameter#Powers -->
+
+
+    <owl:ObjectProperty rdf:about="http://parameter.com/vocabulary/parameter#Powers">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://parameter.com/vocabulary/parameter#PhysicalEntity"/>
+        <rdfs:range rdf:resource="http://parameter.com/vocabulary/parameter#PhysicalEntity"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#UnreifiedRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://parameter.com/vocabulary/parameter#Receives -->
+
+
+    <owl:ObjectProperty rdf:about="http://parameter.com/vocabulary/parameter#Receives">
+        <rdfs:domain rdf:resource="http://parameter.com/vocabulary/parameter#ParameterSlot"/>
+        <rdfs:range rdf:resource="http://parameter.com/vocabulary/parameter#ParameterCandidate"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#UnreifiedRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://parameter.com/vocabulary/parameter#Represents -->
+
+
+    <owl:ObjectProperty rdf:about="http://parameter.com/vocabulary/parameter#Represents">
+        <rdfs:domain rdf:resource="http://parameter.com/vocabulary/parameter#ParameterSlot"/>
+        <rdfs:range rdf:resource="http://parameter.com/vocabulary/parameter#StateVariable"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#UnreifiedRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://parameter.com/vocabulary/parameter#Simulates -->
+
+
+    <owl:ObjectProperty rdf:about="http://parameter.com/vocabulary/parameter#Simulates">
+        <rdfs:domain rdf:resource="http://parameter.com/vocabulary/parameter#SimulationModel"/>
+        <rdfs:range rdf:resource="http://parameter.com/vocabulary/parameter#PhysicalEntity"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#UnreifiedRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://parameter.com/vocabulary/parameter#isContainedIn -->
+
+
+    <owl:ObjectProperty rdf:about="http://parameter.com/vocabulary/parameter#isContainedIn">
+        <owl:inverseOf rdf:resource="http://parameter.com/vocabulary/parameter#Contains"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://parameter.com/vocabulary/parameter#PhysicalEntity"/>
+        <rdfs:range rdf:resource="http://parameter.com/vocabulary/parameter#PhysicalEntity"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#reverseRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://parameter.com/vocabulary/parameter#isPoweredBy -->
+
+
+    <owl:ObjectProperty rdf:about="http://parameter.com/vocabulary/parameter#isPoweredBy">
+        <owl:inverseOf rdf:resource="http://parameter.com/vocabulary/parameter#Powers"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://parameter.com/vocabulary/parameter#PhysicalEntity"/>
+        <rdfs:range rdf:resource="http://parameter.com/vocabulary/parameter#PhysicalEntity"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#reverseRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://parameter.com/vocabulary/parameter#hasAssignedValue -->
+
+
+    <owl:DatatypeProperty rdf:about="http://parameter.com/vocabulary/parameter#hasAssignedValue">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://parameter.com/vocabulary/parameter#ParameterSlot"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#scalarProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://parameter.com/vocabulary/parameter#hasDomain -->
+
+
+    <owl:DatatypeProperty rdf:about="http://parameter.com/vocabulary/parameter#hasDomain">
+        <rdfs:domain rdf:resource="http://parameter.com/vocabulary/parameter#ParameterSlot"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#scalarProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://parameter.com/vocabulary/parameter#hasId -->
+
+
+    <owl:DatatypeProperty rdf:about="http://parameter.com/vocabulary/parameter#hasId">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://parameter.com/vocabulary/parameter#IdentifiedEntity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#scalarProperty"/>
+        <rdfs:comment>The id property of an identified thing</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://parameter.com/vocabulary/parameter#hasName -->
+
+
+    <owl:DatatypeProperty rdf:about="http://parameter.com/vocabulary/parameter#hasName">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://parameter.com/vocabulary/parameter#IdentifiedEntity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#scalarProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://parameter.com/vocabulary/parameter#hasNominalValue -->
+
+
+    <owl:DatatypeProperty rdf:about="http://parameter.com/vocabulary/parameter#hasNominalValue">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://parameter.com/vocabulary/parameter#ParameterSlot"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#scalarProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://parameter.com/vocabulary/parameter#hasProbability -->
+
+
+    <owl:DatatypeProperty rdf:about="http://parameter.com/vocabulary/parameter#hasProbability">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://parameter.com/vocabulary/parameter#ParameterCandidate"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#scalarProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://parameter.com/vocabulary/parameter#hasUnit -->
+
+
+    <owl:DatatypeProperty rdf:about="http://parameter.com/vocabulary/parameter#hasUnit">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://parameter.com/vocabulary/parameter#ParameterSlot"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#scalarProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://parameter.com/vocabulary/parameter#hasValue -->
+
+
+    <owl:DatatypeProperty rdf:about="http://parameter.com/vocabulary/parameter#hasValue">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://parameter.com/vocabulary/parameter#ParameterCandidate"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#scalarProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://parameter.com/vocabulary/parameter#Component -->
+
+
+    <owl:Class rdf:about="http://parameter.com/vocabulary/parameter#Component">
+        <rdfs:subClassOf rdf:resource="http://parameter.com/vocabulary/parameter#PhysicalEntity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://parameter.com/vocabulary/parameter#Contains"/>
+                <owl:allValuesFrom rdf:resource="http://parameter.com/vocabulary/parameter#Device"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:type rdf:resource="http://opencaesar.io/oml#Concept"/>
+    </owl:Class>
+    
+
+
+    <!-- http://parameter.com/vocabulary/parameter#Device -->
+
+
+    <owl:Class rdf:about="http://parameter.com/vocabulary/parameter#Device">
+        <rdfs:subClassOf rdf:resource="http://parameter.com/vocabulary/parameter#PhysicalEntity"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#Concept"/>
+    </owl:Class>
+    
+
+
+    <!-- http://parameter.com/vocabulary/parameter#IdentifiedEntity -->
+
+
+    <owl:Class rdf:about="http://parameter.com/vocabulary/parameter#IdentifiedEntity">
+        <owl:hasKey rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://parameter.com/vocabulary/parameter#hasId"/>
+        </owl:hasKey>
+        <dc:type rdf:resource="http://opencaesar.io/oml#Aspect"/>
+        <rdfs:comment>The class of things that are uniquely identified by id</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://parameter.com/vocabulary/parameter#Input -->
+
+
+    <owl:Class rdf:about="http://parameter.com/vocabulary/parameter#Input">
+        <rdfs:subClassOf rdf:resource="http://parameter.com/vocabulary/parameter#ModelComponent"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#Concept"/>
+    </owl:Class>
+    
+
+
+    <!-- http://parameter.com/vocabulary/parameter#ModelComponent -->
+
+
+    <owl:Class rdf:about="http://parameter.com/vocabulary/parameter#ModelComponent">
+        <rdfs:subClassOf rdf:resource="http://parameter.com/vocabulary/parameter#IdentifiedEntity"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#Concept"/>
+        <rdfs:comment>The class of model components</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://parameter.com/vocabulary/parameter#Module -->
+
+
+    <owl:Class rdf:about="http://parameter.com/vocabulary/parameter#Module">
+        <rdfs:subClassOf rdf:resource="http://parameter.com/vocabulary/parameter#PhysicalEntity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://parameter.com/vocabulary/parameter#Contains"/>
+                <owl:allValuesFrom rdf:resource="http://parameter.com/vocabulary/parameter#System"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:type rdf:resource="http://opencaesar.io/oml#Concept"/>
+    </owl:Class>
+    
+
+
+    <!-- http://parameter.com/vocabulary/parameter#Output -->
+
+
+    <owl:Class rdf:about="http://parameter.com/vocabulary/parameter#Output">
+        <rdfs:subClassOf rdf:resource="http://parameter.com/vocabulary/parameter#ModelComponent"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#Concept"/>
+    </owl:Class>
+    
+
+
+    <!-- http://parameter.com/vocabulary/parameter#ParameterCandidate -->
+
+
+    <owl:Class rdf:about="http://parameter.com/vocabulary/parameter#ParameterCandidate">
+        <rdfs:subClassOf rdf:resource="http://parameter.com/vocabulary/parameter#IdentifiedEntity"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#Concept"/>
+        <rdfs:comment>The class of parameter candidates</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://parameter.com/vocabulary/parameter#ParameterSlot -->
+
+
+    <owl:Class rdf:about="http://parameter.com/vocabulary/parameter#ParameterSlot">
+        <rdfs:subClassOf rdf:resource="http://parameter.com/vocabulary/parameter#ModelComponent"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#Concept"/>
+    </owl:Class>
+    
+
+
+    <!-- http://parameter.com/vocabulary/parameter#PhysicalEntity -->
+
+
+    <owl:Class rdf:about="http://parameter.com/vocabulary/parameter#PhysicalEntity">
+        <rdfs:subClassOf rdf:resource="http://parameter.com/vocabulary/parameter#IdentifiedEntity"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#Concept"/>
+        <rdfs:comment>The class of systems</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://parameter.com/vocabulary/parameter#SimulationModel -->
+
+
+    <owl:Class rdf:about="http://parameter.com/vocabulary/parameter#SimulationModel">
+        <rdfs:subClassOf rdf:resource="http://parameter.com/vocabulary/parameter#IdentifiedEntity"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#Concept"/>
+        <rdfs:comment>The class of simulation models</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://parameter.com/vocabulary/parameter#StateVariable -->
+
+
+    <owl:Class rdf:about="http://parameter.com/vocabulary/parameter#StateVariable">
+        <rdfs:subClassOf rdf:resource="http://parameter.com/vocabulary/parameter#IdentifiedEntity"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#Concept"/>
+    </owl:Class>
+    
+
+
+    <!-- http://parameter.com/vocabulary/parameter#Station -->
+
+
+    <owl:Class rdf:about="http://parameter.com/vocabulary/parameter#Station">
+        <rdfs:subClassOf rdf:resource="http://parameter.com/vocabulary/parameter#PhysicalEntity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://parameter.com/vocabulary/parameter#Contains"/>
+                <owl:allValuesFrom rdf:resource="http://parameter.com/vocabulary/parameter#Module"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:type rdf:resource="http://opencaesar.io/oml#Concept"/>
+    </owl:Class>
+    
+
+
+    <!-- http://parameter.com/vocabulary/parameter#Subsystem -->
+
+
+    <owl:Class rdf:about="http://parameter.com/vocabulary/parameter#Subsystem">
+        <rdfs:subClassOf rdf:resource="http://parameter.com/vocabulary/parameter#PhysicalEntity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://parameter.com/vocabulary/parameter#Contains"/>
+                <owl:allValuesFrom rdf:resource="http://parameter.com/vocabulary/parameter#Component"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:type rdf:resource="http://opencaesar.io/oml#Concept"/>
+    </owl:Class>
+    
+
+
+    <!-- http://parameter.com/vocabulary/parameter#System -->
+
+
+    <owl:Class rdf:about="http://parameter.com/vocabulary/parameter#System">
+        <rdfs:subClassOf rdf:resource="http://parameter.com/vocabulary/parameter#PhysicalEntity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://parameter.com/vocabulary/parameter#Contains"/>
+                <owl:allValuesFrom rdf:resource="http://parameter.com/vocabulary/parameter#Subsystem"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:type rdf:resource="http://opencaesar.io/oml#Concept"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.17.2020-11-07T15:03:35Z) https://github.com/owlcs/owlapi/ -->
+
+

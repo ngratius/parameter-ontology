@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete 10 resources" deleteContents="false" description="Delete 10 resources" element1="/parameter-model/build/results/CQ1_calibrate.json" element10="/parameter-model/build/results/max_proba_v2.json" element2="/parameter-model/build/results/CQ1_get_most_likely_param.json" element3="/parameter-model/build/results/CQ2_assess.json" element4="/parameter-model/build/results/CQ2_get_assigned_proba.json" element5="/parameter-model/build/results/CQ2.json" element6="/parameter-model/build/results/CQ3_test.json" element7="/parameter-model/build/results/get_all_param.json" element8="/parameter-model/build/results/get_most_likely_param.json" element9="/parameter-model/build/results/max_proba_v1.json" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="10" stamp="1701158875666"/>
+</session>

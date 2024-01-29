@@ -1,0 +1,760 @@
+@dc:description "A description of the simulation parameters of a specific spacecraft"
+description <http://parameter.com/description/spacecraft#> as spacecraft {
+
+	// LOAD VOCABULARIES
+	// The [spacecraft] description "uses" the [parameter] vocabulary terms in assertions 
+	uses <http://parameter.com/vocabulary/parameter#> as v
+
+	uses <http://www.w3.org/2001/XMLSchema#> as xsd
+
+	uses <http://purl.org/dc/elements/1.1/> as dc
+
+	// MODELS
+	instance simulink : v:SimulationModel [
+		v:hasId "Mo_1"
+		v:hasName "simulink"
+		v:IsComposedOf mesh_size
+		v:IsComposedOf leak_severity
+		v:IsComposedOf check_valve_severity
+		v:IsComposedOf vacuum_severity
+		v:Simulates filter_1
+		v:Simulates filter_2
+		v:Simulates selection_valve_1
+		v:Simulates selection_valve_2
+		v:Simulates selection_valve_3
+		v:Simulates selection_valve_4
+		v:Simulates pipe
+	]
+
+	instance aspen : v:SimulationModel [
+		v:hasId "Mo_2"
+		v:hasName "aspen"
+		v:IsComposedOf crew_size
+		v:IsComposedOf bed_length
+		v:IsComposedOf flow_rate
+		v:IsComposedOf sustained_valve_fault
+		v:IsComposedOf heater_fault
+		v:IsComposedOf vacuum_fault
+		v:IsComposedOf leak_fault
+		v:IsComposedOf filter_clog_fault
+		v:IsComposedOf water_preload
+		v:Simulates crew
+		v:Simulates desiccant_bed_1
+		v:Simulates desiccant_bed_2
+		v:Simulates sorbent_bed_1
+		v:Simulates sorbent_bed_2
+		v:Simulates pipe
+		v:Simulates selection_valve_1
+		v:Simulates selection_valve_2
+		v:Simulates selection_valve_3
+		v:Simulates selection_valve_4
+		v:Simulates heater
+		v:Simulates filter_1
+		v:Simulates filter_2
+	]
+
+	instance lstm : v:SimulationModel [
+		v:hasId "Mo_3"
+		v:hasName "lstm"
+		v:IsComposedOf lstm_param_filter
+		v:Simulates filter_1
+		v:Simulates filter_2
+	]
+
+	instance regression : v:SimulationModel [
+		v:hasId "Mo_4"
+		v:hasName "regression"
+		v:IsComposedOf activate_backup
+		v:Simulates backup
+	]
+
+	// PARAMETERS
+	// mesh_size
+	instance mesh_size : v:ParameterSlot [
+		v:hasId "PaS_1"
+		v:hasName "mesh_size"
+		v:Represents clogging
+		v:hasAssignedValue "60"
+		v:hasNominalValue "60"
+		v:hasUnit "μm"
+		v:hasDomain "[2;60]"
+		v:Receives mesh_size_1
+		v:Receives mesh_size_2
+	]
+
+	instance mesh_size_1 : v:ParameterCandidate [
+		v:hasName "mesh_size_1"
+		v:hasId "PaC_1-1"
+		v:hasValue "2"
+		v:hasProbability "0.4"^^xsd:float
+	]
+
+	instance mesh_size_2 : v:ParameterCandidate [
+		v:hasName "mesh_size_2"
+		v:hasId "PaC_1-2"
+		v:hasValue "60"
+		v:hasProbability "0.6"^^xsd:float
+	]
+
+	// leak_severity
+	instance leak_severity : v:ParameterSlot [
+		v:hasId "PaS_2"
+		v:hasName "leak_severity"
+		v:Represents leakage
+		v:hasAssignedValue "4.8e-10"
+		v:hasNominalValue "4.8e-10"
+		v:hasUnit "in^2"
+		v:hasDomain "[4.8e−10, 1e− 8]"
+		v:Receives leak_severity_1
+		v:Receives leak_severity_2
+	]
+
+	instance leak_severity_1 : v:ParameterCandidate [
+		v:hasId "PaC_2-1"
+		v:hasName "leak_severity_1"
+		v:hasValue "4.8e-10"
+		v:hasProbability "0.6"^^xsd:float
+	]
+
+	instance leak_severity_2 : v:ParameterCandidate [
+		v:hasId "PaC_2-2"
+		v:hasName "leak_severity_2"
+		v:hasValue "1e−8"
+		v:hasProbability "0.4"^^xsd:float
+	]
+
+	// check_valve_severity
+	instance check_valve_severity : v:ParameterSlot [
+		v:hasId "PaS_3"
+		v:hasName "check_valve_severity"
+		v:Represents stiction
+		v:hasAssignedValue "3e−7"
+		v:hasNominalValue "3e−7"
+		v:hasUnit "deg"
+		v:hasDomain "[3e−7;45]"
+		v:Receives check_valve_severity_1
+		v:Receives check_valve_severity_2
+	]
+
+	instance check_valve_severity_1 : v:ParameterCandidate [
+		v:hasId "PaC_3-1"
+		v:hasName "check_valve_severity_1"
+		v:hasValue "3e−7"
+		v:hasProbability "0.6"^^xsd:float
+	]
+
+	instance check_valve_severity_2 : v:ParameterCandidate [
+		v:hasId "PaC_3-2"
+		v:hasName "check_valve_severity_2"
+		v:hasValue "45"
+		v:hasProbability "0.4"^^xsd:float
+	]
+
+	// vacuum_severity
+	instance vacuum_severity : v:ParameterSlot [
+		v:hasId "PaS_4"
+		v:hasName "vacuum_severity"
+		v:Represents pressure
+		v:hasAssignedValue "606"
+		v:hasNominalValue "606"
+		v:hasUnit "Pa"
+		v:hasDomain "[606;1156]"
+		v:Receives vacuum_severity_1
+		v:Receives vacuum_severity_2
+	]
+
+	instance vacuum_severity_1 : v:ParameterCandidate [
+		v:hasId "PaC_4-1"
+		v:hasName "vacuum_severity_1"
+		v:hasValue "606"
+		v:hasProbability "0.6"^^xsd:float
+	]
+
+	instance vacuum_severity_2 : v:ParameterCandidate [
+		v:hasId "PaC_4-2"
+		v:hasName "vacuum_severity_2"
+		v:hasValue "1156"
+		v:hasProbability "0.4"^^xsd:float
+	]
+
+	// crew_size
+	instance crew_size : v:ParameterSlot [
+		v:hasId "PaS_5"
+		v:hasName "crew_size"
+		v:Represents count
+		v:hasAssignedValue "2"
+		v:hasNominalValue "∅"
+		v:hasUnit "∅"
+		v:hasDomain "[2;10]"
+		v:Receives crew_size_1
+		v:Receives crew_size_2
+	]
+
+	instance crew_size_1 : v:ParameterCandidate [
+		v:hasId "PaC_5-1"
+		v:hasName "crew_size_1"
+		v:hasValue "2"
+		v:hasProbability "0.6"^^xsd:float
+	]
+
+	instance crew_size_2 : v:ParameterCandidate [
+		v:hasId "PaC_5-2"
+		v:hasName "crew_size_2"
+		v:hasValue "10"
+		v:hasProbability "0.4"^^xsd:float
+	]
+
+	// bed_length
+	instance bed_length : v:ParameterSlot [
+		v:hasId "PaS_6"
+		v:hasName "bed_length"
+		v:Represents dimension
+		v:hasAssignedValue "15"
+		v:hasNominalValue "∅"
+		v:hasUnit "in"
+		v:hasDomain "[15;25]"
+		v:Receives bed_length_1
+		v:Receives bed_length_2
+	]
+
+	instance bed_length_1 : v:ParameterCandidate [
+		v:hasId "PaC_6-1"
+		v:hasName "bed_length_1"
+		v:hasValue "15"
+		v:hasProbability "0.6"^^xsd:float
+	]
+
+	instance bed_length_2 : v:ParameterCandidate [
+		v:hasId "PaC_6-2"
+		v:hasName "bed_length_2"
+		v:hasValue "25"
+		v:hasProbability "0.4"^^xsd:float
+	]
+
+	// flow_rate
+	instance flow_rate : v:ParameterSlot [
+		v:hasId "PaS_7"
+		v:hasName "flow_rate"
+		v:Represents airflow
+		v:hasAssignedValue "5"
+		v:hasNominalValue "5"
+		v:hasUnit "kmol/s"
+		v:hasDomain "[5;10]"
+		v:Receives flow_rate_1
+		v:Receives flow_rate_2
+	]
+
+	instance flow_rate_1 : v:ParameterCandidate [
+		v:hasId "PaC_7-1"
+		v:hasName "flow_rate_1"
+		v:hasValue "5"
+		v:hasProbability "0.6"^^xsd:float
+	]
+
+	instance flow_rate_2 : v:ParameterCandidate [
+		v:hasId "PaC_7-2"
+		v:hasName "flow_rate_2"
+		v:hasValue "10"
+		v:hasProbability "0.4"^^xsd:float
+	]
+
+	// sustained_valve_fault
+	instance sustained_valve_fault : v:ParameterSlot [
+		v:hasId "PaS_8"
+		v:hasName "sustained_valve_fault"
+		v:Represents stiction
+		v:hasAssignedValue "1000"
+		v:hasNominalValue "1000"
+		v:hasUnit "kmol/s/bar"
+		v:hasDomain "[1e-5;1000]"
+		v:Receives sustained_valve_fault_1
+		v:Receives sustained_valve_fault_2
+	]
+
+	instance sustained_valve_fault_1 : v:ParameterCandidate [
+		v:hasId "PaC_8-1"
+		v:hasName "sustained_valve_fault_1"
+		v:hasValue "1e-5"
+		v:hasProbability "0.2"^^xsd:float
+	]
+
+	instance sustained_valve_fault_2 : v:ParameterCandidate [
+		v:hasId "PaC_8-2"
+		v:hasName "sustained_valve_fault_2"
+		v:hasValue "1000"
+		v:hasProbability "0.8"^^xsd:float
+	]
+
+	// heater_fault
+	instance heater_fault : v:ParameterSlot [
+		v:hasId "PaS_9"
+		v:hasName "heater_fault"
+		v:Represents temperature
+		v:hasAssignedValue "498"
+		v:hasNominalValue "498"
+		v:hasUnit "K"
+		v:hasDomain "[450;498]"
+		v:Receives heater_fault_1
+		v:Receives heater_fault_2
+	]
+
+	instance heater_fault_1 : v:ParameterCandidate [
+		v:hasId "PaC_9-1"
+		v:hasName "heater_fault_1"
+		v:hasValue "450"
+		v:hasProbability "0.4"^^xsd:float
+	]
+
+	instance heater_fault_2 : v:ParameterCandidate [
+		v:hasId "PaC_9-2"
+		v:hasName "heater_fault_2"
+		v:hasValue "498"
+		v:hasProbability "0.6"^^xsd:float
+	]
+
+	// vacuum_fault
+	instance vacuum_fault : v:ParameterSlot [
+		v:hasId "PaS_10"
+		v:hasName "vacuum_fault"
+		v:Represents pressure
+		v:hasAssignedValue "10"
+		v:hasNominalValue "10"
+		v:hasUnit "kPa"
+		v:hasDomain "[10;80]"
+		v:Receives vacuum_fault_1
+		v:Receives vacuum_fault_2
+	]
+
+	instance vacuum_fault_1 : v:ParameterCandidate [
+		v:hasId "PaC_10-1"
+		v:hasName "vacuum_fault_1"
+		v:hasValue "10"
+		v:hasProbability "0.6"^^xsd:float
+	]
+
+	instance vacuum_fault_2 : v:ParameterCandidate [
+		v:hasId "PaC_10-2"
+		v:hasName "vacuum_fault_2"
+		v:hasValue "80"
+		v:hasProbability "0.4"^^xsd:float
+	]
+
+	// leak_fault
+	instance leak_fault : v:ParameterSlot [
+		v:hasId "PaS_11"
+		v:hasName "leak_fault"
+		v:Represents leakage
+		v:hasAssignedValue "4.8e-10"
+		v:hasNominalValue "1e-8"
+		v:hasUnit "kmol/s"
+		v:hasDomain "[4.8e-10;1e-8]"
+		v:Receives leak_fault_1
+		v:Receives leak_fault_2
+	]
+
+	instance leak_fault_1 : v:ParameterCandidate [
+		v:hasId "PaC_11-1"
+		v:hasName "leak_fault_1"
+		v:hasValue "4.8e-10"
+		v:hasProbability "0.6"^^xsd:float
+	]
+
+	instance leak_fault_2 : v:ParameterCandidate [
+		v:hasId "PaC_11-2"
+		v:hasName "leak_fault_2"
+		v:hasValue "1e-8"
+		v:hasProbability "0.4"^^xsd:float
+	]
+
+	// filter_clog_fault
+	instance filter_clog_fault : v:ParameterSlot [
+		v:hasId "PaS_12"
+		v:hasName "filter_clog_fault"
+		v:Represents leakage
+		v:hasAssignedValue "1000"
+		v:hasNominalValue "1000"
+		v:hasUnit "kmol/s/bar"
+		v:hasDomain "[1e-5;1000]"
+		v:Receives filter_clog_fault_1
+		v:Receives filter_clog_fault_2
+	]
+
+	instance filter_clog_fault_1 : v:ParameterCandidate [
+		v:hasId "PaC_12-1"
+		v:hasName "filter_clog_fault_1"
+		v:hasValue "1e-5"
+		v:hasProbability "0.4"^^xsd:float
+	]
+
+	instance filter_clog_fault_2 : v:ParameterCandidate [
+		v:hasId "PaC_12-2"
+		v:hasName "filter_clog_fault_2"
+		v:hasValue "1000"
+		v:hasProbability "0.6"^^xsd:float
+	]
+
+	// water_preload
+	instance water_preload : v:ParameterSlot [
+		v:hasId "PaS_13"
+		v:hasName "water_preload"
+		v:Represents water
+		v:hasAssignedValue "0"
+		v:hasNominalValue "0"
+		v:hasUnit "kmol/kmol"
+		v:hasDomain "[0;1e-3]"
+		v:Receives water_preload_1
+		v:Receives water_preload_2
+	]
+
+	instance water_preload_1 : v:ParameterCandidate [
+		v:hasId "PaC_13-1"
+		v:hasName "water_preload_1"
+		v:hasValue "0"
+		v:hasProbability "0.6"^^xsd:float
+	]
+
+	instance water_preload_2 : v:ParameterCandidate [
+		v:hasId "PaC_13-2"
+		v:hasName "water_preload_2"
+		v:hasValue "1e-3"
+		v:hasProbability "0.4"^^xsd:float
+	]
+
+	// lstm_param_filter
+	instance lstm_param_filter : v:ParameterSlot [
+		v:hasId "PaS_14"
+		v:hasName "lstm_param_filter"
+		v:Represents clogging
+		v:hasAssignedValue "Mok"
+		v:hasNominalValue "Mok"
+		v:hasUnit "∅"
+		v:hasDomain "[Mok;Mko]"
+		v:Receives lstm_param_filter_1
+		v:Receives lstm_param_filter_2
+	]
+
+	instance lstm_param_filter_1 : v:ParameterCandidate [
+		v:hasId "PaC_14-1"
+		v:hasName "lstm_param_filter_1"
+		v:hasValue "Mok"
+		v:hasProbability "0.6"^^xsd:float
+	]
+
+	instance lstm_param_filter_2 : v:ParameterCandidate [
+		v:hasId "PaC_14-2"
+		v:hasName "lstm_param_filter_2"
+		v:hasValue "Mko"
+		v:hasProbability "0.4"^^xsd:float
+	]
+
+	// activate_backup
+	instance activate_backup : v:ParameterSlot [
+		v:hasId "PaS_15"
+		v:hasName "activate_backup"
+		v:Represents activation
+		v:hasAssignedValue "off"
+		v:hasNominalValue "off"
+		v:hasUnit "∅"
+		v:hasDomain "[on;off]"
+		v:Receives activate_backup_1
+		v:Receives activate_backup_2
+	]
+
+	instance activate_backup_1 : v:ParameterCandidate [
+		v:hasId "PaC_15-1"
+		v:hasName "activate_backup_1"
+		v:hasValue "on"
+		v:hasProbability "0.4"^^xsd:float
+	]
+
+	instance activate_backup_2 : v:ParameterCandidate [
+		v:hasId "PaC_15-2"
+		v:hasName "activate_backup_2"
+		v:hasValue "off"
+		v:hasProbability "0.6"^^xsd:float
+	]
+
+	// PHYSICAL ENTITY
+	instance crew : v:PhysicalEntity [
+		v:hasId "PhysicalEntity_1"
+		v:hasName "crew"
+		v:HasHealthStatus count
+	]
+
+	// Physical entity: Station
+	instance gateway : v:Station [
+		v:hasId "Station_1"
+		v:hasName "gateway"
+		v:Contains i-hab
+	]
+
+	// Physical entity: Module
+	instance i-hab : v:Module [
+		v:hasId "Module_1"
+		v:hasName "i-hab"
+		v:Contains eclss
+		v:Contains power_unit
+	]
+
+	// Physical entity: System
+	instance eclss : v:System [
+		v:hasId "System_1"
+		v:hasName "eclss"
+		v:Contains air_revitalization
+	]
+
+	instance power_unit : v:System [
+		v:hasId "System_2"
+		v:hasName "power_unit"
+		v:Contains generation
+		v:Contains storage
+	]
+
+	// Physical entity: Subsystem
+	instance air_revitalization : v:Subsystem [
+		v:hasId "Subsystem_1"
+		v:hasName "air_revitalization"
+		v:Contains co2_removal
+	]
+
+	instance generation : v:Subsystem [
+		v:hasId "Subsystem_2"
+		v:hasName "generation"
+	]
+
+	instance storage : v:Subsystem [
+		v:hasId "Subsystem_3"
+		v:hasName "storage"
+		v:Contains primary
+		v:Contains auxiliary
+	]
+
+	// Physical entity: Component
+	instance co2_removal : v:Component [
+		v:hasId "Component_1"
+		v:hasName "co2_removal"
+		v:Contains heater
+		v:Contains desiccant_bed_1
+		v:Contains desiccant_bed_2
+		v:Contains sorbent_bed_1
+		v:Contains sorbent_bed_2
+		v:Contains selection_valve_1
+		v:Contains selection_valve_2
+		v:Contains selection_valve_3
+		v:Contains selection_valve_4
+		v:Contains filter_1
+		v:Contains filter_2
+		v:Contains pipe
+	]
+
+	instance primary : v:Component [
+		v:hasId "Component_2"
+		v:hasName "primary"
+	]
+
+	instance auxiliary : v:Component [
+		v:hasId "Component_3"
+		v:hasName "auxiliary"
+		v:Powers eclss
+	]
+
+	// Physical entity: Device
+	instance filter_1 : v:Device [
+		v:hasId "Device_1.1"
+		v:hasName "filter_1"
+		v:HasHealthStatus clogging
+		v:HC2_Follows sorbent_bed_1
+	]
+
+	instance filter_2 : v:Device [
+		v:hasId "Device_1.2"
+		v:hasName "filter_2"
+		v:HasHealthStatus clogging
+		v:HC1_Follows sorbent_bed_2
+	]
+
+	instance in-outlet_valve_1 : v:Device [
+		v:hasId "Device_2.01"
+		v:hasName "in-outlet_valve_1"
+		v:HasHealthStatus leakage
+		v:HasHealthStatus stiction
+		v:HC2_Follows desiccant_bed_1
+	]
+
+	instance in-outlet_valve_2 : v:Device [
+		v:hasId "Device_2.02"
+		v:hasName "in-outlet_valve_2"
+		v:HasHealthStatus leakage
+		v:HasHealthStatus stiction
+		v:HC1_Follows desiccant_bed_2
+	]
+
+	instance check_valve_1 : v:Device [
+		v:hasId "Device_2.03"
+		v:hasName "check_valve_1"
+		v:HasHealthStatus leakage
+		v:HasHealthStatus stiction
+		v:HC2_Follows filter_1
+	]
+
+	instance check_valve_2 : v:Device [
+		v:hasId "Device_2.04"
+		v:hasName "check_valve_2"
+		v:HasHealthStatus leakage
+		v:HasHealthStatus stiction
+		v:HC1_Follows filter_2
+	]
+
+	instance selection_valve_1 : v:Device [
+		v:hasId "Device_2.1"
+		v:hasName "selection_valve_1"
+		v:HasHealthStatus leakage
+		v:HasHealthStatus stiction
+		v:HC1_Follows desiccant_bed_1
+		v:HC2_Follows desiccant_bed_2
+	]
+
+	instance selection_valve_2 : v:Device [
+		v:hasId "Device_2.2"
+		v:hasName "selection_valve_2"
+		v:HasHealthStatus leakage
+		v:HasHealthStatus stiction
+		v:HC1_Follows precooler
+		v:HC2_Follows precooler
+	]
+
+	instance selection_valve_3 : v:Device [
+		v:hasId "Device_2.3"
+		v:hasName "selection_valve_3"
+		v:HasHealthStatus leakage
+		v:HasHealthStatus stiction
+		v:HC1_Follows sorbent_bed_1
+		v:HC2_Follows sorbent_bed_2
+	]
+
+	instance selection_valve_4 : v:Device [
+		v:hasId "Device_2.4"
+		v:hasName "selection_valve_4"
+		v:HasHealthStatus leakage
+		v:HasHealthStatus stiction
+		v:HC1_Follows selection_valve_3
+		v:HC2_Follows selection_valve_3
+	]
+
+	instance pipe : v:Device [
+		v:hasId "Device_3"
+		v:hasName "pipe"
+		v:HasHealthStatus pressure
+	]
+
+	instance desiccant_bed_1 : v:Device [
+		v:hasId "Device_4.1"
+		v:hasName "desiccant_bed_1"
+		v:HasHealthStatus dimension
+		v:HasHealthStatus water
+		v:HC1_Follows in-outlet_valve_1
+		v:HC2_Follows check_valve_1
+	]
+
+	instance desiccant_bed_2 : v:Device [
+		v:hasId "Device_4.2"
+		v:hasName "desiccant_bed_2"
+		v:HasHealthStatus dimension
+		v:HasHealthStatus water
+		v:HC1_Follows check_valve_2
+		v:HC2_Follows in-outlet_valve_2
+	]
+
+	instance sorbent_bed_1 : v:Device [
+		v:hasId "Device_4.3"
+		v:hasName "sorbent_bed_1"
+		v:HasHealthStatus dimension
+		v:HasHealthStatus water
+		v:HC2_Follows selection_valve_2
+	]
+
+	instance sorbent_bed_2 : v:Device [
+		v:hasId "Device_4.4"
+		v:hasName "sorbent_bed_2"
+		v:HasHealthStatus dimension
+		v:HasHealthStatus water
+		v:HC1_Follows selection_valve_2
+	]
+
+	instance heater : v:Device [
+		v:hasId "Device_5"
+		v:hasName "heater"
+		v:HasHealthStatus temperature
+	]
+
+	instance backup : v:Device [
+		v:hasId "Device_6"
+		v:hasName "backup"
+		v:HasHealthStatus activation
+	]
+
+	instance precooler : v:Device [
+		v:hasId "Device_7"
+		v:hasName "precooler"
+		v:HC1_Follows air_blower
+		v:HC2_Follows air_blower
+	]
+
+	instance air_blower : v:Device [
+		v:hasId "Device_8"
+		v:hasName "air_blower"
+		v:HC1_Follows selection_valve_1
+		v:HC2_Follows selection_valve_1
+	]
+
+	// STATE VARIABLES
+	instance clogging : v:StateVariable [
+		v:hasId "St_1"
+		v:hasName "clogging"
+	]
+
+	instance leakage : v:StateVariable [
+		v:hasId "St_2"
+		v:hasName "leakage"
+	]
+
+	instance stiction : v:StateVariable [
+		v:hasId "St_3"
+		v:hasName "stiction"
+	]
+
+	instance pressure : v:StateVariable [
+		v:hasId "St_4"
+		v:hasName "pressure"
+	]
+
+	instance count : v:StateVariable [
+		v:hasId "St_5"
+		v:hasName "count"
+	]
+
+	instance dimension : v:StateVariable [
+		v:hasId "St_6"
+		v:hasName "dimension"
+	]
+
+	instance airflow : v:StateVariable [
+		v:hasId "St_7"
+		v:hasName "airflow"
+	]
+
+	instance temperature : v:StateVariable [
+		v:hasId "St_8"
+		v:hasName "temperature"
+	]
+
+	instance water : v:StateVariable [
+		v:hasId "St_9"
+		v:hasName "water"
+	]
+
+	instance activation : v:StateVariable [
+		v:hasId "St_10"
+		v:hasName "activation"
+	]
+}
