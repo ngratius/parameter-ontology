@@ -1,1 +1,24 @@
-
+cff-version: 1.2.0
+title: parameter-ontology
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - given-names: Nicolas
+    family-names: Gratius
+    affiliation: Carnegie Mellon University
+    email: ngratius@andrew.cmu.edu
+    orcid: 'https://orcid.org/0000-0001-7051-4777'
+  - given-names: Mario
+    family-names: Bergés
+    email: mberges@andrew.cmu.edu
+    affiliation: Carnegie Mellon University
+  - given-names: Burcu
+    family-names: Akinci
+    email: bakinci@andrew.cmu.edu
+    affiliation: Carnegie Mellon University
+identifiers:
+  - type: url
+    value: 'https://github.com/ngratius/parameter-ontology'
+repository-code: 'https://github.com/ngratius/parameter-ontology'
