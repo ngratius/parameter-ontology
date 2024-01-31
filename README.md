@@ -8,7 +8,7 @@ Deep space habitat operations will depend less on ground support than in low Ear
 
 ## Dependencies
 
-* [OML-Rosetta] (https://github.com/opencaesar/oml-rosetta)
+* [OML-Rosetta](https://github.com/opencaesar/oml-rosetta)
 
 ## Getting Started
 
@@ -16,11 +16,11 @@ Instructions are available at: https://www.opencaesar.io/oml-tutorials/
 
 ## Authors
 
-* [Nicolas Gratius] (https://www.linkedin.com/in/nicolas-gratius-3360b0110/)
+* [Nicolas Gratius](https://www.linkedin.com/in/nicolas-gratius-3360b0110/)
 
-* [Mario Bergés] (https://www.cmu.edu/cee/people/faculty/berges.html)
+* [Mario Bergés](https://www.cmu.edu/cee/people/faculty/berges.html)
 
-* [Burcu Akinci] (https://www.cmu.edu/cee/people/faculty/akinci.html)
+* [Burcu Akinci](https://www.cmu.edu/cee/people/faculty/akinci.html)
 
 ## Acknowledgments
 
