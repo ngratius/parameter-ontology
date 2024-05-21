@@ -1,0 +1,25 @@
+PREFIX v:       <http://parameter.com/vocabulary/parameter#>
+PREFIX rdfs:    <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?system_id ?system_name ?model_id ?model_name ?slot_id ?slot_name ?candidate_domain ?slot_unit
+
+WHERE{
+	?model v:Simulates ?system.
+	?model v:hasName ?model_name.
+	?system v:hasName ?system_name.
+	?system v:hasId ?system_id.
+	?model v:hasId ?model_id.
+	
+	?model v:IsComposedOf ?slot.
+	?slot v:hasName ?slot_name.
+	?slot v:hasId ?slot_id.
+	?slot v:hasUnit ?slot_unit.
+	
+	?slot v:hasDomain ?candidate_domain.
+	
+	# FILTER(?system_name = "filter_1" || ?system_name = "desiccant_bed_1")
+	FILTER(?system_name = "heater")
+}
+
+#AND filter: FILTER(confition_1 && condition_2)
+#OR filter: FILTER(condition_1 || condition_2)

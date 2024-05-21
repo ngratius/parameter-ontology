@@ -4,123 +4,6 @@
   "results": {
     "bindings": [
       { 
-        "system_id": { "type": "literal" , "value": "Device_4.4" } ,
-        "system_name": { "type": "literal" , "value": "sorbent_bed_2" } ,
-        "model_id": { "type": "literal" , "value": "Mo_2" } ,
-        "model_name": { "type": "literal" , "value": "aspen" } ,
-        "slot_id": { "type": "literal" , "value": "PaS_12" } ,
-        "slot_name": { "type": "literal" , "value": "filter_clog_fault" } ,
-        "candidate_domain": { "type": "literal" , "value": "[1e-5;1000]" } ,
-        "slot_unit": { "type": "literal" , "value": "kmol/s/bar" } ,
-        "container_name": { "type": "literal" , "value": "eclss" } ,
-        "upstream_device_name": { "type": "literal" , "value": "selection_valve_2" } ,
-        "power_source_name": { "type": "literal" , "value": "auxiliary" }
-      } ,
-      { 
-        "system_id": { "type": "literal" , "value": "Device_4.4" } ,
-        "system_name": { "type": "literal" , "value": "sorbent_bed_2" } ,
-        "model_id": { "type": "literal" , "value": "Mo_2" } ,
-        "model_name": { "type": "literal" , "value": "aspen" } ,
-        "slot_id": { "type": "literal" , "value": "PaS_13" } ,
-        "slot_name": { "type": "literal" , "value": "water_preload" } ,
-        "candidate_domain": { "type": "literal" , "value": "[0;1e-3]" } ,
-        "slot_unit": { "type": "literal" , "value": "kmol/kmol" } ,
-        "container_name": { "type": "literal" , "value": "eclss" } ,
-        "upstream_device_name": { "type": "literal" , "value": "selection_valve_2" } ,
-        "power_source_name": { "type": "literal" , "value": "auxiliary" }
-      } ,
-      { 
-        "system_id": { "type": "literal" , "value": "Device_4.4" } ,
-        "system_name": { "type": "literal" , "value": "sorbent_bed_2" } ,
-        "model_id": { "type": "literal" , "value": "Mo_2" } ,
-        "model_name": { "type": "literal" , "value": "aspen" } ,
-        "slot_id": { "type": "literal" , "value": "PaS_6" } ,
-        "slot_name": { "type": "literal" , "value": "bed_length" } ,
-        "candidate_domain": { "type": "literal" , "value": "[15;25]" } ,
-        "slot_unit": { "type": "literal" , "value": "in" } ,
-        "container_name": { "type": "literal" , "value": "eclss" } ,
-        "upstream_device_name": { "type": "literal" , "value": "selection_valve_2" } ,
-        "power_source_name": { "type": "literal" , "value": "auxiliary" }
-      } ,
-      { 
-        "system_id": { "type": "literal" , "value": "Device_4.4" } ,
-        "system_name": { "type": "literal" , "value": "sorbent_bed_2" } ,
-        "model_id": { "type": "literal" , "value": "Mo_2" } ,
-        "model_name": { "type": "literal" , "value": "aspen" } ,
-        "slot_id": { "type": "literal" , "value": "PaS_9" } ,
-        "slot_name": { "type": "literal" , "value": "heater_fault" } ,
-        "candidate_domain": { "type": "literal" , "value": "[450;498]" } ,
-        "slot_unit": { "type": "literal" , "value": "K" } ,
-        "container_name": { "type": "literal" , "value": "eclss" } ,
-        "upstream_device_name": { "type": "literal" , "value": "selection_valve_2" } ,
-        "power_source_name": { "type": "literal" , "value": "auxiliary" }
-      } ,
-      { 
-        "system_id": { "type": "literal" , "value": "Device_4.4" } ,
-        "system_name": { "type": "literal" , "value": "sorbent_bed_2" } ,
-        "model_id": { "type": "literal" , "value": "Mo_2" } ,
-        "model_name": { "type": "literal" , "value": "aspen" } ,
-        "slot_id": { "type": "literal" , "value": "PaS_10" } ,
-        "slot_name": { "type": "literal" , "value": "vacuum_fault" } ,
-        "candidate_domain": { "type": "literal" , "value": "[10;80]" } ,
-        "slot_unit": { "type": "literal" , "value": "kPa" } ,
-        "container_name": { "type": "literal" , "value": "eclss" } ,
-        "upstream_device_name": { "type": "literal" , "value": "selection_valve_2" } ,
-        "power_source_name": { "type": "literal" , "value": "auxiliary" }
-      } ,
-      { 
-        "system_id": { "type": "literal" , "value": "Device_4.4" } ,
-        "system_name": { "type": "literal" , "value": "sorbent_bed_2" } ,
-        "model_id": { "type": "literal" , "value": "Mo_2" } ,
-        "model_name": { "type": "literal" , "value": "aspen" } ,
-        "slot_id": { "type": "literal" , "value": "PaS_11" } ,
-        "slot_name": { "type": "literal" , "value": "leak_fault" } ,
-        "candidate_domain": { "type": "literal" , "value": "[4.8e-10;1e-8]" } ,
-        "slot_unit": { "type": "literal" , "value": "kmol/s" } ,
-        "container_name": { "type": "literal" , "value": "eclss" } ,
-        "upstream_device_name": { "type": "literal" , "value": "selection_valve_2" } ,
-        "power_source_name": { "type": "literal" , "value": "auxiliary" }
-      } ,
-      { 
-        "system_id": { "type": "literal" , "value": "Device_4.4" } ,
-        "system_name": { "type": "literal" , "value": "sorbent_bed_2" } ,
-        "model_id": { "type": "literal" , "value": "Mo_2" } ,
-        "model_name": { "type": "literal" , "value": "aspen" } ,
-        "slot_id": { "type": "literal" , "value": "PaS_8" } ,
-        "slot_name": { "type": "literal" , "value": "sustained_valve_fault" } ,
-        "candidate_domain": { "type": "literal" , "value": "[1e-5;1000]" } ,
-        "slot_unit": { "type": "literal" , "value": "kmol/s/bar" } ,
-        "container_name": { "type": "literal" , "value": "eclss" } ,
-        "upstream_device_name": { "type": "literal" , "value": "selection_valve_2" } ,
-        "power_source_name": { "type": "literal" , "value": "auxiliary" }
-      } ,
-      { 
-        "system_id": { "type": "literal" , "value": "Device_4.4" } ,
-        "system_name": { "type": "literal" , "value": "sorbent_bed_2" } ,
-        "model_id": { "type": "literal" , "value": "Mo_2" } ,
-        "model_name": { "type": "literal" , "value": "aspen" } ,
-        "slot_id": { "type": "literal" , "value": "PaS_5" } ,
-        "slot_name": { "type": "literal" , "value": "crew_size" } ,
-        "candidate_domain": { "type": "literal" , "value": "[2;10]" } ,
-        "slot_unit": { "type": "literal" , "value": "∅" } ,
-        "container_name": { "type": "literal" , "value": "eclss" } ,
-        "upstream_device_name": { "type": "literal" , "value": "selection_valve_2" } ,
-        "power_source_name": { "type": "literal" , "value": "auxiliary" }
-      } ,
-      { 
-        "system_id": { "type": "literal" , "value": "Device_4.4" } ,
-        "system_name": { "type": "literal" , "value": "sorbent_bed_2" } ,
-        "model_id": { "type": "literal" , "value": "Mo_2" } ,
-        "model_name": { "type": "literal" , "value": "aspen" } ,
-        "slot_id": { "type": "literal" , "value": "PaS_7" } ,
-        "slot_name": { "type": "literal" , "value": "flow_rate" } ,
-        "candidate_domain": { "type": "literal" , "value": "[5;10]" } ,
-        "slot_unit": { "type": "literal" , "value": "kmol/s" } ,
-        "container_name": { "type": "literal" , "value": "eclss" } ,
-        "upstream_device_name": { "type": "literal" , "value": "selection_valve_2" } ,
-        "power_source_name": { "type": "literal" , "value": "auxiliary" }
-      } ,
-      { 
         "system_id": { "type": "literal" , "value": "Device_1.2" } ,
         "system_name": { "type": "literal" , "value": "filter_2" } ,
         "model_id": { "type": "literal" , "value": "Mo_2" } ,
@@ -130,7 +13,7 @@
         "candidate_domain": { "type": "literal" , "value": "[1e-5;1000]" } ,
         "slot_unit": { "type": "literal" , "value": "kmol/s/bar" } ,
         "container_name": { "type": "literal" , "value": "eclss" } ,
-        "upstream_device_name": { "type": "literal" , "value": "selection_valve_2" } ,
+        "upstream_device_name": { "type": "literal" , "value": "sorbent_bed_2" } ,
         "power_source_name": { "type": "literal" , "value": "auxiliary" }
       } ,
       { 
@@ -143,7 +26,7 @@
         "candidate_domain": { "type": "literal" , "value": "[0;1e-3]" } ,
         "slot_unit": { "type": "literal" , "value": "kmol/kmol" } ,
         "container_name": { "type": "literal" , "value": "eclss" } ,
-        "upstream_device_name": { "type": "literal" , "value": "selection_valve_2" } ,
+        "upstream_device_name": { "type": "literal" , "value": "sorbent_bed_2" } ,
         "power_source_name": { "type": "literal" , "value": "auxiliary" }
       } ,
       { 
@@ -156,7 +39,7 @@
         "candidate_domain": { "type": "literal" , "value": "[15;25]" } ,
         "slot_unit": { "type": "literal" , "value": "in" } ,
         "container_name": { "type": "literal" , "value": "eclss" } ,
-        "upstream_device_name": { "type": "literal" , "value": "selection_valve_2" } ,
+        "upstream_device_name": { "type": "literal" , "value": "sorbent_bed_2" } ,
         "power_source_name": { "type": "literal" , "value": "auxiliary" }
       } ,
       { 
@@ -169,7 +52,7 @@
         "candidate_domain": { "type": "literal" , "value": "[450;498]" } ,
         "slot_unit": { "type": "literal" , "value": "K" } ,
         "container_name": { "type": "literal" , "value": "eclss" } ,
-        "upstream_device_name": { "type": "literal" , "value": "selection_valve_2" } ,
+        "upstream_device_name": { "type": "literal" , "value": "sorbent_bed_2" } ,
         "power_source_name": { "type": "literal" , "value": "auxiliary" }
       } ,
       { 
@@ -182,7 +65,7 @@
         "candidate_domain": { "type": "literal" , "value": "[10;80]" } ,
         "slot_unit": { "type": "literal" , "value": "kPa" } ,
         "container_name": { "type": "literal" , "value": "eclss" } ,
-        "upstream_device_name": { "type": "literal" , "value": "selection_valve_2" } ,
+        "upstream_device_name": { "type": "literal" , "value": "sorbent_bed_2" } ,
         "power_source_name": { "type": "literal" , "value": "auxiliary" }
       } ,
       { 
@@ -195,7 +78,7 @@
         "candidate_domain": { "type": "literal" , "value": "[4.8e-10;1e-8]" } ,
         "slot_unit": { "type": "literal" , "value": "kmol/s" } ,
         "container_name": { "type": "literal" , "value": "eclss" } ,
-        "upstream_device_name": { "type": "literal" , "value": "selection_valve_2" } ,
+        "upstream_device_name": { "type": "literal" , "value": "sorbent_bed_2" } ,
         "power_source_name": { "type": "literal" , "value": "auxiliary" }
       } ,
       { 
@@ -208,7 +91,7 @@
         "candidate_domain": { "type": "literal" , "value": "[1e-5;1000]" } ,
         "slot_unit": { "type": "literal" , "value": "kmol/s/bar" } ,
         "container_name": { "type": "literal" , "value": "eclss" } ,
-        "upstream_device_name": { "type": "literal" , "value": "selection_valve_2" } ,
+        "upstream_device_name": { "type": "literal" , "value": "sorbent_bed_2" } ,
         "power_source_name": { "type": "literal" , "value": "auxiliary" }
       } ,
       { 
@@ -221,7 +104,7 @@
         "candidate_domain": { "type": "literal" , "value": "[2;10]" } ,
         "slot_unit": { "type": "literal" , "value": "∅" } ,
         "container_name": { "type": "literal" , "value": "eclss" } ,
-        "upstream_device_name": { "type": "literal" , "value": "selection_valve_2" } ,
+        "upstream_device_name": { "type": "literal" , "value": "sorbent_bed_2" } ,
         "power_source_name": { "type": "literal" , "value": "auxiliary" }
       } ,
       { 
@@ -234,7 +117,7 @@
         "candidate_domain": { "type": "literal" , "value": "[5;10]" } ,
         "slot_unit": { "type": "literal" , "value": "kmol/s" } ,
         "container_name": { "type": "literal" , "value": "eclss" } ,
-        "upstream_device_name": { "type": "literal" , "value": "selection_valve_2" } ,
+        "upstream_device_name": { "type": "literal" , "value": "sorbent_bed_2" } ,
         "power_source_name": { "type": "literal" , "value": "auxiliary" }
       } ,
       { 
@@ -247,7 +130,7 @@
         "candidate_domain": { "type": "literal" , "value": "[3e−7;45]" } ,
         "slot_unit": { "type": "literal" , "value": "deg" } ,
         "container_name": { "type": "literal" , "value": "eclss" } ,
-        "upstream_device_name": { "type": "literal" , "value": "selection_valve_2" } ,
+        "upstream_device_name": { "type": "literal" , "value": "sorbent_bed_2" } ,
         "power_source_name": { "type": "literal" , "value": "auxiliary" }
       } ,
       { 
@@ -260,7 +143,7 @@
         "candidate_domain": { "type": "literal" , "value": "[4.8e−10, 1e− 8]" } ,
         "slot_unit": { "type": "literal" , "value": "in^2" } ,
         "container_name": { "type": "literal" , "value": "eclss" } ,
-        "upstream_device_name": { "type": "literal" , "value": "selection_valve_2" } ,
+        "upstream_device_name": { "type": "literal" , "value": "sorbent_bed_2" } ,
         "power_source_name": { "type": "literal" , "value": "auxiliary" }
       } ,
       { 
@@ -273,7 +156,7 @@
         "candidate_domain": { "type": "literal" , "value": "[2;60]" } ,
         "slot_unit": { "type": "literal" , "value": "μm" } ,
         "container_name": { "type": "literal" , "value": "eclss" } ,
-        "upstream_device_name": { "type": "literal" , "value": "selection_valve_2" } ,
+        "upstream_device_name": { "type": "literal" , "value": "sorbent_bed_2" } ,
         "power_source_name": { "type": "literal" , "value": "auxiliary" }
       } ,
       { 
@@ -286,7 +169,7 @@
         "candidate_domain": { "type": "literal" , "value": "[606;1156]" } ,
         "slot_unit": { "type": "literal" , "value": "Pa" } ,
         "container_name": { "type": "literal" , "value": "eclss" } ,
-        "upstream_device_name": { "type": "literal" , "value": "selection_valve_2" } ,
+        "upstream_device_name": { "type": "literal" , "value": "sorbent_bed_2" } ,
         "power_source_name": { "type": "literal" , "value": "auxiliary" }
       } ,
       { 
@@ -299,7 +182,7 @@
         "candidate_domain": { "type": "literal" , "value": "[Mok;Mko]" } ,
         "slot_unit": { "type": "literal" , "value": "∅" } ,
         "container_name": { "type": "literal" , "value": "eclss" } ,
-        "upstream_device_name": { "type": "literal" , "value": "selection_valve_2" } ,
+        "upstream_device_name": { "type": "literal" , "value": "sorbent_bed_2" } ,
         "power_source_name": { "type": "literal" , "value": "auxiliary" }
       } ,
       { 
@@ -312,7 +195,7 @@
         "candidate_domain": { "type": "literal" , "value": "[1e-5;1000]" } ,
         "slot_unit": { "type": "literal" , "value": "kmol/s/bar" } ,
         "container_name": { "type": "literal" , "value": "eclss" } ,
-        "upstream_device_name": { "type": "literal" , "value": "selection_valve_2" } ,
+        "upstream_device_name": { "type": "literal" , "value": "sorbent_bed_2" } ,
         "power_source_name": { "type": "literal" , "value": "auxiliary" }
       } ,
       { 
@@ -325,7 +208,7 @@
         "candidate_domain": { "type": "literal" , "value": "[0;1e-3]" } ,
         "slot_unit": { "type": "literal" , "value": "kmol/kmol" } ,
         "container_name": { "type": "literal" , "value": "eclss" } ,
-        "upstream_device_name": { "type": "literal" , "value": "selection_valve_2" } ,
+        "upstream_device_name": { "type": "literal" , "value": "sorbent_bed_2" } ,
         "power_source_name": { "type": "literal" , "value": "auxiliary" }
       } ,
       { 
@@ -338,7 +221,7 @@
         "candidate_domain": { "type": "literal" , "value": "[15;25]" } ,
         "slot_unit": { "type": "literal" , "value": "in" } ,
         "container_name": { "type": "literal" , "value": "eclss" } ,
-        "upstream_device_name": { "type": "literal" , "value": "selection_valve_2" } ,
+        "upstream_device_name": { "type": "literal" , "value": "sorbent_bed_2" } ,
         "power_source_name": { "type": "literal" , "value": "auxiliary" }
       } ,
       { 
@@ -351,7 +234,7 @@
         "candidate_domain": { "type": "literal" , "value": "[450;498]" } ,
         "slot_unit": { "type": "literal" , "value": "K" } ,
         "container_name": { "type": "literal" , "value": "eclss" } ,
-        "upstream_device_name": { "type": "literal" , "value": "selection_valve_2" } ,
+        "upstream_device_name": { "type": "literal" , "value": "sorbent_bed_2" } ,
         "power_source_name": { "type": "literal" , "value": "auxiliary" }
       } ,
       { 
@@ -364,7 +247,7 @@
         "candidate_domain": { "type": "literal" , "value": "[10;80]" } ,
         "slot_unit": { "type": "literal" , "value": "kPa" } ,
         "container_name": { "type": "literal" , "value": "eclss" } ,
-        "upstream_device_name": { "type": "literal" , "value": "selection_valve_2" } ,
+        "upstream_device_name": { "type": "literal" , "value": "sorbent_bed_2" } ,
         "power_source_name": { "type": "literal" , "value": "auxiliary" }
       } ,
       { 
@@ -377,7 +260,7 @@
         "candidate_domain": { "type": "literal" , "value": "[4.8e-10;1e-8]" } ,
         "slot_unit": { "type": "literal" , "value": "kmol/s" } ,
         "container_name": { "type": "literal" , "value": "eclss" } ,
-        "upstream_device_name": { "type": "literal" , "value": "selection_valve_2" } ,
+        "upstream_device_name": { "type": "literal" , "value": "sorbent_bed_2" } ,
         "power_source_name": { "type": "literal" , "value": "auxiliary" }
       } ,
       { 
@@ -390,7 +273,7 @@
         "candidate_domain": { "type": "literal" , "value": "[1e-5;1000]" } ,
         "slot_unit": { "type": "literal" , "value": "kmol/s/bar" } ,
         "container_name": { "type": "literal" , "value": "eclss" } ,
-        "upstream_device_name": { "type": "literal" , "value": "selection_valve_2" } ,
+        "upstream_device_name": { "type": "literal" , "value": "sorbent_bed_2" } ,
         "power_source_name": { "type": "literal" , "value": "auxiliary" }
       } ,
       { 
@@ -403,7 +286,7 @@
         "candidate_domain": { "type": "literal" , "value": "[2;10]" } ,
         "slot_unit": { "type": "literal" , "value": "∅" } ,
         "container_name": { "type": "literal" , "value": "eclss" } ,
-        "upstream_device_name": { "type": "literal" , "value": "selection_valve_2" } ,
+        "upstream_device_name": { "type": "literal" , "value": "sorbent_bed_2" } ,
         "power_source_name": { "type": "literal" , "value": "auxiliary" }
       } ,
       { 
@@ -416,7 +299,7 @@
         "candidate_domain": { "type": "literal" , "value": "[5;10]" } ,
         "slot_unit": { "type": "literal" , "value": "kmol/s" } ,
         "container_name": { "type": "literal" , "value": "eclss" } ,
-        "upstream_device_name": { "type": "literal" , "value": "selection_valve_2" } ,
+        "upstream_device_name": { "type": "literal" , "value": "sorbent_bed_2" } ,
         "power_source_name": { "type": "literal" , "value": "auxiliary" }
       }
     ]

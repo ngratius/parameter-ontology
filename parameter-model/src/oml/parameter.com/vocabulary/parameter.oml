@@ -5,7 +5,7 @@ vocabulary <http://parameter.com/vocabulary/parameter#> as parameter {
 	extends <http://www.w3.org/2000/01/rdf-schema#> as rdfs
 
 	// Top level
-	@rdfs:comment "The class of things that are uniquely identified by id"
+	@rdfs:comment "The class of entities that are uniquely identified by id"
 	aspect IdentifiedEntity [
 		key hasId
 	]
@@ -18,13 +18,13 @@ vocabulary <http://parameter.com/vocabulary/parameter#> as parameter {
 	]
 
 	// Identified Things
-	@rdfs:comment "The class of simulation models"
+	@rdfs:comment "The class of computer simulation models"
 	concept SimulationModel < IdentifiedEntity
 
-	@rdfs:comment "The class of model components"
+	@rdfs:comment "The class of simulation model components"
 	concept ModelComponent < IdentifiedEntity
 
-	@rdfs:comment "The class of systems"
+	@rdfs:comment "The class of physical entities"
 	concept PhysicalEntity < IdentifiedEntity
 
 	relation IsComposedOf [
@@ -32,10 +32,13 @@ vocabulary <http://parameter.com/vocabulary/parameter#> as parameter {
 		to ModelComponent
 	]
 
+	@rdfs:comment "The class of model inputs"
 	concept Input < ModelComponent
 
+	@rdfs:comment "The class of slots that can contain a model parameter"
 	concept ParameterSlot < ModelComponent
 
+	@rdfs:comment "The class of model outputs"
 	concept Output < ModelComponent
 
 	relation Simulates [
@@ -43,6 +46,7 @@ vocabulary <http://parameter.com/vocabulary/parameter#> as parameter {
 		to PhysicalEntity
 	]
 
+	@rdfs:comment "The class of model outputs"
 	concept StateVariable < IdentifiedEntity
 
 	relation HasHealthStatus [
@@ -104,26 +108,33 @@ vocabulary <http://parameter.com/vocabulary/parameter#> as parameter {
 		to StateVariable
 	]
 
+	@rdfs:comment "The class of station entities (e.g., Gateway)"
 	concept Station < PhysicalEntity[
 		restricts all Contains to Module
 	]
 
+
+	@rdfs:comment "The class of module entities (e.g., I-HAB)"
 	concept Module < PhysicalEntity[
 		restricts all Contains to System
 	]
 
+	@rdfs:comment "The class of system entities (e.g., ECLSS)"
 	concept System < PhysicalEntity[
 		restricts all Contains to Subsystem
 	]
 
+	@rdfs:comment "The class of subsystem entities (e.g., air_revitalization)"
 	concept Subsystem < PhysicalEntity[
 		restricts all Contains to Component
 	]
 
+	@rdfs:comment "The class of component entities (e.g., co2_removal)"
 	concept Component < PhysicalEntity[
 		restricts all Contains to Device
 	]
 
+	@rdfs:comment "The class of device entities (e.g., filter)"
 	concept Device < PhysicalEntity
 
 	relation Contains [

@@ -2,6 +2,7 @@
 <rdf:RDF xmlns="http://parameter.com/description/spacecraft#"
      xml:base="http://parameter.com/description/spacecraft"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:oml="http://opencaesar.io/oml#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
@@ -12,8 +13,10 @@
     <owl:Ontology rdf:about="http://parameter.com/description/spacecraft">
         <owl:imports rdf:resource="http://parameter.com/vocabulary/parameter"/>
         <owl:imports rdf:resource="http://purl.org/dc/elements/1.1"/>
+        <oml:namespace rdf:resource="http://parameter.com/description/spacecraft#"/>
+        <oml:prefix>spacecraft</oml:prefix>
+        <oml:type rdf:resource="http://opencaesar.io/oml#Description"/>
         <dc:description>A description of the simulation parameters of a specific spacecraft</dc:description>
-        <dc:type rdf:resource="http://opencaesar.io/oml#Description"/>
     </owl:Ontology>
     
 
@@ -187,6 +190,7 @@
         <parameter:hasName>activate_backup</parameter:hasName>
         <parameter:hasNominalValue>off</parameter:hasNominalValue>
         <parameter:hasUnit>∅</parameter:hasUnit>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -200,6 +204,7 @@
         <parameter:hasName>activate_backup_1</parameter:hasName>
         <parameter:hasProbability rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.4</parameter:hasProbability>
         <parameter:hasValue>on</parameter:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -213,6 +218,7 @@
         <parameter:hasName>activate_backup_2</parameter:hasName>
         <parameter:hasProbability rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.6</parameter:hasProbability>
         <parameter:hasValue>off</parameter:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -224,6 +230,7 @@
         <rdf:type rdf:resource="http://parameter.com/vocabulary/parameter#StateVariable"/>
         <parameter:hasId>St_10</parameter:hasId>
         <parameter:hasName>activation</parameter:hasName>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -237,6 +244,7 @@
         <parameter:HC2_Follows rdf:resource="http://parameter.com/description/spacecraft#selection_valve_1"/>
         <parameter:hasId>Device_8</parameter:hasId>
         <parameter:hasName>air_blower</parameter:hasName>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -249,6 +257,7 @@
         <parameter:Contains rdf:resource="http://parameter.com/description/spacecraft#co2_removal"/>
         <parameter:hasId>Subsystem_1</parameter:hasId>
         <parameter:hasName>air_revitalization</parameter:hasName>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -260,6 +269,7 @@
         <rdf:type rdf:resource="http://parameter.com/vocabulary/parameter#StateVariable"/>
         <parameter:hasId>St_7</parameter:hasId>
         <parameter:hasName>airflow</parameter:hasName>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -293,6 +303,7 @@
         <parameter:Simulates rdf:resource="http://parameter.com/description/spacecraft#sorbent_bed_2"/>
         <parameter:hasId>Mo_2</parameter:hasId>
         <parameter:hasName>aspen</parameter:hasName>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -305,6 +316,7 @@
         <parameter:Powers rdf:resource="http://parameter.com/description/spacecraft#eclss"/>
         <parameter:hasId>Component_3</parameter:hasId>
         <parameter:hasName>auxiliary</parameter:hasName>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -317,6 +329,7 @@
         <parameter:HasHealthStatus rdf:resource="http://parameter.com/description/spacecraft#activation"/>
         <parameter:hasId>Device_6</parameter:hasId>
         <parameter:hasName>backup</parameter:hasName>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -335,6 +348,7 @@
         <parameter:hasName>bed_length</parameter:hasName>
         <parameter:hasNominalValue>∅</parameter:hasNominalValue>
         <parameter:hasUnit>in</parameter:hasUnit>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -348,6 +362,7 @@
         <parameter:hasName>bed_length_1</parameter:hasName>
         <parameter:hasProbability rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.6</parameter:hasProbability>
         <parameter:hasValue>15</parameter:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -361,6 +376,7 @@
         <parameter:hasName>bed_length_2</parameter:hasName>
         <parameter:hasProbability rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.4</parameter:hasProbability>
         <parameter:hasValue>25</parameter:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -375,6 +391,7 @@
         <parameter:HasHealthStatus rdf:resource="http://parameter.com/description/spacecraft#stiction"/>
         <parameter:hasId>Device_2.03</parameter:hasId>
         <parameter:hasName>check_valve_1</parameter:hasName>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -389,6 +406,7 @@
         <parameter:HasHealthStatus rdf:resource="http://parameter.com/description/spacecraft#stiction"/>
         <parameter:hasId>Device_2.04</parameter:hasId>
         <parameter:hasName>check_valve_2</parameter:hasName>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -407,6 +425,7 @@
         <parameter:hasName>check_valve_severity</parameter:hasName>
         <parameter:hasNominalValue>3e−7</parameter:hasNominalValue>
         <parameter:hasUnit>deg</parameter:hasUnit>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -420,6 +439,7 @@
         <parameter:hasName>check_valve_severity_1</parameter:hasName>
         <parameter:hasProbability rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.6</parameter:hasProbability>
         <parameter:hasValue>3e−7</parameter:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -433,6 +453,7 @@
         <parameter:hasName>check_valve_severity_2</parameter:hasName>
         <parameter:hasProbability rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.4</parameter:hasProbability>
         <parameter:hasValue>45</parameter:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -444,6 +465,7 @@
         <rdf:type rdf:resource="http://parameter.com/vocabulary/parameter#StateVariable"/>
         <parameter:hasId>St_1</parameter:hasId>
         <parameter:hasName>clogging</parameter:hasName>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -467,6 +489,7 @@
         <parameter:Contains rdf:resource="http://parameter.com/description/spacecraft#sorbent_bed_2"/>
         <parameter:hasId>Component_1</parameter:hasId>
         <parameter:hasName>co2_removal</parameter:hasName>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -478,6 +501,7 @@
         <rdf:type rdf:resource="http://parameter.com/vocabulary/parameter#StateVariable"/>
         <parameter:hasId>St_5</parameter:hasId>
         <parameter:hasName>count</parameter:hasName>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -490,6 +514,7 @@
         <parameter:HasHealthStatus rdf:resource="http://parameter.com/description/spacecraft#count"/>
         <parameter:hasId>PhysicalEntity_1</parameter:hasId>
         <parameter:hasName>crew</parameter:hasName>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -508,6 +533,7 @@
         <parameter:hasName>crew_size</parameter:hasName>
         <parameter:hasNominalValue>∅</parameter:hasNominalValue>
         <parameter:hasUnit>∅</parameter:hasUnit>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -521,6 +547,7 @@
         <parameter:hasName>crew_size_1</parameter:hasName>
         <parameter:hasProbability rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.6</parameter:hasProbability>
         <parameter:hasValue>2</parameter:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -534,6 +561,7 @@
         <parameter:hasName>crew_size_2</parameter:hasName>
         <parameter:hasProbability rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.4</parameter:hasProbability>
         <parameter:hasValue>10</parameter:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -549,6 +577,7 @@
         <parameter:HasHealthStatus rdf:resource="http://parameter.com/description/spacecraft#water"/>
         <parameter:hasId>Device_4.1</parameter:hasId>
         <parameter:hasName>desiccant_bed_1</parameter:hasName>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -564,6 +593,7 @@
         <parameter:HasHealthStatus rdf:resource="http://parameter.com/description/spacecraft#water"/>
         <parameter:hasId>Device_4.2</parameter:hasId>
         <parameter:hasName>desiccant_bed_2</parameter:hasName>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -575,6 +605,7 @@
         <rdf:type rdf:resource="http://parameter.com/vocabulary/parameter#StateVariable"/>
         <parameter:hasId>St_6</parameter:hasId>
         <parameter:hasName>dimension</parameter:hasName>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -587,6 +618,7 @@
         <parameter:Contains rdf:resource="http://parameter.com/description/spacecraft#air_revitalization"/>
         <parameter:hasId>System_1</parameter:hasId>
         <parameter:hasName>eclss</parameter:hasName>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -600,6 +632,7 @@
         <parameter:HasHealthStatus rdf:resource="http://parameter.com/description/spacecraft#clogging"/>
         <parameter:hasId>Device_1.1</parameter:hasId>
         <parameter:hasName>filter_1</parameter:hasName>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -613,6 +646,7 @@
         <parameter:HasHealthStatus rdf:resource="http://parameter.com/description/spacecraft#clogging"/>
         <parameter:hasId>Device_1.2</parameter:hasId>
         <parameter:hasName>filter_2</parameter:hasName>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -631,6 +665,7 @@
         <parameter:hasName>filter_clog_fault</parameter:hasName>
         <parameter:hasNominalValue>1000</parameter:hasNominalValue>
         <parameter:hasUnit>kmol/s/bar</parameter:hasUnit>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -644,6 +679,7 @@
         <parameter:hasName>filter_clog_fault_1</parameter:hasName>
         <parameter:hasProbability rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.4</parameter:hasProbability>
         <parameter:hasValue>1e-5</parameter:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -657,6 +693,7 @@
         <parameter:hasName>filter_clog_fault_2</parameter:hasName>
         <parameter:hasProbability rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.6</parameter:hasProbability>
         <parameter:hasValue>1000</parameter:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -675,6 +712,7 @@
         <parameter:hasName>flow_rate</parameter:hasName>
         <parameter:hasNominalValue>5</parameter:hasNominalValue>
         <parameter:hasUnit>kmol/s</parameter:hasUnit>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -688,6 +726,7 @@
         <parameter:hasName>flow_rate_1</parameter:hasName>
         <parameter:hasProbability rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.6</parameter:hasProbability>
         <parameter:hasValue>5</parameter:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -701,6 +740,7 @@
         <parameter:hasName>flow_rate_2</parameter:hasName>
         <parameter:hasProbability rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.4</parameter:hasProbability>
         <parameter:hasValue>10</parameter:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -713,6 +753,7 @@
         <parameter:Contains rdf:resource="http://parameter.com/description/spacecraft#i-hab"/>
         <parameter:hasId>Station_1</parameter:hasId>
         <parameter:hasName>gateway</parameter:hasName>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -724,6 +765,7 @@
         <rdf:type rdf:resource="http://parameter.com/vocabulary/parameter#Subsystem"/>
         <parameter:hasId>Subsystem_2</parameter:hasId>
         <parameter:hasName>generation</parameter:hasName>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -736,6 +778,7 @@
         <parameter:HasHealthStatus rdf:resource="http://parameter.com/description/spacecraft#temperature"/>
         <parameter:hasId>Device_5</parameter:hasId>
         <parameter:hasName>heater</parameter:hasName>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -754,6 +797,7 @@
         <parameter:hasName>heater_fault</parameter:hasName>
         <parameter:hasNominalValue>498</parameter:hasNominalValue>
         <parameter:hasUnit>K</parameter:hasUnit>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -767,6 +811,7 @@
         <parameter:hasName>heater_fault_1</parameter:hasName>
         <parameter:hasProbability rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.4</parameter:hasProbability>
         <parameter:hasValue>450</parameter:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -780,6 +825,7 @@
         <parameter:hasName>heater_fault_2</parameter:hasName>
         <parameter:hasProbability rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.6</parameter:hasProbability>
         <parameter:hasValue>498</parameter:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -793,6 +839,7 @@
         <parameter:Contains rdf:resource="http://parameter.com/description/spacecraft#power_unit"/>
         <parameter:hasId>Module_1</parameter:hasId>
         <parameter:hasName>i-hab</parameter:hasName>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -807,6 +854,7 @@
         <parameter:HasHealthStatus rdf:resource="http://parameter.com/description/spacecraft#stiction"/>
         <parameter:hasId>Device_2.01</parameter:hasId>
         <parameter:hasName>in-outlet_valve_1</parameter:hasName>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -821,6 +869,7 @@
         <parameter:HasHealthStatus rdf:resource="http://parameter.com/description/spacecraft#stiction"/>
         <parameter:hasId>Device_2.02</parameter:hasId>
         <parameter:hasName>in-outlet_valve_2</parameter:hasName>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -839,6 +888,7 @@
         <parameter:hasName>leak_fault</parameter:hasName>
         <parameter:hasNominalValue>1e-8</parameter:hasNominalValue>
         <parameter:hasUnit>kmol/s</parameter:hasUnit>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -852,6 +902,7 @@
         <parameter:hasName>leak_fault_1</parameter:hasName>
         <parameter:hasProbability rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.6</parameter:hasProbability>
         <parameter:hasValue>4.8e-10</parameter:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -865,6 +916,7 @@
         <parameter:hasName>leak_fault_2</parameter:hasName>
         <parameter:hasProbability rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.4</parameter:hasProbability>
         <parameter:hasValue>1e-8</parameter:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -883,6 +935,7 @@
         <parameter:hasName>leak_severity</parameter:hasName>
         <parameter:hasNominalValue>4.8e-10</parameter:hasNominalValue>
         <parameter:hasUnit>in^2</parameter:hasUnit>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -896,6 +949,7 @@
         <parameter:hasName>leak_severity_1</parameter:hasName>
         <parameter:hasProbability rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.6</parameter:hasProbability>
         <parameter:hasValue>4.8e-10</parameter:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -909,6 +963,7 @@
         <parameter:hasName>leak_severity_2</parameter:hasName>
         <parameter:hasProbability rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.4</parameter:hasProbability>
         <parameter:hasValue>1e−8</parameter:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -920,6 +975,7 @@
         <rdf:type rdf:resource="http://parameter.com/vocabulary/parameter#StateVariable"/>
         <parameter:hasId>St_2</parameter:hasId>
         <parameter:hasName>leakage</parameter:hasName>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -934,6 +990,7 @@
         <parameter:Simulates rdf:resource="http://parameter.com/description/spacecraft#filter_2"/>
         <parameter:hasId>Mo_3</parameter:hasId>
         <parameter:hasName>lstm</parameter:hasName>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -952,6 +1009,7 @@
         <parameter:hasName>lstm_param_filter</parameter:hasName>
         <parameter:hasNominalValue>Mok</parameter:hasNominalValue>
         <parameter:hasUnit>∅</parameter:hasUnit>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -965,6 +1023,7 @@
         <parameter:hasName>lstm_param_filter_1</parameter:hasName>
         <parameter:hasProbability rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.6</parameter:hasProbability>
         <parameter:hasValue>Mok</parameter:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -978,6 +1037,7 @@
         <parameter:hasName>lstm_param_filter_2</parameter:hasName>
         <parameter:hasProbability rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.4</parameter:hasProbability>
         <parameter:hasValue>Mko</parameter:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -996,6 +1056,7 @@
         <parameter:hasName>mesh_size</parameter:hasName>
         <parameter:hasNominalValue>60</parameter:hasNominalValue>
         <parameter:hasUnit>μm</parameter:hasUnit>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -1009,6 +1070,7 @@
         <parameter:hasName>mesh_size_1</parameter:hasName>
         <parameter:hasProbability rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.4</parameter:hasProbability>
         <parameter:hasValue>2</parameter:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -1022,6 +1084,7 @@
         <parameter:hasName>mesh_size_2</parameter:hasName>
         <parameter:hasProbability rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.6</parameter:hasProbability>
         <parameter:hasValue>60</parameter:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -1034,6 +1097,7 @@
         <parameter:HasHealthStatus rdf:resource="http://parameter.com/description/spacecraft#pressure"/>
         <parameter:hasId>Device_3</parameter:hasId>
         <parameter:hasName>pipe</parameter:hasName>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -1047,6 +1111,7 @@
         <parameter:Contains rdf:resource="http://parameter.com/description/spacecraft#storage"/>
         <parameter:hasId>System_2</parameter:hasId>
         <parameter:hasName>power_unit</parameter:hasName>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -1060,6 +1125,7 @@
         <parameter:HC2_Follows rdf:resource="http://parameter.com/description/spacecraft#air_blower"/>
         <parameter:hasId>Device_7</parameter:hasId>
         <parameter:hasName>precooler</parameter:hasName>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -1071,6 +1137,7 @@
         <rdf:type rdf:resource="http://parameter.com/vocabulary/parameter#StateVariable"/>
         <parameter:hasId>St_4</parameter:hasId>
         <parameter:hasName>pressure</parameter:hasName>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -1082,6 +1149,7 @@
         <rdf:type rdf:resource="http://parameter.com/vocabulary/parameter#Component"/>
         <parameter:hasId>Component_2</parameter:hasId>
         <parameter:hasName>primary</parameter:hasName>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -1095,6 +1163,7 @@
         <parameter:Simulates rdf:resource="http://parameter.com/description/spacecraft#backup"/>
         <parameter:hasId>Mo_4</parameter:hasId>
         <parameter:hasName>regression</parameter:hasName>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -1110,6 +1179,7 @@
         <parameter:HasHealthStatus rdf:resource="http://parameter.com/description/spacecraft#stiction"/>
         <parameter:hasId>Device_2.1</parameter:hasId>
         <parameter:hasName>selection_valve_1</parameter:hasName>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -1125,6 +1195,7 @@
         <parameter:HasHealthStatus rdf:resource="http://parameter.com/description/spacecraft#stiction"/>
         <parameter:hasId>Device_2.2</parameter:hasId>
         <parameter:hasName>selection_valve_2</parameter:hasName>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -1140,6 +1211,7 @@
         <parameter:HasHealthStatus rdf:resource="http://parameter.com/description/spacecraft#stiction"/>
         <parameter:hasId>Device_2.3</parameter:hasId>
         <parameter:hasName>selection_valve_3</parameter:hasName>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -1155,6 +1227,7 @@
         <parameter:HasHealthStatus rdf:resource="http://parameter.com/description/spacecraft#stiction"/>
         <parameter:hasId>Device_2.4</parameter:hasId>
         <parameter:hasName>selection_valve_4</parameter:hasName>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -1177,6 +1250,7 @@
         <parameter:Simulates rdf:resource="http://parameter.com/description/spacecraft#selection_valve_4"/>
         <parameter:hasId>Mo_1</parameter:hasId>
         <parameter:hasName>simulink</parameter:hasName>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -1191,6 +1265,7 @@
         <parameter:HasHealthStatus rdf:resource="http://parameter.com/description/spacecraft#water"/>
         <parameter:hasId>Device_4.3</parameter:hasId>
         <parameter:hasName>sorbent_bed_1</parameter:hasName>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -1205,6 +1280,7 @@
         <parameter:HasHealthStatus rdf:resource="http://parameter.com/description/spacecraft#water"/>
         <parameter:hasId>Device_4.4</parameter:hasId>
         <parameter:hasName>sorbent_bed_2</parameter:hasName>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -1216,6 +1292,7 @@
         <rdf:type rdf:resource="http://parameter.com/vocabulary/parameter#StateVariable"/>
         <parameter:hasId>St_3</parameter:hasId>
         <parameter:hasName>stiction</parameter:hasName>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -1229,6 +1306,7 @@
         <parameter:Contains rdf:resource="http://parameter.com/description/spacecraft#primary"/>
         <parameter:hasId>Subsystem_3</parameter:hasId>
         <parameter:hasName>storage</parameter:hasName>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -1247,6 +1325,7 @@
         <parameter:hasName>sustained_valve_fault</parameter:hasName>
         <parameter:hasNominalValue>1000</parameter:hasNominalValue>
         <parameter:hasUnit>kmol/s/bar</parameter:hasUnit>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -1260,6 +1339,7 @@
         <parameter:hasName>sustained_valve_fault_1</parameter:hasName>
         <parameter:hasProbability rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.2</parameter:hasProbability>
         <parameter:hasValue>1e-5</parameter:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -1273,6 +1353,7 @@
         <parameter:hasName>sustained_valve_fault_2</parameter:hasName>
         <parameter:hasProbability rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.8</parameter:hasProbability>
         <parameter:hasValue>1000</parameter:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -1284,6 +1365,7 @@
         <rdf:type rdf:resource="http://parameter.com/vocabulary/parameter#StateVariable"/>
         <parameter:hasId>St_8</parameter:hasId>
         <parameter:hasName>temperature</parameter:hasName>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -1302,6 +1384,7 @@
         <parameter:hasName>vacuum_fault</parameter:hasName>
         <parameter:hasNominalValue>10</parameter:hasNominalValue>
         <parameter:hasUnit>kPa</parameter:hasUnit>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -1315,6 +1398,7 @@
         <parameter:hasName>vacuum_fault_1</parameter:hasName>
         <parameter:hasProbability rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.6</parameter:hasProbability>
         <parameter:hasValue>10</parameter:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -1328,6 +1412,7 @@
         <parameter:hasName>vacuum_fault_2</parameter:hasName>
         <parameter:hasProbability rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.4</parameter:hasProbability>
         <parameter:hasValue>80</parameter:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -1346,6 +1431,7 @@
         <parameter:hasName>vacuum_severity</parameter:hasName>
         <parameter:hasNominalValue>606</parameter:hasNominalValue>
         <parameter:hasUnit>Pa</parameter:hasUnit>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -1359,6 +1445,7 @@
         <parameter:hasName>vacuum_severity_1</parameter:hasName>
         <parameter:hasProbability rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.6</parameter:hasProbability>
         <parameter:hasValue>606</parameter:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -1372,6 +1459,7 @@
         <parameter:hasName>vacuum_severity_2</parameter:hasName>
         <parameter:hasProbability rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.4</parameter:hasProbability>
         <parameter:hasValue>1156</parameter:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -1383,6 +1471,7 @@
         <rdf:type rdf:resource="http://parameter.com/vocabulary/parameter#StateVariable"/>
         <parameter:hasId>St_9</parameter:hasId>
         <parameter:hasName>water</parameter:hasName>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -1401,6 +1490,7 @@
         <parameter:hasName>water_preload</parameter:hasName>
         <parameter:hasNominalValue>0</parameter:hasNominalValue>
         <parameter:hasUnit>kmol/kmol</parameter:hasUnit>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -1414,6 +1504,7 @@
         <parameter:hasName>water_preload_1</parameter:hasName>
         <parameter:hasProbability rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.6</parameter:hasProbability>
         <parameter:hasValue>0</parameter:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
     
 
@@ -1427,11 +1518,12 @@
         <parameter:hasName>water_preload_2</parameter:hasName>
         <parameter:hasProbability rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.4</parameter:hasProbability>
         <parameter:hasValue>1e-3</parameter:hasValue>
+        <oml:type rdf:resource="http://opencaesar.io/oml#ConceptInstance"/>
     </owl:NamedIndividual>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 5.1.17.2020-11-07T15:03:35Z) https://github.com/owlcs/owlapi/ -->
+<!-- Generated by the OWL API (version 5.5.0.2023-01-14T12:41:38Z) https://github.com/owlcs/owlapi/ -->
 
 
